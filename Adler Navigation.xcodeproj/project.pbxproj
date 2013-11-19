@@ -27,6 +27,7 @@
 		30E5028F18360B3200BCDA41 /* ExitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5028E18360B3200BCDA41 /* ExitNode.m */; };
 		30E502921836222000BCDA41 /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502911836222000BCDA41 /* Edge.m */; };
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
+		F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* MapData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
+		F382AE9C183AA28600CED1A0 /* MapData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		30E50259183607E100BCDA41 /* Adler Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F382AE9C183AA28600CED1A0 /* MapData.plist */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E50262183607E100BCDA41 /* AppDelegate.h */,
 				30E50263183607E100BCDA41 /* AppDelegate.m */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E5025E183607E100BCDA41 /* InfoPlist.strings in Resources */,
+				F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +493,7 @@
 				30E50282183607E100BCDA41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler NavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +502,7 @@
 				30E50285183607E100BCDA41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
