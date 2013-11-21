@@ -69,7 +69,7 @@
 }
 
 /**
- * Returns a dictionary with keys being adjacent Nodes and values being the Edges
+ * Returns a set of Edge objects
  */
 - (NSSet *)getAdjacentNodes:(Node *)node
 {

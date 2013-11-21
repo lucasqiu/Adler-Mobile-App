@@ -19,7 +19,13 @@
 
 - (void)addNode:(Node *)node;
 - (void)addEdge:(Edge *)edge;
+- (void)addEdgeFromNode:(NSString *)nodeId1 toNode:(NSString *)nodeId2;
+
 - (Node *)getNodeById:(NSString *)id;
+
+/**
+ * Returns a set of Edge objects
+ */
 - (NSSet *)getAdjacentNodes:(Node *)node;
 
 @end
