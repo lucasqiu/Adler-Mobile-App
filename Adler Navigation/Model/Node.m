@@ -13,6 +13,7 @@
 - (id)copyWithZone:(NSZone *)zone
 {
     Node *copyNode = [[[self class] allocWithZone:zone] init];
+    copyNode.id = [_id copy];
     copyNode.xCoord = _xCoord;
     copyNode.yCoord = _yCoord;
     return copyNode;

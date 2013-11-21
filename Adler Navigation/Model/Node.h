@@ -10,6 +10,7 @@
 
 @interface Node : NSObject <NSCopying>
 
+@property (nonatomic) NSString *id;
 @property (nonatomic) float xCoord;
 @property (nonatomic) float yCoord;
 

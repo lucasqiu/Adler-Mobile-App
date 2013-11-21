@@ -4,63 +4,92 @@
 <array>
 	<dict>
 		<key>uid</key>
-		<string></string>
+		<string>entrance</string>
 		<key>type</key>
-		<string></string>
+		<string>exit</string>
 		<key>x</key>
-		<real>0</real>
+		<integer>207</integer>
 		<key>y</key>
-		<real>0</real>
+		<integer>424</integer>
 		<key>adjacent</key>
-		<array/>
+		<array>
+			<string>entrance_travel1</string>
+		</array>
 	</dict>
 	<dict>
 		<key>uid</key>
-		<string></string>
+		<string>room1</string>
 		<key>type</key>
-		<string></string>
+		<string>exit</string>
 		<key>x</key>
-		<real>0</real>
+		<integer>234</integer>
 		<key>y</key>
-		<real>0</real>
+		<integer>405</integer>
 		<key>adjacent</key>
-		<array/>
+		<array>
+			<string>entrance_travel1</string>
+			<string>exhibit1</string>
+		</array>
 	</dict>
 	<dict>
 		<key>uid</key>
-		<string></string>
+		<string>exhibit1</string>
 		<key>type</key>
-		<string></string>
+		<string>exhibit</string>
 		<key>x</key>
-		<real>0</real>
+		<integer>247</integer>
 		<key>y</key>
-		<real>0</real>
+		<integer>420</integer>
 		<key>adjacent</key>
-		<array/>
+		<array>
+			<string>room1</string>
+		</array>
 	</dict>
 	<dict>
 		<key>uid</key>
-		<string></string>
+		<string>entrance_travel1</string>
 		<key>type</key>
-		<string></string>
+		<string>travel</string>
 		<key>x</key>
-		<real>0</real>
+		<integer>220</integer>
 		<key>y</key>
-		<real>0</real>
+		<integer>405</integer>
 		<key>adjacent</key>
-		<array/>
+		<array>
+			<string>entrance</string>
+			<string>room1</string>
+		</array>
 	</dict>
 	<dict>
 		<key>uid</key>
-		<string></string>
+		<string>main_room</string>
 		<key>type</key>
-		<string></string>
+		<string>exit</string>
 		<key>x</key>
-		<real>0</real>
+		<integer>231</integer>
 		<key>y</key>
-		<real>0</real>
+		<integer>385</integer>
 		<key>adjacent</key>
-		<array/>
+		<array>
+			<string>entrance</string>
+			<string>room1</string>
+			<string>entrance_travel1</string>
+			<string>main_exhibit</string>
+		</array>
+	</dict>
+	<dict>
+		<key>uid</key>
+		<string>main_exhibit</string>
+		<key>type</key>
+		<string>exhibit</string>
+		<key>x</key>
+		<integer>288</integer>
+		<key>y</key>
+		<integer>313</integer>
+		<key>adjacent</key>
+		<array>
+			<string>main_room</string>
+		</array>
 	</dict>
 </array>
 </plist>

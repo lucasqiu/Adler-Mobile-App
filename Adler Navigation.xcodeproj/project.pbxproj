@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C674183DD41F00E71EDD /* MapGraphTests.m */; };
+		30D1C678183DEDA800E71EDD /* ExhibitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C677183DEDA800E71EDD /* ExhibitNode.m */; };
+		30D1C67B183DF53200E71EDD /* Map_bottomlevel_labeled.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */; };
 		30E50252183607E100BCDA41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50251183607E100BCDA41 /* Foundation.framework */; };
 		30E50254183607E100BCDA41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50253183607E100BCDA41 /* CoreGraphics.framework */; };
 		30E50256183607E100BCDA41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50255183607E100BCDA41 /* UIKit.framework */; };
@@ -41,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30D1C674183DD41F00E71EDD /* MapGraphTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGraphTests.m; sourceTree = "<group>"; };
+		30D1C676183DEDA800E71EDD /* ExhibitNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExhibitNode.h; path = Model/ExhibitNode.h; sourceTree = "<group>"; };
+		30D1C677183DEDA800E71EDD /* ExhibitNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExhibitNode.m; path = Model/ExhibitNode.m; sourceTree = "<group>"; };
+		30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map_bottomlevel_labeled.png; sourceTree = "<group>"; };
 		30E5024E183607E100BCDA41 /* Adler Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adler Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E50251183607E100BCDA41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30E50253183607E100BCDA41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,7 +76,7 @@
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
-		F382AE9C183AA28600CED1A0 /* MapData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapData.plist; sourceTree = "<group>"; };
+		F382AE9C183AA28600CED1A0 /* MapData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapData.plist; path = "../Adler Navigation/MapData.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +105,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30D1C679183DF50500E71EDD /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				F382AE9C183AA28600CED1A0 /* MapData.plist */,
+				30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */,
+			);
+			name = "Test Data";
+			sourceTree = "<group>";
+		};
+		30D1C67C183DF5D400E71EDD /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				30E502871836084000BCDA41 /* Node.h */,
+				30E502881836084000BCDA41 /* Node.m */,
+				30E5028A18360A1500BCDA41 /* TravelNode.h */,
+				30E5028B18360A1500BCDA41 /* TravelNode.m */,
+				30E5028D18360B3200BCDA41 /* ExitNode.h */,
+				30E5028E18360B3200BCDA41 /* ExitNode.m */,
+				30D1C676183DEDA800E71EDD /* ExhibitNode.h */,
+				30D1C677183DEDA800E71EDD /* ExhibitNode.m */,
+			);
+			name = Node;
+			sourceTree = "<group>";
+		};
 		30E50245183607E100BCDA41 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +163,6 @@
 		30E50259183607E100BCDA41 /* Adler Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				F382AE9C183AA28600CED1A0 /* MapData.plist */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E50262183607E100BCDA41 /* AppDelegate.h */,
 				30E50263183607E100BCDA41 /* AppDelegate.m */,
@@ -157,8 +187,10 @@
 		30E50276183607E100BCDA41 /* Adler NavigationTests */ = {
 			isa = PBXGroup;
 			children = (
+				30D1C679183DF50500E71EDD /* Test Data */,
 				30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */,
 				30E50277183607E100BCDA41 /* Supporting Files */,
+				30D1C674183DD41F00E71EDD /* MapGraphTests.m */,
 			);
 			path = "Adler NavigationTests";
 			sourceTree = "<group>";
@@ -175,12 +207,7 @@
 		30E502861836080B00BCDA41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				30E502871836084000BCDA41 /* Node.h */,
-				30E502881836084000BCDA41 /* Node.m */,
-				30E5028A18360A1500BCDA41 /* TravelNode.h */,
-				30E5028B18360A1500BCDA41 /* TravelNode.m */,
-				30E5028D18360B3200BCDA41 /* ExitNode.h */,
-				30E5028E18360B3200BCDA41 /* ExitNode.m */,
+				30D1C67C183DF5D400E71EDD /* Node */,
 				30E502901836222000BCDA41 /* Edge.h */,
 				30E502911836222000BCDA41 /* Edge.m */,
 				30E502931836263100BCDA41 /* MapGraph.h */,
@@ -274,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D1C67B183DF53200E71EDD /* Map_bottomlevel_labeled.png in Resources */,
 				30E5027B183607E100BCDA41 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D1C678183DEDA800E71EDD /* ExhibitNode.m in Sources */,
 				30E50264183607E100BCDA41 /* AppDelegate.m in Sources */,
 				30E50260183607E100BCDA41 /* main.m in Sources */,
 				30E50267183607E100BCDA41 /* Adler_Navigation.xcdatamodeld in Sources */,
@@ -301,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E5027D183607E100BCDA41 /* Adler_NavigationTests.m in Sources */,
+				30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
