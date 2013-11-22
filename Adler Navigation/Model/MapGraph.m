@@ -76,4 +76,82 @@
     return [_adjacencyMatrix objectForKey:node];
 }
 
+/**
+ * Returns an array of UIDs for adjacent nodes
+ */
+- (NSArray *)getIDsOfAdjacentNodes:(Node *)node
+{
+    NSMutableArray * adjacentNodeUIDs = [[NSMutableArray alloc] init];
+    NSSet * edges = [_adjacencyMatrix objectForKey:node];
+    for(Edge * currentEdge in edges) {
+        NSString * node1ID = currentEdge.node1.id;
+        NSString * node2ID = currentEdge.node2.id;
+//        NSLog(@"node1ID = %@ ", node1ID);
+//        NSLog(@"node2ID = %@\n", node2ID);
+        
+        if(![node1ID isEqualToString:node.id]) {
+            [adjacentNodeUIDs addObject:node1ID];
+        }
+        
+        if(![node2ID isEqualToString:node.id]) {
+            [adjacentNodeUIDs addObject:node2ID];
+        }
+    }
+    
+    return adjacentNodeUIDs;
+}
+
+- (void)addGraphNodesFromFile:(NSString *)filePath
+{
+    NSArray * nodeDataArray = [[NSArray alloc] initWithContentsOfFile:filePath];    //array containing dict objects
+    
+    for(id nodeDict in nodeDataArray){
+        NSString * uniqueID = [nodeDict objectForKey:@"uid"];
+        NSString * nodeType = [nodeDict objectForKey:@"type"];
+        NSNumber * xCoordinate = [nodeDict objectForKey:@"x"];
+        NSNumber * yCoordinate = [nodeDict objectForKey:@"y"];
+        
+        Node * newNode;
+        
+        if([nodeType isEqualToString:@"exit"]) {
+            newNode = [[ExitNode alloc] init];
+        }
+        
+        else if([nodeType isEqualToString:@"travel"]) {
+            newNode = [[TravelNode alloc] init];
+        }
+        
+        else {
+            newNode = [[ExhibitNode alloc] init];
+        }
+        
+        newNode.xCoord = [xCoordinate floatValue];
+        newNode.yCoord = [yCoordinate floatValue];
+        newNode.id = uniqueID;
+        
+        [self addNode:newNode];
+    }
+}
+
+- (void)createGraphEdgesFromFile:(NSString *)filePath
+{
+    NSArray * nodeDataArray = [[NSArray alloc] initWithContentsOfFile:filePath];    //array containing dict objects
+    
+    for(id nodeDict in nodeDataArray) {
+        NSString * uniqueID = [nodeDict objectForKey:@"uid"];
+        NSArray * adjacentNodes = [nodeDict objectForKey:@"adjacent"];
+        
+        for(id nodeID in adjacentNodes) {
+            [self addEdgeFromNode:uniqueID toNode:nodeID];
+        }
+    }
+}
+
+- (void) createGraphFromFile:(NSString *) filePath
+{
+    //should the destructor be called here to clear out existing data in the graph?
+    [self addGraphNodesFromFile:filePath];
+    [self createGraphEdgesFromFile:filePath];
+}
+
 @end

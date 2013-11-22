@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Node.h"
 #import "Edge.h"
+#import "ExhibitNode.h"
+#import "ExitNode.h"
+#import "TravelNode.h"
 
 @interface MapGraph : NSObject
 
@@ -27,5 +30,9 @@
  * Returns a set of Edge objects
  */
 - (NSSet *)getAdjacentNodes:(Node *)node;
+
+- (NSArray *)getIDsOfAdjacentNodes:(Node *)node;
+
+- (void) createGraphFromFile:(NSString *) filePath;
 
 @end

@@ -104,4 +104,35 @@ Edge *e13;
     XCTAssertEqualObjects(adjacent, expected);
 }
 
+- (void)testCreateGraphFromFile
+{
+    MapGraph * testGraph = [[MapGraph alloc] init];
+    
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"MapData" ofType:@"plist"];
+    
+    [testGraph createGraphFromFile:filePath];
+    
+    NSArray * nodeDataArray = [[NSArray alloc] initWithContentsOfFile:filePath];    //array containing dict objects
+    
+    for(id nodeDict in nodeDataArray){
+        NSString * uniqueID = [nodeDict objectForKey:@"uid"];
+        NSArray * adjacentNodes = [nodeDict objectForKey:@"adjacent"];
+        
+//        NSLog(@"uniqueID = %@\n", uniqueID);
+//        NSLog(@"adjacentNodes = %@\n", adjacentNodes);
+        
+        Node * currentNodeInGraph = [testGraph getNodeById:uniqueID];
+        XCTAssertNotNil(currentNodeInGraph);
+        
+        NSArray * setOfAdjacentNodes = [testGraph getIDsOfAdjacentNodes:currentNodeInGraph];
+        
+        for(NSString * adjacentNodeID in setOfAdjacentNodes) {
+//            NSLog(@"adjacentNodeID = %@\n", adjacentNodeID);
+            XCTAssertTrue([adjacentNodes containsObject:adjacentNodeID]);
+        }
+        
+        NSLog(@"end of for loop");
+    }
+}
+
 @end
