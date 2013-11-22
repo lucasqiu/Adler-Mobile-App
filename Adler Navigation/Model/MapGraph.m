@@ -86,8 +86,6 @@
     for(Edge * currentEdge in edges) {
         NSString * node1ID = currentEdge.node1.id;
         NSString * node2ID = currentEdge.node2.id;
-//        NSLog(@"node1ID = %@ ", node1ID);
-//        NSLog(@"node2ID = %@\n", node2ID);
         
         if(![node1ID isEqualToString:node.id]) {
             [adjacentNodeUIDs addObject:node1ID];

@@ -118,17 +118,13 @@ Edge *e13;
         NSString * uniqueID = [nodeDict objectForKey:@"uid"];
         NSArray * adjacentNodes = [nodeDict objectForKey:@"adjacent"];
         
-//        NSLog(@"uniqueID = %@\n", uniqueID);
-//        NSLog(@"adjacentNodes = %@\n", adjacentNodes);
-        
         Node * currentNodeInGraph = [testGraph getNodeById:uniqueID];
         XCTAssertNotNil(currentNodeInGraph);
         
         NSArray * setOfAdjacentNodes = [testGraph getIDsOfAdjacentNodes:currentNodeInGraph];
         
-        for(NSString * adjacentNodeID in setOfAdjacentNodes) {
-//            NSLog(@"adjacentNodeID = %@\n", adjacentNodeID);
-            XCTAssertTrue([adjacentNodes containsObject:adjacentNodeID]);
+        for(NSString * adjacentNodeID in adjacentNodes) {
+            XCTAssertTrue([setOfAdjacentNodes containsObject:adjacentNodeID]);
         }
         
         NSLog(@"end of for loop");
