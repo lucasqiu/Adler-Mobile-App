@@ -126,8 +126,6 @@ Edge *e13;
         for(NSString * adjacentNodeID in adjacentNodes) {
             XCTAssertTrue([setOfAdjacentNodes containsObject:adjacentNodeID]);
         }
-        
-        NSLog(@"end of for loop");
     }
 }
 
