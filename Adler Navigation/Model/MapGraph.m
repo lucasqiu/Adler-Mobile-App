@@ -131,7 +131,7 @@
     }
 }
 
-- (void)createGraphEdgesFromFile:(NSString *)filePath
+- (void)addGraphEdgesFromFile:(NSString *)filePath
 {
     NSArray * nodeDataArray = [[NSArray alloc] initWithContentsOfFile:filePath];    //array containing dict objects
     
@@ -149,7 +149,7 @@
 {
     //should the destructor be called here to clear out existing data in the graph?
     [self addGraphNodesFromFile:filePath];
-    [self createGraphEdgesFromFile:filePath];
+    [self addGraphEdgesFromFile:filePath];
 }
 
 @end
