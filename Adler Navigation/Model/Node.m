@@ -47,4 +47,10 @@
     return hash;
 }
 
+- (BOOL)inRoom:(NSString *)room
+{
+    [NSException raise:@"Method not implemented" format:@""];
+    return false;
+}
+
 @end

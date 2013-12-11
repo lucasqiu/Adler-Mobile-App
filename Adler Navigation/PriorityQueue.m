@@ -12,6 +12,8 @@
 @property (nonatomic, strong) NSObject *obj;
 @property (nonatomic) float priority;
 @end
+@implementation Item
+@end
 
 @implementation PriorityQueue
 {
