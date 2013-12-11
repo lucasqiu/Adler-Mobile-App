@@ -18,7 +18,7 @@
 // id -> node
 @property (strong, nonatomic) NSMutableDictionary *nodes;
 // node -> set of edges
-@property (strong, nonatomic) NSMutableDictionary *adjacencyMatrix;
+@property (strong, nonatomic) NSMutableDictionary *adjacencyList;
 
 - (void)addNode:(Node *)node;
 - (void)addEdge:(Edge *)edge;

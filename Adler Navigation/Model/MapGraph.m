@@ -16,7 +16,7 @@
     if (self)
     {
         _nodes = [[NSMutableDictionary alloc] init];
-        _adjacencyMatrix = [[NSMutableDictionary alloc] init];
+        _adjacencyList = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -28,11 +28,11 @@
         NSLog(@"Warning: ID not defined for node");
         node.id = [NSString stringWithFormat:@"(%f,%f)", node.xCoord, node.yCoord];
     }
-    if ([_adjacencyMatrix objectForKey:node] == nil)
+    if ([_adjacencyList objectForKey:node] == nil)
     {
         [_nodes setObject:node forKey:node.id];
         NSMutableSet *adjacentNodes = [[NSMutableSet alloc] init];
-        [_adjacencyMatrix setObject:adjacentNodes forKey:node];
+        [_adjacencyList setObject:adjacentNodes forKey:node];
     }
 }
 
@@ -42,9 +42,9 @@
     [self addNode:edge.node1];
     [self addNode:edge.node2];
     
-    [[_adjacencyMatrix objectForKey:edge.node1] addObject:edge];
+    [[_adjacencyList objectForKey:edge.node1] addObject:edge];
     
-    [[_adjacencyMatrix objectForKey:edge.node2] addObject:edge];
+    [[_adjacencyList objectForKey:edge.node2] addObject:edge];
 }
 
 - (void)addEdgeFromNode:(NSString *)nodeId1 toNode:(NSString *)nodeId2
@@ -73,7 +73,7 @@
  */
 - (NSSet *)getAdjacentNodes:(Node *)node
 {
-    return [_adjacencyMatrix objectForKey:node];
+    return [_adjacencyList objectForKey:node];
 }
 
 /**
@@ -82,7 +82,7 @@
 - (NSArray *)getIDsOfAdjacentNodes:(Node *)node
 {
     NSMutableArray * adjacentNodeUIDs = [[NSMutableArray alloc] init];
-    NSSet * edges = [_adjacencyMatrix objectForKey:node];
+    NSSet * edges = [_adjacencyList objectForKey:node];
     for(Edge * currentEdge in edges) {
         NSString * node1ID = currentEdge.node1.id;
         NSString * node2ID = currentEdge.node2.id;
