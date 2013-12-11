@@ -44,7 +44,7 @@
     ExhibitNode *n3 = [[ExhibitNode alloc] init];
     n3.room = @"room2";
     
-    Node *n4 = [[Node alloc] init];
+//    Node *n4 = [[Node alloc] init];
     
     NSArray *path = @[n1, n2, n3];
     
