@@ -39,6 +39,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Set the image view as the object to zoom when pinching.
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.imageView;
+}
+
 /*
  * Draws the next direction and places the text direction on the view.
  * Removes the used Nodes from path.

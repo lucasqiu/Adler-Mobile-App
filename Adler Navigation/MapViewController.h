@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 + (void)nextDirection:(NSArray *)path;
 
