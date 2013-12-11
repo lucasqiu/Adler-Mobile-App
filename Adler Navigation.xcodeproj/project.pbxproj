@@ -10,6 +10,8 @@
 		30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C674183DD41F00E71EDD /* MapGraphTests.m */; };
 		30D1C678183DEDA800E71EDD /* ExhibitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C677183DEDA800E71EDD /* ExhibitNode.m */; };
 		30D1C67B183DF53200E71EDD /* Map_bottomlevel_labeled.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */; };
+		30E3740B18403EAB00996B60 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740A18403EAB00996B60 /* MapViewController.m */; };
+		30E3740D18408BCC00996B60 /* MapViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740C18408BCC00996B60 /* MapViewControllerTests.m */; };
 		30E50252183607E100BCDA41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50251183607E100BCDA41 /* Foundation.framework */; };
 		30E50254183607E100BCDA41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50253183607E100BCDA41 /* CoreGraphics.framework */; };
 		30E50256183607E100BCDA41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50255183607E100BCDA41 /* UIKit.framework */; };
@@ -50,6 +52,9 @@
 		30D1C676183DEDA800E71EDD /* ExhibitNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExhibitNode.h; path = Model/ExhibitNode.h; sourceTree = "<group>"; };
 		30D1C677183DEDA800E71EDD /* ExhibitNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExhibitNode.m; path = Model/ExhibitNode.m; sourceTree = "<group>"; };
 		30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map_bottomlevel_labeled.png; sourceTree = "<group>"; };
+		30E3740918403EAB00996B60 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		30E3740A18403EAB00996B60 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		30E3740C18408BCC00996B60 /* MapViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewControllerTests.m; sourceTree = "<group>"; };
 		30E5024E183607E100BCDA41 /* Adler Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adler Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E50251183607E100BCDA41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30E50253183607E100BCDA41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,6 +179,8 @@
 				30E50268183607E100BCDA41 /* Images.xcassets */,
 				30E50265183607E100BCDA41 /* Adler_Navigation.xcdatamodeld */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
+				30E3740918403EAB00996B60 /* MapViewController.h */,
+				30E3740A18403EAB00996B60 /* MapViewController.m */,
 			);
 			path = "Adler Navigation";
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 				30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */,
 				30E50277183607E100BCDA41 /* Supporting Files */,
 				30D1C674183DD41F00E71EDD /* MapGraphTests.m */,
+				30E3740C18408BCC00996B60 /* MapViewControllerTests.m */,
 			);
 			path = "Adler NavigationTests";
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 				30E502921836222000BCDA41 /* Edge.m in Sources */,
 				30E5028F18360B3200BCDA41 /* ExitNode.m in Sources */,
 				30E502951836263100BCDA41 /* MapGraph.m in Sources */,
+				30E3740B18403EAB00996B60 /* MapViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
 				30E5028C18360A1500BCDA41 /* TravelNode.m in Sources */,
 			);
@@ -338,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E5027D183607E100BCDA41 /* Adler_NavigationTests.m in Sources */,
+				30E3740D18408BCC00996B60 /* MapViewControllerTests.m in Sources */,
 				30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,4 +10,9 @@
 
 @implementation ExhibitNode
 
+- (BOOL)inRoom:(NSString *)room
+{
+    return room == _room;
+}
+
 @end

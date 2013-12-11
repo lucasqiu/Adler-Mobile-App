@@ -14,4 +14,6 @@
 @property (nonatomic) float xCoord;
 @property (nonatomic) float yCoord;
 
+- (BOOL)inRoom:(NSString *)room;
+
 @end

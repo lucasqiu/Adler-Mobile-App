@@ -10,4 +10,9 @@
 
 @implementation TravelNode
 
+- (BOOL)inRoom:(NSString *)room
+{
+    return room == _room;
+}
+
 @end

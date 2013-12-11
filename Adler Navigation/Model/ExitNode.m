@@ -10,4 +10,9 @@
 
 @implementation ExitNode
 
+- (BOOL)inRoom:(NSString *)room
+{
+    return room == _room1 || room == _room2;
+}
+
 @end
