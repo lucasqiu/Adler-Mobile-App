@@ -12,6 +12,7 @@
 		30D1C67B183DF53200E71EDD /* Map_bottomlevel_labeled.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */; };
 		30E3740B18403EAB00996B60 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740A18403EAB00996B60 /* MapViewController.m */; };
 		30E3740D18408BCC00996B60 /* MapViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740C18408BCC00996B60 /* MapViewControllerTests.m */; };
+		30E374161858464500996B60 /* PriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E374151858464500996B60 /* PriorityQueue.m */; };
 		30E50252183607E100BCDA41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50251183607E100BCDA41 /* Foundation.framework */; };
 		30E50254183607E100BCDA41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50253183607E100BCDA41 /* CoreGraphics.framework */; };
 		30E50256183607E100BCDA41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E50255183607E100BCDA41 /* UIKit.framework */; };
@@ -55,6 +56,8 @@
 		30E3740918403EAB00996B60 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		30E3740A18403EAB00996B60 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		30E3740C18408BCC00996B60 /* MapViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewControllerTests.m; sourceTree = "<group>"; };
+		30E374141858464500996B60 /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
+		30E374151858464500996B60 /* PriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueue.m; sourceTree = "<group>"; };
 		30E5024E183607E100BCDA41 /* Adler Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adler Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E50251183607E100BCDA41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30E50253183607E100BCDA41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +184,8 @@
 				30E5025A183607E100BCDA41 /* Supporting Files */,
 				30E3740918403EAB00996B60 /* MapViewController.h */,
 				30E3740A18403EAB00996B60 /* MapViewController.m */,
+				30E374141858464500996B60 /* PriorityQueue.h */,
+				30E374151858464500996B60 /* PriorityQueue.m */,
 			);
 			path = "Adler Navigation";
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 				30D1C678183DEDA800E71EDD /* ExhibitNode.m in Sources */,
 				30E50264183607E100BCDA41 /* AppDelegate.m in Sources */,
 				30E50260183607E100BCDA41 /* main.m in Sources */,
+				30E374161858464500996B60 /* PriorityQueue.m in Sources */,
 				30E50267183607E100BCDA41 /* Adler_Navigation.xcdatamodeld in Sources */,
 				30E502921836222000BCDA41 /* Edge.m in Sources */,
 				30E5028F18360B3200BCDA41 /* ExitNode.m in Sources */,
