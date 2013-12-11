@@ -29,9 +29,9 @@
 /**
  * Returns a set of Edge objects
  */
-- (NSSet *)getAdjacentNodes:(Node *)node;
+- (NSSet *)getAdjacentEdges:(Node *)node;
 
-- (NSArray *)getIDsOfAdjacentNodes:(Node *)node;
+- (NSArray *)getIDsOfAdjacentEdges:(Node *)node;
 
 - (void) createGraphFromFile:(NSString *) filePath;
 

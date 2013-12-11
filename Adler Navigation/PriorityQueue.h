@@ -12,4 +12,7 @@
 
 - (void)addItem:(NSObject *)item withPriority:(float)priority;
 
+- (NSObject *)getItemLeastPriority;
+
+- (Boolean)isEmpty;
 @end

@@ -71,7 +71,7 @@
 /**
  * Returns a set of Edge objects
  */
-- (NSSet *)getAdjacentNodes:(Node *)node
+- (NSSet *)getAdjacentEdges:(Node *)node
 {
     return [_adjacencyMatrix objectForKey:node];
 }

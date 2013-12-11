@@ -52,4 +52,9 @@
     return ((Item *)[items objectAtIndex:startIdx++]).obj;
 }
 
+- (Boolean)isEmpty
+{
+    return ([items count]==0);
+}
+
 @end
