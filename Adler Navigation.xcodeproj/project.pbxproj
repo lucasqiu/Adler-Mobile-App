@@ -34,7 +34,6 @@
 		30E502921836222000BCDA41 /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502911836222000BCDA41 /* Edge.m */; };
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
-		B6D85FB1184FCC17002B33BF /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FB0184FCC17002B33BF /* map.png */; };
 		F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* MapData.plist */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +86,6 @@
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B6D85FB0184FCC17002B33BF /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		F382AE9C183AA28600CED1A0 /* MapData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapData.plist; path = "../Adler Navigation/MapData.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +191,6 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B6D85FB0184FCC17002B33BF /* map.png */,
 				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
 				30E5025F183607E100BCDA41 /* main.m */,
@@ -314,7 +311,6 @@
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
 				F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
-				B6D85FB1184FCC17002B33BF /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
