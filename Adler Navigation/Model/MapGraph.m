@@ -26,7 +26,8 @@
     if (node.id == nil)
     {
         NSLog(@"Warning: ID not defined for node");
-        node.id = [NSString stringWithFormat:@"(%f,%f)", node.xCoord, node.yCoord];
+        node.id = [NSString stringWithFormat:@"(%f,%f,%f)", node.xCoord,
+                   node.yCoord, node.zCoord];
     }
     if ([_adjacencyMatrix objectForKey:node] == nil)
     {
@@ -108,6 +109,7 @@
         NSString * nodeType = [nodeDict objectForKey:@"type"];
         NSNumber * xCoordinate = [nodeDict objectForKey:@"x"];
         NSNumber * yCoordinate = [nodeDict objectForKey:@"y"];
+        NSNumber * zCoordinate = [nodeDict objectForKey:@"z"];
         
         Node * newNode;
         
@@ -125,6 +127,7 @@
         
         newNode.xCoord = [xCoordinate floatValue];
         newNode.yCoord = [yCoordinate floatValue];
+        newNode.zCoord = [zCoordinate floatValue];
         newNode.id = uniqueID;
         
         [self addNode:newNode];
