@@ -35,6 +35,7 @@
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
 		B6D85FB1184FCC17002B33BF /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FB0184FCC17002B33BF /* map.png */; };
+		F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */; };
 		F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* MapData.plist */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B6D85FB0184FCC17002B33BF /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Map_stack_tabloid_lower_modified.pdf; sourceTree = "<group>"; };
 		F382AE9C183AA28600CED1A0 /* MapData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapData.plist; path = "../Adler Navigation/MapData.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */,
 				B6D85FB0184FCC17002B33BF /* map.png */,
 				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
@@ -313,6 +316,7 @@
 				30E5025E183607E100BCDA41 /* InfoPlist.strings in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
 				F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */,
+				F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 				B6D85FB1184FCC17002B33BF /* map.png in Resources */,
 			);
