@@ -33,6 +33,10 @@
 		30E5028F18360B3200BCDA41 /* ExitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5028E18360B3200BCDA41 /* ExitNode.m */; };
 		30E502921836222000BCDA41 /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502911836222000BCDA41 /* Edge.m */; };
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
+		B62E979B18A6E18200D290F4 /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979718A6E18200D290F4 /* lower.pdf */; };
+		B62E979C18A6E18200D290F4 /* mid.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979818A6E18200D290F4 /* mid.pdf */; };
+		B62E979D18A6E18200D290F4 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979918A6E18200D290F4 /* star.pdf */; };
+		B62E979E18A6E18200D290F4 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979A18A6E18200D290F4 /* top.pdf */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
 		B6D85FB1184FCC17002B33BF /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FB0184FCC17002B33BF /* map.png */; };
 		F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */; };
@@ -87,6 +91,10 @@
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
+		B62E979718A6E18200D290F4 /* lower.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lower.pdf; sourceTree = "<group>"; };
+		B62E979818A6E18200D290F4 /* mid.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mid.pdf; sourceTree = "<group>"; };
+		B62E979918A6E18200D290F4 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
+		B62E979A18A6E18200D290F4 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = top.pdf; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B6D85FB0184FCC17002B33BF /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Map_stack_tabloid_lower_modified.pdf; sourceTree = "<group>"; };
@@ -313,12 +321,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62E979B18A6E18200D290F4 /* lower.pdf in Resources */,
+				B62E979D18A6E18200D290F4 /* star.pdf in Resources */,
+				B62E979E18A6E18200D290F4 /* top.pdf in Resources */,
 				30E5025E183607E100BCDA41 /* InfoPlist.strings in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
+				B62E979C18A6E18200D290F4 /* mid.pdf in Resources */,
 				F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */,
 				F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
-				B6D85FB1184FCC17002B33BF /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
