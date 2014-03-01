@@ -13,6 +13,7 @@
 @property (nonatomic) NSString *id;
 @property (nonatomic) float xCoord;
 @property (nonatomic) float yCoord;
+@property (nonatomic) float zCoord;
 
 - (BOOL)inRoom:(NSString *)room;
 
