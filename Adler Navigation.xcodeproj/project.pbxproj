@@ -38,6 +38,12 @@
 		F322638C18CCD63C007F0C1F /* mid_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F322638818CCD63C007F0C1F /* mid_paths.pdf */; };
 		F322638D18CCD63C007F0C1F /* star_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F322638918CCD63C007F0C1F /* star_paths.pdf */; };
 		F322638E18CCD63C007F0C1F /* top_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F322638A18CCD63C007F0C1F /* top_paths.pdf */; };
+		F322639018CCD733007F0C1F /* star.plist in Resources */ = {isa = PBXBuildFile; fileRef = F322638F18CCD733007F0C1F /* star.plist */; };
+		F322639218CCD73B007F0C1F /* mid.plist in Resources */ = {isa = PBXBuildFile; fileRef = F322639118CCD73B007F0C1F /* mid.plist */; };
+		F322639718CCDB52007F0C1F /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F322639318CCDB52007F0C1F /* lower.pdf */; };
+		F322639818CCDB52007F0C1F /* mid.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F322639418CCDB52007F0C1F /* mid.pdf */; };
+		F322639918CCDB52007F0C1F /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F322639518CCDB52007F0C1F /* star.pdf */; };
+		F322639A18CCDB53007F0C1F /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F322639618CCDB52007F0C1F /* top.pdf */; };
 		F357A8D918CC18D800A93EEC /* top.plist in Resources */ = {isa = PBXBuildFile; fileRef = F357A8D818CC18D800A93EEC /* top.plist */; };
 		F382AE9D183AA28600CED1A0 /* lower.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* lower.plist */; };
 /* End PBXBuildFile section */
@@ -92,6 +98,12 @@
 		F322638818CCD63C007F0C1F /* mid_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mid_paths.pdf; sourceTree = "<group>"; };
 		F322638918CCD63C007F0C1F /* star_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star_paths.pdf; sourceTree = "<group>"; };
 		F322638A18CCD63C007F0C1F /* top_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = top_paths.pdf; sourceTree = "<group>"; };
+		F322638F18CCD733007F0C1F /* star.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = star.plist; sourceTree = "<group>"; };
+		F322639118CCD73B007F0C1F /* mid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mid.plist; sourceTree = "<group>"; };
+		F322639318CCDB52007F0C1F /* lower.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lower.pdf; sourceTree = "<group>"; };
+		F322639418CCDB52007F0C1F /* mid.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mid.pdf; sourceTree = "<group>"; };
+		F322639518CCDB52007F0C1F /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
+		F322639618CCDB52007F0C1F /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = top.pdf; sourceTree = "<group>"; };
 		F357A8D818CC18D800A93EEC /* top.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = top.plist; sourceTree = "<group>"; };
 		F382AE9C183AA28600CED1A0 /* lower.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = lower.plist; path = "../Adler Navigation/lower.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,10 +137,16 @@
 		30D1C679183DF50500E71EDD /* Map Data */ = {
 			isa = PBXGroup;
 			children = (
+				F322639318CCDB52007F0C1F /* lower.pdf */,
+				F322639418CCDB52007F0C1F /* mid.pdf */,
+				F322639518CCDB52007F0C1F /* star.pdf */,
+				F322639618CCDB52007F0C1F /* top.pdf */,
 				F322638718CCD63C007F0C1F /* lower_paths.pdf */,
 				F322638818CCD63C007F0C1F /* mid_paths.pdf */,
 				F322638918CCD63C007F0C1F /* star_paths.pdf */,
 				F322638A18CCD63C007F0C1F /* top_paths.pdf */,
+				F322639118CCD73B007F0C1F /* mid.plist */,
+				F322638F18CCD733007F0C1F /* star.plist */,
 				F357A8D818CC18D800A93EEC /* top.plist */,
 				F382AE9C183AA28600CED1A0 /* lower.plist */,
 			);
@@ -322,16 +340,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F322638D18CCD63C007F0C1F /* star_paths.pdf in Resources */,
+				F322639918CCDB52007F0C1F /* star.pdf in Resources */,
 				F322638C18CCD63C007F0C1F /* mid_paths.pdf in Resources */,
 				B62E979B18A6E18200D290F4 /* lower.pdf in Resources */,
 				F322638E18CCD63C007F0C1F /* top_paths.pdf in Resources */,
 				F322638B18CCD63C007F0C1F /* lower_paths.pdf in Resources */,
+				F322639A18CCDB53007F0C1F /* top.pdf in Resources */,
+				F322639218CCD73B007F0C1F /* mid.plist in Resources */,
 				B62E979D18A6E18200D290F4 /* star.pdf in Resources */,
 				B62E979E18A6E18200D290F4 /* top.pdf in Resources */,
 				30E5025E183607E100BCDA41 /* InfoPlist.strings in Resources */,
+				F322639818CCDB52007F0C1F /* mid.pdf in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
+				F322639718CCDB52007F0C1F /* lower.pdf in Resources */,
 				B62E979C18A6E18200D290F4 /* mid.pdf in Resources */,
 				F382AE9D183AA28600CED1A0 /* lower.plist in Resources */,
+				F322639018CCD733007F0C1F /* star.plist in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
