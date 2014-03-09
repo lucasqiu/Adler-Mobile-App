@@ -18,8 +18,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel2</string>
-		<key>type</key>
-		<string>travel</string>
 		<key>x</key>
 		<integer>262</integer>
 		<key>y</key>
@@ -33,8 +31,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel3</string>
-		<key>type</key>
-		<string>travel</string>
 		<key>x</key>
 		<integer>290</integer>
 		<key>y</key>
@@ -48,8 +44,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel4</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>349</integer>
 		<key>y</key>
@@ -63,8 +57,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel5</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>349</integer>
 		<key>y</key>
@@ -80,8 +72,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel6</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>333</integer>
 		<key>y</key>
@@ -97,8 +87,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel7</string>
-		<key>type</key>
-		<string>travel</string>
 		<key>x</key>
 		<integer>253</integer>
 		<key>y</key>
@@ -114,8 +102,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel8</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>169</integer>
 		<key>y</key>
@@ -129,8 +115,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel9</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>448</integer>
 		<key>y</key>
@@ -144,8 +128,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel10</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>448</integer>
 		<key>y</key>
@@ -160,8 +142,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel11</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>391</integer>
 		<key>y</key>
@@ -176,8 +156,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel12</string>
-		<key>type</key>
-		<string>travel</string>
 		<key>x</key>
 		<integer>416</integer>
 		<key>y</key>
@@ -192,8 +170,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel13</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>611</integer>
 		<key>y</key>
@@ -207,8 +183,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel14</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>530</integer>
 		<key>y</key>
@@ -222,8 +196,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel15</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>237</integer>
 		<key>y</key>
@@ -237,8 +209,6 @@
 	<dict>
 		<key>uid</key>
 		<string>travel16</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>268</integer>
 		<key>y</key>
@@ -252,8 +222,6 @@
 	<dict>
 		<key>uid</key>
 		<string>rainbow_lobby</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
@@ -268,8 +236,6 @@
 	<dict>
 		<key>uid</key>
 		<string>coat_check</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>288</integer>
 		<key>y</key>
@@ -283,8 +249,6 @@
 	<dict>
 		<key>uid</key>
 		<string>welcome_gallery</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>228</integer>
 		<key>y</key>
@@ -299,8 +263,6 @@
 	<dict>
 		<key>uid</key>
 		<string>sky_theater</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
@@ -313,8 +275,6 @@
 	<dict>
 		<key>uid</key>
 		<string>shoot_for_the_moon</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>398</integer>
 		<key>y</key>
@@ -328,8 +288,6 @@
 	<dict>
 		<key>uid</key>
 		<string>cafe_galileo</string>
-		<key>type</key>
-		<string>exit</string>
 		<key>x</key>
 		<integer>64</integer>
 		<key>y</key>
@@ -342,8 +300,6 @@
 	<dict>
 		<key>uid</key>
 		<string>our_solar_system</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>210</integer>
 		<key>y</key>
@@ -357,8 +313,6 @@
 	<dict>
 		<key>uid</key>
 		<string>planet_explorers</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>473</integer>
 		<key>y</key>
@@ -372,8 +326,6 @@
 	<dict>
 		<key>uid</key>
 		<string>adler_store</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>617</integer>
 		<key>y</key>
@@ -387,8 +339,6 @@
 	<dict>
 		<key>uid</key>
 		<string>rainbow_lobby_exit</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>411</integer>
 		<key>y</key>
@@ -401,8 +351,6 @@
 	<dict>
 		<key>uid</key>
 		<string>sky_theater_exit</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>489</integer>
 		<key>y</key>
@@ -415,8 +363,6 @@
 	<dict>
 		<key>uid</key>
 		<string>planet_explorers_exit</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>497</integer>
 		<key>y</key>
@@ -430,8 +376,6 @@
 	<dict>
 		<key>uid</key>
 		<string>cafe_galileo_exit</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>204</integer>
 		<key>y</key>
@@ -446,8 +390,6 @@
 	<dict>
 		<key>uid</key>
 		<string>main_entrance</string>
-		<key>type</key>
-		<string>exhibit</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
