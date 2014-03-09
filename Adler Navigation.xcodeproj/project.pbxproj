@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C674183DD41F00E71EDD /* MapGraphTests.m */; };
-		30D1C678183DEDA800E71EDD /* ExhibitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C677183DEDA800E71EDD /* ExhibitNode.m */; };
-		30D1C67B183DF53200E71EDD /* Map_bottomlevel_labeled.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */; };
 		30E3740B18403EAB00996B60 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740A18403EAB00996B60 /* MapViewController.m */; };
 		30E3740D18408BCC00996B60 /* MapViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740C18408BCC00996B60 /* MapViewControllerTests.m */; };
 		30E374161858464500996B60 /* PriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E374151858464500996B60 /* PriorityQueue.m */; };
@@ -29,8 +27,6 @@
 		30E5027B183607E100BCDA41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30E50279183607E100BCDA41 /* InfoPlist.strings */; };
 		30E5027D183607E100BCDA41 /* Adler_NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */; };
 		30E502891836084000BCDA41 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502881836084000BCDA41 /* Node.m */; };
-		30E5028C18360A1500BCDA41 /* TravelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5028B18360A1500BCDA41 /* TravelNode.m */; };
-		30E5028F18360B3200BCDA41 /* ExitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5028E18360B3200BCDA41 /* ExitNode.m */; };
 		30E502921836222000BCDA41 /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502911836222000BCDA41 /* Edge.m */; };
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
 		B62E979B18A6E18200D290F4 /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979718A6E18200D290F4 /* lower.pdf */; };
@@ -38,9 +34,8 @@
 		B62E979D18A6E18200D290F4 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979918A6E18200D290F4 /* star.pdf */; };
 		B62E979E18A6E18200D290F4 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979A18A6E18200D290F4 /* top.pdf */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
-		B6D85FB1184FCC17002B33BF /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FB0184FCC17002B33BF /* map.png */; };
-		F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */; };
-		F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* MapData.plist */; };
+		F357A8D918CC18D800A93EEC /* top.plist in Resources */ = {isa = PBXBuildFile; fileRef = F357A8D818CC18D800A93EEC /* top.plist */; };
+		F382AE9D183AA28600CED1A0 /* mid.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* mid.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +50,6 @@
 
 /* Begin PBXFileReference section */
 		30D1C674183DD41F00E71EDD /* MapGraphTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGraphTests.m; sourceTree = "<group>"; };
-		30D1C676183DEDA800E71EDD /* ExhibitNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExhibitNode.h; path = Model/ExhibitNode.h; sourceTree = "<group>"; };
-		30D1C677183DEDA800E71EDD /* ExhibitNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExhibitNode.m; path = Model/ExhibitNode.m; sourceTree = "<group>"; };
-		30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map_bottomlevel_labeled.png; sourceTree = "<group>"; };
 		30E3740918403EAB00996B60 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		30E3740A18403EAB00996B60 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		30E3740C18408BCC00996B60 /* MapViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewControllerTests.m; sourceTree = "<group>"; };
@@ -83,10 +75,6 @@
 		30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adler_NavigationTests.m; sourceTree = "<group>"; };
 		30E502871836084000BCDA41 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = Model/Node.h; sourceTree = "<group>"; };
 		30E502881836084000BCDA41 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Node.m; path = Model/Node.m; sourceTree = "<group>"; };
-		30E5028A18360A1500BCDA41 /* TravelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TravelNode.h; path = Model/TravelNode.h; sourceTree = "<group>"; };
-		30E5028B18360A1500BCDA41 /* TravelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TravelNode.m; path = Model/TravelNode.m; sourceTree = "<group>"; };
-		30E5028D18360B3200BCDA41 /* ExitNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExitNode.h; path = Model/ExitNode.h; sourceTree = "<group>"; };
-		30E5028E18360B3200BCDA41 /* ExitNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExitNode.m; path = Model/ExitNode.m; sourceTree = "<group>"; };
 		30E502901836222000BCDA41 /* Edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Edge.h; path = Model/Edge.h; sourceTree = "<group>"; };
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
@@ -96,9 +84,8 @@
 		B62E979918A6E18200D290F4 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
 		B62E979A18A6E18200D290F4 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = top.pdf; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B6D85FB0184FCC17002B33BF /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
-		F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Map_stack_tabloid_lower_modified.pdf; sourceTree = "<group>"; };
-		F382AE9C183AA28600CED1A0 /* MapData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapData.plist; path = "../Adler Navigation/MapData.plist"; sourceTree = "<group>"; };
+		F357A8D818CC18D800A93EEC /* top.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = top.plist; sourceTree = "<group>"; };
+		F382AE9C183AA28600CED1A0 /* mid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = mid.plist; path = "../Adler Navigation/mid.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,26 +114,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30D1C679183DF50500E71EDD /* Test Data */ = {
+		30D1C679183DF50500E71EDD /* Map Data */ = {
 			isa = PBXGroup;
 			children = (
-				F382AE9C183AA28600CED1A0 /* MapData.plist */,
-				30D1C67A183DF53200E71EDD /* Map_bottomlevel_labeled.png */,
+				F357A8D818CC18D800A93EEC /* top.plist */,
+				F382AE9C183AA28600CED1A0 /* mid.plist */,
 			);
-			name = "Test Data";
-			sourceTree = "<group>";
+			name = "Map Data";
+			path = "Adler NavigationTests";
+			sourceTree = SOURCE_ROOT;
 		};
 		30D1C67C183DF5D400E71EDD /* Node */ = {
 			isa = PBXGroup;
 			children = (
 				30E502871836084000BCDA41 /* Node.h */,
 				30E502881836084000BCDA41 /* Node.m */,
-				30E5028A18360A1500BCDA41 /* TravelNode.h */,
-				30E5028B18360A1500BCDA41 /* TravelNode.m */,
-				30E5028D18360B3200BCDA41 /* ExitNode.h */,
-				30E5028E18360B3200BCDA41 /* ExitNode.m */,
-				30D1C676183DEDA800E71EDD /* ExhibitNode.h */,
-				30D1C677183DEDA800E71EDD /* ExhibitNode.m */,
 			);
 			name = Node;
 			sourceTree = "<group>";
@@ -203,8 +185,6 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */,
-				B6D85FB0184FCC17002B33BF /* map.png */,
 				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
 				30E5025F183607E100BCDA41 /* main.m */,
@@ -216,7 +196,6 @@
 		30E50276183607E100BCDA41 /* Adler NavigationTests */ = {
 			isa = PBXGroup;
 			children = (
-				30D1C679183DF50500E71EDD /* Test Data */,
 				30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */,
 				30E50277183607E100BCDA41 /* Supporting Files */,
 				30D1C674183DD41F00E71EDD /* MapGraphTests.m */,
@@ -237,6 +216,7 @@
 		30E502861836080B00BCDA41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30D1C679183DF50500E71EDD /* Map Data */,
 				30D1C67C183DF5D400E71EDD /* Node */,
 				30E502901836222000BCDA41 /* Edge.h */,
 				30E502911836222000BCDA41 /* Edge.m */,
@@ -327,8 +307,7 @@
 				30E5025E183607E100BCDA41 /* InfoPlist.strings in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
 				B62E979C18A6E18200D290F4 /* mid.pdf in Resources */,
-				F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */,
-				F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */,
+				F382AE9D183AA28600CED1A0 /* mid.plist in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,8 +316,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D1C67B183DF53200E71EDD /* Map_bottomlevel_labeled.png in Resources */,
 				30E5027B183607E100BCDA41 /* InfoPlist.strings in Resources */,
+				F357A8D918CC18D800A93EEC /* top.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,17 +328,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D1C678183DEDA800E71EDD /* ExhibitNode.m in Sources */,
 				30E50264183607E100BCDA41 /* AppDelegate.m in Sources */,
 				30E50260183607E100BCDA41 /* main.m in Sources */,
 				30E374161858464500996B60 /* PriorityQueue.m in Sources */,
 				30E50267183607E100BCDA41 /* Adler_Navigation.xcdatamodeld in Sources */,
 				30E502921836222000BCDA41 /* Edge.m in Sources */,
-				30E5028F18360B3200BCDA41 /* ExitNode.m in Sources */,
 				30E502951836263100BCDA41 /* MapGraph.m in Sources */,
 				30E3740B18403EAB00996B60 /* MapViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
-				30E5028C18360A1500BCDA41 /* TravelNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
