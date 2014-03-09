@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel0</string>
 		<key>type</key>
@@ -17,6 +19,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel1</string>
 		<key>x</key>
@@ -30,6 +34,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel2</string>
 		<key>x</key>
@@ -43,6 +49,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>star_theater_exit</string>
 		<key>x</key>
@@ -56,6 +64,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>star_exhibits</string>
 		<key>x</key>
@@ -69,6 +79,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>star_theather_enter</string>
 		<key>x</key>
@@ -83,6 +95,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel3</string>
 		<key>x</key>
@@ -96,6 +110,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel4</string>
 		<key>x</key>
@@ -109,6 +125,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel5</string>
 		<key>x</key>
@@ -121,6 +139,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>star_theater</string>
 		<key>x</key>

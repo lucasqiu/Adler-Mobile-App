@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel1</string>
 		<key>x</key>
@@ -16,6 +18,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel2</string>
 		<key>x</key>
@@ -29,6 +33,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel3</string>
 		<key>x</key>
@@ -42,6 +48,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel4</string>
 		<key>x</key>
@@ -55,6 +63,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel5</string>
 		<key>x</key>
@@ -70,6 +80,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel6</string>
 		<key>x</key>
@@ -85,6 +97,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel7</string>
 		<key>x</key>
@@ -100,6 +114,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel8</string>
 		<key>x</key>
@@ -113,6 +129,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel9</string>
 		<key>x</key>
@@ -126,6 +144,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel10</string>
 		<key>x</key>
@@ -140,6 +160,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel11</string>
 		<key>x</key>
@@ -154,6 +176,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel12</string>
 		<key>x</key>
@@ -168,6 +192,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel13</string>
 		<key>x</key>
@@ -181,6 +207,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel14</string>
 		<key>x</key>
@@ -194,6 +222,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel15</string>
 		<key>x</key>
@@ -207,6 +237,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel16</string>
 		<key>x</key>
@@ -220,6 +252,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>rainbow_lobby</string>
 		<key>x</key>
@@ -234,6 +268,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>coat_check</string>
 		<key>x</key>
@@ -247,6 +283,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>welcome_gallery</string>
 		<key>x</key>
@@ -261,6 +299,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>sky_theater</string>
 		<key>x</key>
@@ -273,6 +313,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>shoot_for_the_moon</string>
 		<key>x</key>
@@ -286,6 +328,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>cafe_galileo</string>
 		<key>x</key>
@@ -298,6 +342,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>our_solar_system</string>
 		<key>x</key>
@@ -311,6 +357,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>planet_explorers</string>
 		<key>x</key>
@@ -324,6 +372,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>adler_store</string>
 		<key>x</key>
@@ -337,6 +387,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>rainbow_lobby_exit</string>
 		<key>x</key>
@@ -349,6 +401,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>sky_theater_exit</string>
 		<key>x</key>
@@ -361,6 +415,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>planet_explorers_exit</string>
 		<key>x</key>
@@ -374,6 +430,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>cafe_galileo_exit</string>
 		<key>x</key>
@@ -388,6 +446,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>main_entrance</string>
 		<key>x</key>

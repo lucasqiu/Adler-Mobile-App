@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>left_exit</string>
 		<key>x</key>
@@ -15,6 +17,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel0</string>
 		<key>x</key>
@@ -28,6 +32,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel1</string>
 		<key>x</key>
@@ -40,6 +46,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>unknown_restroom_1</string>
 		<key>x</key>
@@ -52,6 +60,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>unknown_restroom_2</string>
 		<key>x</key>
@@ -64,6 +74,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>right_exit</string>
 		<key>x</key>
@@ -76,6 +88,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel2</string>
 		<key>x</key>
@@ -91,6 +105,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel3</string>
 		<key>x</key>
@@ -105,6 +121,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>unknown_restroom_3</string>
 		<key>x</key>
@@ -117,6 +135,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>unknown_restroom_4</string>
 		<key>x</key>
@@ -129,6 +149,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>classroom_b</string>
 		<key>x</key>
@@ -141,6 +163,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>vending</string>
 		<key>x</key>
@@ -154,6 +178,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel4</string>
 		<key>x</key>
@@ -168,6 +194,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<false/>
 		<key>uid</key>
 		<string>travel5</string>
 		<key>x</key>
@@ -182,6 +210,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>classroom_a</string>
 		<key>x</key>
@@ -194,6 +224,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>education_pavilion</string>
 		<key>x</key>
@@ -206,6 +238,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>south_entrance</string>
 		<key>x</key>
@@ -218,6 +252,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>south_elevator</string>
 		<key>x</key>
@@ -231,6 +267,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>isSourceOrDestination</key>
+		<true/>
 		<key>uid</key>
 		<string>south_stairs</string>
 		<key>x</key>
