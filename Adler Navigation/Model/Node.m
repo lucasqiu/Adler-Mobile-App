@@ -14,9 +14,9 @@
 {
     Node *copyNode = [[[self class] allocWithZone:zone] init];
     copyNode.id = [_id copy];
-    copyNode.xCoord = _xCoord;
-    copyNode.yCoord = _yCoord;
-    copyNode.zCoord = _zCoord;
+    copyNode.xCoordinate = _xCoordinate;
+    copyNode.yCoordinate = _yCoordinate;
+    copyNode.zCoordinate = _zCoordinate;
     return copyNode;
 }
 
@@ -33,9 +33,9 @@
 
 - (BOOL)isEqualToNode:(Node *)otherNode
 {
-    return _xCoord == otherNode.xCoord
-            && _yCoord == otherNode.yCoord
-            && _zCoord == otherNode.zCoord;
+    return _xCoordinate == otherNode.xCoordinate
+            && _yCoordinate == otherNode.yCoordinate
+            && _zCoordinate == otherNode.zCoordinate;
 }
 
 - (NSUInteger)hash
@@ -43,9 +43,9 @@
     NSUInteger prime = 31;
     NSUInteger hash = 1;
     
-    hash = hash * prime + _xCoord;
-    hash = hash * prime + _yCoord;
-    hash = hash * prime + _zCoord;
+    hash = hash * prime + _xCoordinate;
+    hash = hash * prime + _yCoordinate;
+    hash = hash * prime + _zCoordinate;
     
     return hash;
 }

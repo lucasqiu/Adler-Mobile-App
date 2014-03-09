@@ -30,20 +30,20 @@ Edge *e13;
     g = [[MapGraph alloc] init];
     
     n1 = [[Node alloc] init];
-    n1.xCoord = 1;
-    n1.yCoord = 11;
+    n1.xCoordinate = 1;
+    n1.yCoordinate = 11;
     
     n2 = [[Node alloc] init];
-    n2.xCoord = 2;
-    n2.yCoord = 12;
+    n2.xCoordinate = 2;
+    n2.yCoordinate = 12;
     
     n3 = [[Node alloc] init];
-    n3.xCoord = 3;
-    n3.yCoord = 13;
+    n3.xCoordinate = 3;
+    n3.yCoordinate = 13;
     
     n4 = [[Node alloc] init];
-    n4.xCoord = 4;
-    n4.yCoord = 14;
+    n4.xCoordinate = 4;
+    n4.yCoordinate = 14;
     
     [g addNode:n1];
     [g addNode:n2];
@@ -74,18 +74,18 @@ Edge *e13;
     XCTAssertNotNil([g.adjacencyMatrix objectForKey:n4]);
     
     Node *n = [[Node alloc] init];
-    n.xCoord = 101;
-    n.yCoord = 101;
-    n.zCoord = 101;
+    n.xCoordinate = 101;
+    n.yCoordinate = 101;
+    n.zCoordinate = 101;
     XCTAssertNil([g.adjacencyMatrix objectForKey:n]);
 }
 
 - (void)testGetNodeById
 {
     Node *n = [[Node alloc] init];
-    n.xCoord = 102;
-    n.yCoord = 102;
-    n.zCoord = 102;
+    n.xCoordinate = 102;
+    n.yCoordinate = 102;
+    n.zCoordinate = 102;
     n.id = @"test";
     
     XCTAssertNil([g getNodeById:n.id]);

@@ -11,9 +11,10 @@
 @interface Node : NSObject <NSCopying>
 
 @property (nonatomic) NSString *id;
-@property (nonatomic) float xCoord;
-@property (nonatomic) float yCoord;
-@property (nonatomic) float zCoord;
+@property (nonatomic) float xCoordinate;
+@property (nonatomic) float yCoordinate;
+@property (nonatomic) float zCoordinate;
+@property (nonatomic) BOOL isSourceOrDestination;
 
 - (BOOL)inRoom:(NSString *)room;
 
