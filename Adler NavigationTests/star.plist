@@ -8,9 +8,9 @@
 		<key>type</key>
 		<string>exhibit</string>
 		<key>x</key>
-		<integer>20</integer>
+		<integer>16</integer>
 		<key>y</key>
-		<integer>58</integer>
+		<integer>46</integer>
 		<key>adjacent</key>
 		<array>
 			<string>travel1</string>
@@ -20,9 +20,9 @@
 		<key>uid</key>
 		<string>travel1</string>
 		<key>x</key>
-		<integer>73</integer>
+		<integer>58</integer>
 		<key>y</key>
-		<integer>89</integer>
+		<integer>70</integer>
 		<key>adjacent</key>
 		<array>
 			<string>travel0</string>
@@ -33,9 +33,9 @@
 		<key>uid</key>
 		<string>travel2</string>
 		<key>x</key>
-		<integer>74</integer>
+		<integer>59</integer>
 		<key>y</key>
-		<integer>364</integer>
+		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
 			<string>travel1</string>
@@ -46,9 +46,9 @@
 		<key>uid</key>
 		<string>star_theater_exit</string>
 		<key>x</key>
-		<integer>102</integer>
+		<integer>82</integer>
 		<key>y</key>
-		<integer>364</integer>
+		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
 			<string>travel2</string>
@@ -59,9 +59,9 @@
 		<key>uid</key>
 		<string>star_exhibits</string>
 		<key>x</key>
-		<integer>167</integer>
+		<integer>133</integer>
 		<key>y</key>
-		<integer>364</integer>
+		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
 			<string>star_theather_enter</string>
@@ -72,9 +72,9 @@
 		<key>uid</key>
 		<string>star_theather_enter</string>
 		<key>x</key>
-		<integer>231</integer>
+		<integer>184</integer>
 		<key>y</key>
-		<integer>364</integer>
+		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
 			<string>star_theater</string>
@@ -86,9 +86,9 @@
 		<key>uid</key>
 		<string>travel3</string>
 		<key>x</key>
-		<integer>258</integer>
+		<integer>206</integer>
 		<key>y</key>
-		<integer>364</integer>
+		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
 			<string>star_theather_enter</string>
@@ -99,9 +99,9 @@
 		<key>uid</key>
 		<string>travel4</string>
 		<key>x</key>
-		<integer>258</integer>
+		<integer>206</integer>
 		<key>y</key>
-		<integer>396</integer>
+		<integer>70</integer>
 		<key>adjacent</key>
 		<array>
 			<string>travel3</string>
@@ -112,9 +112,9 @@
 		<key>uid</key>
 		<string>travel5</string>
 		<key>x</key>
-		<integer>311</integer>
+		<integer>248</integer>
 		<key>y</key>
-		<integer>59</integer>
+		<integer>46</integer>
 		<key>adjacent</key>
 		<array>
 			<string>travel4</string>
@@ -124,9 +124,9 @@
 		<key>uid</key>
 		<string>star_theater</string>
 		<key>x</key>
-		<integer>169</integer>
+		<integer>135</integer>
 		<key>y</key>
-		<integer>213</integer>
+		<integer>170</integer>
 		<key>adjacent</key>
 		<array>
 			<string>star_theater_exit</string>
