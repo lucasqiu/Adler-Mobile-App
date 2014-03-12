@@ -127,15 +127,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30D1C67C183DF5D400E71EDD /* Node */ = {
-			isa = PBXGroup;
-			children = (
-				30E502871836084000BCDA41 /* Node.h */,
-				30E502881836084000BCDA41 /* Node.m */,
-			);
-			name = Node;
-			sourceTree = "<group>";
-		};
 		30E50245183607E100BCDA41 = {
 			isa = PBXGroup;
 			children = (
@@ -221,9 +212,10 @@
 			isa = PBXGroup;
 			children = (
 				F3F7AF9918CFC47300150D8C /* Map Data */,
-				30D1C67C183DF5D400E71EDD /* Node */,
 				30E502901836222000BCDA41 /* Edge.h */,
 				30E502911836222000BCDA41 /* Edge.m */,
+				30E502871836084000BCDA41 /* Node.h */,
+				30E502881836084000BCDA41 /* Node.m */,
 				30E502931836263100BCDA41 /* MapGraph.h */,
 				30E502941836263100BCDA41 /* MapGraph.m */,
 			);

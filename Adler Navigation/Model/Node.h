@@ -15,7 +15,9 @@
 @property (nonatomic) float yCoordinate;
 @property (nonatomic) float zCoordinate;
 @property (nonatomic) BOOL isSourceOrDestination;
+@property (nonatomic) NSString *location;
 
 - (BOOL)inRoom:(NSString *)room;
+- (NSString*)getLocation: (Node*)node;
 
 @end
