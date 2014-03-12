@@ -2,7 +2,6 @@
 //  MapViewController.m
 //  Adler Navigation
 //
-//  Created by Ahaan Ugale on 11/22/13.
 //  Copyright (c) 2013 Adler Planetarium. All rights reserved.
 //
 
@@ -46,11 +45,11 @@
  * Draws the next direction and places the text direction on the view.
  * Removes the used Nodes from path.
  */
-//+ (void)nextDirection:(NSArray *)path
-//{
++ (void)nextDirection:(NSArray *)path
+{
 //    NSString *text = @"";
 //    Node *start = [path firstObject];
-//    
+    
 //    unsigned i;
 //    for (i = 1; i < [path count]; i++) {
 //        Node *cur = [path objectAtIndex:i];
@@ -63,9 +62,9 @@
 //            break;
 //        }
 //    }
-//    
-//    //path = path objectsAtIndexes:[i..[path count];
-//}
+    
+    //path = path objectsAtIndexes:[i..[path count];
+}
 
 + (void)drawDirectionFrom:(Node *)n1 to:(Node *)n2
 {

@@ -85,6 +85,7 @@
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
+		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3F7AF9A18CFC47300150D8C /* lower.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lower.pdf; sourceTree = "<group>"; };
 		F3F7AF9B18CFC47300150D8C /* lower.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lower.plist; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 				30E3740A18403EAB00996B60 /* MapViewController.m */,
 				30E374141858464500996B60 /* PriorityQueue.h */,
 				30E374151858464500996B60 /* PriorityQueue.m */,
+				728FD49F18D0F66D0073C43F /* comparable.h */,
 			);
 			path = "Adler Navigation";
 			sourceTree = "<group>";
