@@ -30,6 +30,11 @@
 		30E502921836222000BCDA41 /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502911836222000BCDA41 /* Edge.m */; };
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
+		F3555FF018D41F1B0059AFB0 /* map_data_all.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */; };
+		F3555FF218D41F220059AFB0 /* lower_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF118D41F220059AFB0 /* lower_new.plist */; };
+		F3555FF418D41F260059AFB0 /* mid_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF318D41F260059AFB0 /* mid_new.plist */; };
+		F3555FF618D41F2D0059AFB0 /* star_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF518D41F2D0059AFB0 /* star_new.plist */; };
+		F3555FF818D41F320059AFB0 /* top_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF718D41F320059AFB0 /* top_new.plist */; };
 		F3F7AFA618CFC47300150D8C /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9A18CFC47300150D8C /* lower.pdf */; };
 		F3F7AFA718CFC47300150D8C /* lower.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9B18CFC47300150D8C /* lower.plist */; };
 		F3F7AFA818CFC47300150D8C /* lower_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9C18CFC47300150D8C /* lower_paths.pdf */; };
@@ -86,6 +91,11 @@
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = map_data_all.plist; sourceTree = "<group>"; };
+		F3555FF118D41F220059AFB0 /* lower_new.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lower_new.plist; sourceTree = "<group>"; };
+		F3555FF318D41F260059AFB0 /* mid_new.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mid_new.plist; sourceTree = "<group>"; };
+		F3555FF518D41F2D0059AFB0 /* star_new.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = star_new.plist; sourceTree = "<group>"; };
+		F3555FF718D41F320059AFB0 /* top_new.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = top_new.plist; sourceTree = "<group>"; };
 		F3F7AF9A18CFC47300150D8C /* lower.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lower.pdf; sourceTree = "<group>"; };
 		F3F7AF9B18CFC47300150D8C /* lower.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lower.plist; sourceTree = "<group>"; };
 		F3F7AF9C18CFC47300150D8C /* lower_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lower_paths.pdf; sourceTree = "<group>"; };
@@ -243,6 +253,11 @@
 				F3F7AFA318CFC47300150D8C /* top.pdf */,
 				F3F7AFA418CFC47300150D8C /* top.plist */,
 				F3F7AFA518CFC47300150D8C /* top_paths.pdf */,
+				F3555FF118D41F220059AFB0 /* lower_new.plist */,
+				F3555FF318D41F260059AFB0 /* mid_new.plist */,
+				F3555FF518D41F2D0059AFB0 /* star_new.plist */,
+				F3555FF718D41F320059AFB0 /* top_new.plist */,
+				F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */,
 			);
 			name = "Map Data";
 			path = "Model/Map Data";
@@ -330,10 +345,15 @@
 				F3F7AFAE18CFC47300150D8C /* star_paths.pdf in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
 				F3F7AFB118CFC47300150D8C /* top_paths.pdf in Resources */,
+				F3555FF818D41F320059AFB0 /* top_new.plist in Resources */,
+				F3555FF218D41F220059AFB0 /* lower_new.plist in Resources */,
 				F3F7AFAC18CFC47300150D8C /* star.pdf in Resources */,
+				F3555FF618D41F2D0059AFB0 /* star_new.plist in Resources */,
 				F3F7AFAD18CFC47300150D8C /* star.plist in Resources */,
+				F3555FF418D41F260059AFB0 /* mid_new.plist in Resources */,
 				F3F7AFA718CFC47300150D8C /* lower.plist in Resources */,
 				F3F7AFA618CFC47300150D8C /* lower.pdf in Resources */,
+				F3555FF018D41F1B0059AFB0 /* map_data_all.plist in Resources */,
 				F3F7AFB018CFC47300150D8C /* top.plist in Resources */,
 				F3F7AFAA18CFC47300150D8C /* mid.plist in Resources */,
 				F3F7AFA918CFC47300150D8C /* mid.pdf in Resources */,
