@@ -90,6 +90,7 @@
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
+		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = map_data_all.plist; sourceTree = "<group>"; };
 		F3555FF118D41F220059AFB0 /* lower_new.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lower_new.plist; sourceTree = "<group>"; };
@@ -136,15 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30D1C67C183DF5D400E71EDD /* Node */ = {
-			isa = PBXGroup;
-			children = (
-				30E502871836084000BCDA41 /* Node.h */,
-				30E502881836084000BCDA41 /* Node.m */,
-			);
-			name = Node;
-			sourceTree = "<group>";
-		};
 		30E50245183607E100BCDA41 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +182,7 @@
 				30E3740A18403EAB00996B60 /* MapViewController.m */,
 				30E374141858464500996B60 /* PriorityQueue.h */,
 				30E374151858464500996B60 /* PriorityQueue.m */,
+				728FD49F18D0F66D0073C43F /* comparable.h */,
 			);
 			path = "Adler Navigation";
 			sourceTree = "<group>";
@@ -229,9 +222,10 @@
 			isa = PBXGroup;
 			children = (
 				F3F7AF9918CFC47300150D8C /* Map Data */,
-				30D1C67C183DF5D400E71EDD /* Node */,
 				30E502901836222000BCDA41 /* Edge.h */,
 				30E502911836222000BCDA41 /* Edge.m */,
+				30E502871836084000BCDA41 /* Node.h */,
+				30E502881836084000BCDA41 /* Node.m */,
 				30E502931836263100BCDA41 /* MapGraph.h */,
 				30E502941836263100BCDA41 /* MapGraph.m */,
 			);

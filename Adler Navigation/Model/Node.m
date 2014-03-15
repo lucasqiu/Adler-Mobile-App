@@ -10,8 +10,7 @@
 
 @implementation Node
 
-- (id)copyWithZone:(NSZone *)zone
-{
+- (id)copyWithZone:(NSZone *)zone{
     Node *copyNode = [[[self class] allocWithZone:zone] init];
     copyNode.id = [_id copy];
     copyNode.xCoordinate = _xCoordinate;
@@ -20,8 +19,7 @@
     return copyNode;
 }
 
-- (BOOL)isEqual:(id)other
-{
+- (BOOL)isEqual:(id)other{
     if (other == self) {
         return YES;
     }
@@ -31,15 +29,13 @@
     return [self isEqualToNode:other];
 }
 
-- (BOOL)isEqualToNode:(Node *)otherNode
-{
+- (BOOL)isEqualToNode:(Node *)otherNode{
     return _xCoordinate == otherNode.xCoordinate
             && _yCoordinate == otherNode.yCoordinate
             && _zCoordinate == otherNode.zCoordinate;
 }
 
-- (NSUInteger)hash
-{
+- (NSUInteger)hash{
     NSUInteger prime = 31;
     NSUInteger hash = 1;
     
@@ -50,10 +46,15 @@
     return hash;
 }
 
-- (BOOL)inRoom:(NSString *)room
-{
+- (BOOL)inRoom:(NSString *)room{
     [NSException raise:@"Method not implemented" format:@""];
     return false;
 }
+
+- (NSString*)getLocation: (Node*)node{
+    return [node location];
+}
+
+
 
 @end
