@@ -110,7 +110,7 @@ Edge *e13;
 {
     MapGraph * testGraph = [[MapGraph alloc] init];
     
-    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"MapData" ofType:@"plist"];
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"top" ofType:@"plist"];
     
     [testGraph createGraphFromFile:filePath];
     
