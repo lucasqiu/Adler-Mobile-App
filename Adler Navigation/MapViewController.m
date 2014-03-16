@@ -55,9 +55,9 @@
     
     CGPoint points[2];
     points[0].x = node1.xCoordinate;
-    points[0].x = node1.yCoordinate;
+    points[0].y = node1.yCoordinate;
     points[1].x = node2.xCoordinate;
-    points[1].x = node2.yCoordinate;
+    points[1].y = node2.yCoordinate;
     
     [self drawLineSegments:points count:2];
     
