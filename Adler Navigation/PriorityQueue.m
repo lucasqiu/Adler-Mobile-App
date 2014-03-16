@@ -2,7 +2,6 @@
 //  PriorityQueue.m
 //  Adler Navigation
 //
-//  Created by Ahaan Ugale on 12/11/13.
 //  Copyright (c) 2013 Adler Planetarium. All rights reserved.
 //
 
@@ -15,15 +14,14 @@
 @implementation Item
 @end
 
-@implementation PriorityQueue
-{
+@implementation PriorityQueue{
     NSMutableArray *items;
     int startIdx;
 }
 
 
-- (id)init
-{
+
+- (id)init{
     self = [super init];
     if (self)
     {
@@ -32,6 +30,23 @@
     }
     return self;
 }
+
+
+- (BOOL)isEmpty{
+    if([items objectAtIndex:0] == nil){
+        return YES;
+    }
+    return NO;
+}
+
+
+- (id)peek{
+    if ([self isEmpty]==YES){
+        return nil;
+    }
+    return [items objectAtIndex:0];
+}
+
 
 - (void)addItem:(NSObject *)obj withPriority:(float)priority
 {
