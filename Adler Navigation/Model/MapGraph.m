@@ -106,25 +106,12 @@
     
     for(id nodeDict in nodeDataArray){
         NSString * uniqueID = [nodeDict objectForKey:@"uid"];
-//        NSString * nodeType = [nodeDict objectForKey:@"type"];
         NSNumber * xCoordinate = [nodeDict objectForKey:@"x"];
         NSNumber * yCoordinate = [nodeDict objectForKey:@"y"];
         NSNumber * zCoordinate = [nodeDict objectForKey:@"z"];
         
-        Node * newNode;
-        
-//        if([nodeType isEqualToString:@"exit"]) {
-//            newNode = [[ExitNode alloc] init];
-//        }
-//        
-//        else if([nodeType isEqualToString:@"travel"]) {
-//            newNode = [[TravelNode alloc] init];
-//        }
-//        
-//        else {
-//            newNode = [[ExhibitNode alloc] init];
-//        }
-        
+        Node * newNode = [[Node alloc] init];
+              
         newNode.xCoordinate = [xCoordinate floatValue];
         newNode.yCoordinate = [yCoordinate floatValue];
         newNode.zCoordinate = [zCoordinate floatValue];

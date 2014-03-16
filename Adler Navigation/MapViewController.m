@@ -58,8 +58,8 @@
     for (i = 1; i < [path count]; i++) {
         Node *cur = [path objectAtIndex:i];
         //[MapViewController drawDirectionFrom:[path objectAtIndex:i-1] to:cur];
-        points[i-1].x = cur.xCoord;
-        points[i-1].y = cur.yCoord;
+        points[i-1].x = cur.xCoordinate;
+        points[i-1].y = cur.yCoordinate;
         
         if ([cur class] == [Node class]) {
             Node *exit = (Node *) cur;

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavigateTableViewController : UITableViewController
+@interface NavigateTableViewController : UIViewController
 @property (strong, nonatomic) NSString * source;
 @property (strong, nonatomic) NSString * destination;
+@property (strong, nonatomic) IBOutlet UIImageView *path;
 
 @end

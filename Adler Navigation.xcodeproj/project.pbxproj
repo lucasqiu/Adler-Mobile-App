@@ -56,6 +56,7 @@
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
 		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
 		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
+		FE5C880318D647C2009E2CC2 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = FE5C880218D647C2009E2CC2 /* top.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		FE5C87F618D634C3009E2CC2 /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home.jpg; sourceTree = "<group>"; };
 		FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
 		FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
+		FE5C880218D647C2009E2CC2 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = top.png; path = "Model/Map Data/top.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE5C880218D647C2009E2CC2 /* top.png */,
 				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
 				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
@@ -386,6 +389,7 @@
 				F3555FF818D41F320059AFB0 /* top_new.plist in Resources */,
 				F3555FF218D41F220059AFB0 /* lower_new.plist in Resources */,
 				F3F7AFAC18CFC47300150D8C /* star.pdf in Resources */,
+				FE5C880318D647C2009E2CC2 /* top.png in Resources */,
 				F3555FF618D41F2D0059AFB0 /* star_new.plist in Resources */,
 				F3F7AFAD18CFC47300150D8C /* star.plist in Resources */,
 				F3555FF418D41F260059AFB0 /* mid_new.plist in Resources */,

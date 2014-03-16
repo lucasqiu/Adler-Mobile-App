@@ -45,7 +45,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="WmH-Gw-7CF">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WmH-Gw-7CF" id="Wta-Tv-x1o">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -63,6 +63,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQD-7J-uJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4365" y="394"/>
+        </scene>
+        <!--Navigate Table View Controller - Navigate-->
+        <scene sceneID="M9y-3V-8T2">
+            <objects>
+                <viewController id="aBc-ok-hIC" customClass="NavigateTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xl0-4s-ysy"/>
+                        <viewControllerLayoutGuide type="bottom" id="fom-k4-O9d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CIl-dT-0wE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6G-Bz-JOy">
+                                <rect key="frame" x="0.0" y="70" width="320" height="506"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Navigate" id="a7p-DH-VfU"/>
+                    <connections>
+                        <outlet property="path" destination="c6G-Bz-JOy" id="jYO-QK-xIr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y1-7d-vjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4786" y="421"/>
         </scene>
         <!--Collection View Controller - Exhibits-->
         <scene sceneID="s80-sk-bCD">
@@ -273,7 +301,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FZD-pB-YCd" kind="push" identifier="Navigate" id="4JU-2l-oO9"/>
+                                    <segue destination="aBc-ok-hIC" kind="push" identifier="Navigate" id="X99-HO-Ayy"/>
                                 </connections>
                             </button>
                         </subviews>
