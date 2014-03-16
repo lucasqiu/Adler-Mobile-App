@@ -45,7 +45,7 @@
  * Draws the next direction and places the text direction on the view.
  * Removes the used Nodes from path.
  */
-- (void)nextDirection:(NSMutableArray *)path
+- (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image
 {
     Node *node1 = [path firstObject];
     Node *node2 = [path objectAtIndex:1];
@@ -59,17 +59,16 @@
     points[1].x = node2.xCoordinate;
     points[1].y = node2.yCoordinate;
     
-    [self drawLineSegments:points count:2];
+    return [self drawLineSegments:points count:2 image:image];
     
-    NSString *text = [NSString stringWithFormat:@"Go towards %@", node2.id];
+    //NSString *text = [NSString stringWithFormat:@"Go towards %@", node2.id];
     //display text
 }
 
-- (void)drawLineSegments:(CGPoint *)points count:(size_t)count
+- (UIImage *)drawLineSegments:(CGPoint *)points count:(size_t)count image:(UIImage *)image
 {
     //[sender setTitle:@"test" forState:UIControlStateNormal];
     
-    UIImage *image = self.imageView.image;
     UIGraphicsBeginImageContext(image.size);
     
 	// draw original image into the context
@@ -91,7 +90,7 @@
 	// free the context
 	UIGraphicsEndImageContext();
     
-    [self.imageView setImage:retImage];
+    return retImage;
 }
 
 @end
