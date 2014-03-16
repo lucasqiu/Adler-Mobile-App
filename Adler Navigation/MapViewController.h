@@ -12,6 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-- (void)nextDirection:(NSMutableArray *)path;
+- (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image;
 
 @end
