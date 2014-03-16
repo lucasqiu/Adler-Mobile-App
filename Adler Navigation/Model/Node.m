@@ -10,17 +10,16 @@
 
 @implementation Node
 
-- (id)copyWithZone:(NSZone *)zone
-{
+- (id)copyWithZone:(NSZone *)zone{
     Node *copyNode = [[[self class] allocWithZone:zone] init];
     copyNode.id = [_id copy];
-    copyNode.xCoord = _xCoord;
-    copyNode.yCoord = _yCoord;
+    copyNode.xCoordinate = _xCoordinate;
+    copyNode.yCoordinate = _yCoordinate;
+    copyNode.zCoordinate = _zCoordinate;
     return copyNode;
 }
 
-- (BOOL)isEqual:(id)other
-{
+- (BOOL)isEqual:(id)other{
     if (other == self) {
         return YES;
     }
@@ -30,27 +29,32 @@
     return [self isEqualToNode:other];
 }
 
-- (BOOL)isEqualToNode:(Node *)otherNode
-{
-    return _xCoord == otherNode.xCoord
-            && _yCoord == otherNode.yCoord;
+- (BOOL)isEqualToNode:(Node *)otherNode{
+    return _xCoordinate == otherNode.xCoordinate
+            && _yCoordinate == otherNode.yCoordinate
+            && _zCoordinate == otherNode.zCoordinate;
 }
 
-- (NSUInteger)hash
-{
+- (NSUInteger)hash{
     NSUInteger prime = 31;
     NSUInteger hash = 1;
     
-    hash = hash * prime + _xCoord;
-    hash = hash * prime + _yCoord;
+    hash = hash * prime + _xCoordinate;
+    hash = hash * prime + _yCoordinate;
+    hash = hash * prime + _zCoordinate;
     
     return hash;
 }
 
-- (BOOL)inRoom:(NSString *)room
-{
+- (BOOL)inRoom:(NSString *)room{
     [NSException raise:@"Method not implemented" format:@""];
     return false;
 }
+
+- (NSString*)getLocation: (Node*)node{
+    return [node location];
+}
+
+
 
 @end

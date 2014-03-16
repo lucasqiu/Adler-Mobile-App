@@ -26,7 +26,8 @@
     if (node.id == nil)
     {
         NSLog(@"Warning: ID not defined for node");
-        node.id = [NSString stringWithFormat:@"(%f,%f)", node.xCoord, node.yCoord];
+        node.id = [NSString stringWithFormat:@"(%f,%f,%f)", node.xCoordinate,
+                   node.yCoordinate, node.zCoordinate];
     }
     if ([_adjacencyMatrix objectForKey:node] == nil)
     {
@@ -105,26 +106,28 @@
     
     for(id nodeDict in nodeDataArray){
         NSString * uniqueID = [nodeDict objectForKey:@"uid"];
-        NSString * nodeType = [nodeDict objectForKey:@"type"];
+//        NSString * nodeType = [nodeDict objectForKey:@"type"];
         NSNumber * xCoordinate = [nodeDict objectForKey:@"x"];
         NSNumber * yCoordinate = [nodeDict objectForKey:@"y"];
+        NSNumber * zCoordinate = [nodeDict objectForKey:@"z"];
         
         Node * newNode;
         
-        if([nodeType isEqualToString:@"exit"]) {
-            newNode = [[ExitNode alloc] init];
-        }
+//        if([nodeType isEqualToString:@"exit"]) {
+//            newNode = [[ExitNode alloc] init];
+//        }
+//        
+//        else if([nodeType isEqualToString:@"travel"]) {
+//            newNode = [[TravelNode alloc] init];
+//        }
+//        
+//        else {
+//            newNode = [[ExhibitNode alloc] init];
+//        }
         
-        else if([nodeType isEqualToString:@"travel"]) {
-            newNode = [[TravelNode alloc] init];
-        }
-        
-        else {
-            newNode = [[ExhibitNode alloc] init];
-        }
-        
-        newNode.xCoord = [xCoordinate floatValue];
-        newNode.yCoord = [yCoordinate floatValue];
+        newNode.xCoordinate = [xCoordinate floatValue];
+        newNode.yCoordinate = [yCoordinate floatValue];
+        newNode.zCoordinate = [zCoordinate floatValue];
         newNode.id = uniqueID;
         
         [self addNode:newNode];

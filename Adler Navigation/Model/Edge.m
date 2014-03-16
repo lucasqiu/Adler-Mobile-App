@@ -12,8 +12,9 @@
 
 - (float)distance
 {
-    return sqrtf( pow(_node1.xCoord-_node2.xCoord,2) +
-                 pow(_node1.yCoord-_node2.yCoord,2) );
+    return sqrtf( pow(_node1.xCoordinate-_node2.xCoordinate,2) +
+                 pow(_node1.yCoordinate-_node2.yCoordinate,2) +
+                 pow(_node1.zCoordinate-_node2.zCoordinate,2) );
 }
 
 - (BOOL)isEqual:(id)other

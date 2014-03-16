@@ -2,15 +2,11 @@
 //  MapViewController.m
 //  Adler Navigation
 //
-//  Created by Ahaan Ugale on 11/22/13.
 //  Copyright (c) 2013 Adler Planetarium. All rights reserved.
 //
 
 #import "MapViewController.h"
 #import "Node.h"
-#import "ExitNode.h"
-#import "TravelNode.h"
-#import "ExhibitNode.h"
 
 @interface MapViewController ()
 
@@ -65,10 +61,11 @@
         points[i-1].x = cur.xCoord;
         points[i-1].y = cur.yCoord;
         
-        if ([cur class] == [ExitNode class]) {
-            ExitNode *exit = (ExitNode *) cur;
-            NSString *nextRoom = [start inRoom:exit.room1] ? exit.room2 : exit.room1;
-            text = [text stringByAppendingString:[NSString stringWithFormat:@"Go into the %@", nextRoom] ];
+        if ([cur class] == [Node class]) {
+            Node *exit = (Node *) cur;
+            //NSString *nextRoom = [start inRoom:exit.room1] ? exit.room2 : exit.room1;
+            //text = [text stringByAppendingString:[NSString stringWithFormat:@"Go into the %@", nextRoom] ];
+            // need modification 
             break;
         }
     }

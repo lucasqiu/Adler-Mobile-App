@@ -67,20 +67,20 @@
     g = [[MapGraph alloc] init];
     
     n1 = [[Node alloc] init];
-    n1.xCoord = 1;
-    n1.yCoord = 1;
+    n1.xCoordinate = 1;
+    n1.yCoordinate = 1;
     
     n2 = [[Node alloc] init];
-    n2.xCoord = 2;
-    n2.yCoord = 13;
+    n2.xCoordinate = 2;
+    n2.yCoordinate = 13;
     
     n3 = [[Node alloc] init];
-    n3.xCoord = 2.5;
-    n3.yCoord = 7;
+    n3.xCoordinate = 2.5;
+    n3.yCoordinate = 7;
     
     n4 = [[Node alloc] init];
-    n4.xCoord = 4;
-    n4.yCoord = 14;
+    n4.xCoordinate = 4;
+    n4.yCoordinate = 14;
     
     [g addNode:n1];
     [g addNode:n2];
