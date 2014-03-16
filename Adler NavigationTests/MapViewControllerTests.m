@@ -9,9 +9,6 @@
 #import <XCTest/XCTest.h>
 #import "MapViewController.h"
 #import "Node.h"
-#import "ExitNode.h"
-#import "TravelNode.h"
-#import "ExhibitNode.h"
 #import "MapGraph.h"
 
 @interface MapViewControllerTests : XCTestCase
@@ -34,14 +31,14 @@
 
 - (void)testPathText
 {
-    ExhibitNode *n1 = [[ExhibitNode alloc] init];
+/*    Node *n1 = [[Node alloc] init];
     n1.room = @"room1";
     
-    ExitNode *n2 = [[ExitNode alloc] init];
+    Node *n2 = [[Node alloc] init];
     n2.room2 = @"room1";
     n2.room1 = @"room2";
     
-    ExhibitNode *n3 = [[ExhibitNode alloc] init];
+    Node *n3 = [[Node alloc] init];
     n3.room = @"room2";
     
 //    Node *n4 = [[Node alloc] init];
@@ -49,6 +46,7 @@
     NSArray *path = @[n1, n2, n3];
     
     [MapViewController nextDirection:path];
+*/
 }
 
 - (void)testDijkstra
