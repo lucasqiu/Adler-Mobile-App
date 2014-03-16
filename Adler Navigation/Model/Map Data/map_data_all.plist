@@ -15,8 +15,8 @@
 		<integer>441</integer>
 		<key>adjacent</key>
 		<array>
-			<string>mens_restroom</string>
-			<string>astronomy_in_culture</string>
+			<string>Men&apos;s Restroom</string>
+			<string>Astronomy in Culture</string>
 		</array>
 	</dict>
 	<dict>
@@ -33,7 +33,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>cyberspace_exit</string>
-			<string>astronomy_in_culture</string>
+			<string>Astronomy in Culture</string>
 		</array>
 	</dict>
 	<dict>
@@ -49,11 +49,11 @@
 		<integer>176</integer>
 		<key>adjacent</key>
 		<array>
-			<string>cyberspace</string>
+			<string>Cyberspace</string>
 			<string>travel3</string>
 			<string>travel4</string>
 			<string>space_theater_exit</string>
-			<string>citizen_science</string>
+			<string>Citizen Science</string>
 		</array>
 	</dict>
 	<dict>
@@ -69,10 +69,10 @@
 		<integer>70</integer>
 		<key>adjacent</key>
 		<array>
-			<string>citizen_science</string>
-			<string>cyberspace</string>
+			<string>Citizen Science</string>
+			<string>Cyberspace</string>
 			<string>travel2</string>
-			<string>atwood_sphere</string>
+			<string>Atwood Sphere</string>
 		</array>
 	</dict>
 	<dict>
@@ -109,7 +109,7 @@
 		<array>
 			<string>space_theater_enter</string>
 			<string>travel4</string>
-			<string>the_universe</string>
+			<string>The Universe</string>
 			<string>the_universe_exit</string>
 		</array>
 	</dict>
@@ -126,8 +126,8 @@
 		<integer>264</integer>
 		<key>adjacent</key>
 		<array>
-			<string>space_visualization_lab</string>
-			<string>telescopes</string>
+			<string>Space Visualization Lab</string>
+			<string>Telescopes</string>
 			<string>the_universe_exit</string>
 		</array>
 	</dict>
@@ -144,8 +144,8 @@
 		<integer>452</integer>
 		<key>adjacent</key>
 		<array>
-			<string>womens_restroom</string>
-			<string>telescopes</string>
+			<string>Women&apos;s Restroom</string>
+			<string>Telescopes</string>
 			<string>womens_restroom_exit</string>
 		</array>
 	</dict>
@@ -153,7 +153,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>mens_restroom</string>
+		<string>Men&apos;s Restroom</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -169,7 +169,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>astronomy_in_culture</string>
+		<string>Astronomy in Culture</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -184,7 +184,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>cyberspace_exit</string>
 		<key>floor</key>
@@ -203,7 +203,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>cyberspace</string>
+		<string>Cyberspace</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -212,7 +212,7 @@
 		<integer>156</integer>
 		<key>adjacent</key>
 		<array>
-			<string>cyberspace</string>
+			<string>Cyberspace</string>
 			<string>travel3</string>
 			<string>travel2</string>
 		</array>
@@ -221,7 +221,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>citizen_science</string>
+		<string>Citizen Science</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -230,7 +230,7 @@
 		<integer>108</integer>
 		<key>adjacent</key>
 		<array>
-			<string>cyberspace</string>
+			<string>Cyberspace</string>
 			<string>travel2</string>
 			<string>travel3</string>
 		</array>
@@ -239,7 +239,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>atwood_sphere</string>
+		<string>Atwood Sphere</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -256,7 +256,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>space_theater</string>
+		<string>Space Theater</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -272,7 +272,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>the_universe</string>
+		<string>The Universe</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -288,7 +288,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>space_visualization_lab</string>
+		<string>Space Visualization Lab</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -304,7 +304,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>telescopes</string>
+		<string>Telescopes</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -321,7 +321,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>womens_restroom</string>
+		<string>Women&apos;s Restroom</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -335,7 +335,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>womens_restroom_exit</string>
 		<key>floor</key>
@@ -351,7 +351,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>the_universe_exit</string>
 		<key>floor</key>
@@ -368,7 +368,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>space_theater_enter</string>
 		<key>floor</key>
@@ -379,14 +379,14 @@
 		<integer>135</integer>
 		<key>adjacent</key>
 		<array>
-			<string>space_theater</string>
+			<string>Space Theater</string>
 			<string>travel4</string>
 			<string>travel5</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>space_theater_exit</string>
 		<key>floor</key>
@@ -397,14 +397,14 @@
 		<integer>134</integer>
 		<key>adjacent</key>
 		<array>
-			<string>atwood_sphere</string>
+			<string>Atwood Sphere</string>
 			<string>travel4</string>
 			<string>travel2</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>left_exit</string>
 		<key>floor</key>
@@ -431,6 +431,7 @@
 		<integer>131</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Unknown Restroom 1</string>
 			<string>travel9</string>
 			<string>left_exit</string>
 		</array>
@@ -448,6 +449,7 @@
 		<integer>180</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Unknown Restroom 2</string>
 			<string>travel8</string>
 		</array>
 	</dict>
@@ -455,7 +457,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>unknown_restroom_1</string>
+		<string>Unknown Restroom 1</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -471,7 +473,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>unknown_restroom_2</string>
+		<string>Unknown Restroom 2</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -485,7 +487,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>right_exit</string>
 		<key>floor</key>
@@ -513,7 +515,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>right_exit</string>
-			<string>unknown_restroom_3</string>
+			<string>Unknown Restroom 3</string>
 			<string>travel12</string>
 			<string>travel11</string>
 		</array>
@@ -532,15 +534,15 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel10</string>
-			<string>classroom_b</string>
-			<string>vending</string>
+			<string>Classroom B</string>
+			<string>Vending</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>unknown_restroom_3</string>
+		<string>Unknown Restroom 3</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -556,7 +558,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>unknown_restroom_4</string>
+		<string>Unknown Restroom 4</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -572,7 +574,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>classroom_b</string>
+		<string>Classroom B</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -588,7 +590,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>vending</string>
+		<string>Vending</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -614,7 +616,7 @@
 		<integer>195</integer>
 		<key>adjacent</key>
 		<array>
-			<string>unknown_restroom_4</string>
+			<string>Unknown Restroom 4</string>
 			<string>travel13</string>
 			<string>travel10</string>
 		</array>
@@ -632,16 +634,16 @@
 		<integer>199</integer>
 		<key>adjacent</key>
 		<array>
-			<string>classroom_a</string>
+			<string>Classroom A</string>
 			<string>travel12</string>
-			<string>vending</string>
+			<string>Vending</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>classroom_a</string>
+		<string>Classroom A</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -657,7 +659,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>education_pavilion</string>
+		<string>Education Pavilion</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -666,6 +668,7 @@
 		<integer>244</integer>
 		<key>adjacent</key>
 		<array>
+			<string>South Entrance</string>
 			<string>travel12</string>
 		</array>
 	</dict>
@@ -673,7 +676,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>south_entrance</string>
+		<string>South Entrance</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -682,14 +685,14 @@
 		<integer>250</integer>
 		<key>adjacent</key>
 		<array>
-			<string>education_pavilion</string>
+			<string>Education Pavilion</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>south_elevator</string>
+		<string>South Elevator</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -698,15 +701,15 @@
 		<integer>240</integer>
 		<key>adjacent</key>
 		<array>
-			<string>education_pavilion</string>
-			<string>south_stairs</string>
+			<string>Education Pavilion</string>
+			<string>South Stairs</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>south_stairs</string>
+		<string>South Stairs</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -715,7 +718,7 @@
 		<integer>278</integer>
 		<key>adjacent</key>
 		<array>
-			<string>south_elevator</string>
+			<string>South Elevator</string>
 		</array>
 	</dict>
 	<dict>
@@ -772,7 +775,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>star_theater_exit</string>
 		<key>floor</key>
@@ -784,14 +787,14 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel16</string>
-			<string>star_exhibits</string>
+			<string>Star Exhibits</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>star_exhibits</string>
+		<string>Star Exhibits</string>
 		<key>floor</key>
 		<string>star</string>
 		<key>x</key>
@@ -806,7 +809,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>star_theather_enter</string>
 		<key>floor</key>
@@ -817,9 +820,9 @@
 		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
-			<string>star_theater</string>
+			<string>Star Theater</string>
 			<string>travel17</string>
-			<string>star_exhibits</string>
+			<string>Star Exhibits</string>
 		</array>
 	</dict>
 	<dict>
@@ -876,7 +879,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>star_theater</string>
+		<string>Star Theater</string>
 		<key>floor</key>
 		<string>star</string>
 		<key>x</key>
@@ -900,7 +903,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel34</string>
-			<string>welcome_gallery</string>
+			<string>Welcome Gallery</string>
 		</array>
 	</dict>
 	<dict>
@@ -914,7 +917,7 @@
 		<integer>435</integer>
 		<key>adjacent</key>
 		<array>
-			<string>welcome_gallery</string>
+			<string>Welcome Gallery</string>
 			<string>travel22</string>
 		</array>
 	</dict>
@@ -944,7 +947,7 @@
 		<integer>403</integer>
 		<key>adjacent</key>
 		<array>
-			<string>sky_theater</string>
+			<string>Sky Theater</string>
 			<string>travel24</string>
 		</array>
 	</dict>
@@ -962,7 +965,7 @@
 			<string>travel23</string>
 			<string>travel25</string>
 			<string>travel35</string>
-			<string>shoot_for_the_moon</string>
+			<string>Shoot For The Moon</string>
 		</array>
 	</dict>
 	<dict>
@@ -976,7 +979,7 @@
 		<integer>315</integer>
 		<key>adjacent</key>
 		<array>
-			<string>our_solar_system</string>
+			<string>Our Solar System</string>
 			<string>travel31</string>
 			<string>travel26</string>
 			<string>travel24</string>
@@ -993,7 +996,7 @@
 		<integer>361</integer>
 		<key>adjacent</key>
 		<array>
-			<string>our_solar_system</string>
+			<string>Our Solar System</string>
 			<string>travel25</string>
 			<string>travel35</string>
 			<string>cafe_galileo_exit</string>
@@ -1010,7 +1013,7 @@
 		<integer>475</integer>
 		<key>adjacent</key>
 		<array>
-			<string>cafe_galileo</string>
+			<string>Cafe Galileo</string>
 			<string>cafe_galileo_exit</string>
 		</array>
 	</dict>
@@ -1025,7 +1028,7 @@
 		<integer>440</integer>
 		<key>adjacent</key>
 		<array>
-			<string>shoot_for_the_moon</string>
+			<string>Shoot For The Moon</string>
 			<string>travel29</string>
 		</array>
 	</dict>
@@ -1058,7 +1061,7 @@
 		<array>
 			<string>rainbow_lobby_exit</string>
 			<string>travel29</string>
-			<string>rainbow_lobby</string>
+			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
 	<dict>
@@ -1073,7 +1076,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel25</string>
-			<string>planet_explorers</string>
+			<string>Planet Explorers</string>
 			<string>planet_explorers_exit</string>
 		</array>
 	</dict>
@@ -1088,8 +1091,8 @@
 		<integer>392</integer>
 		<key>adjacent</key>
 		<array>
-			<string>planet_explorers</string>
-			<string>adler_store</string>
+			<string>Planet Explorers</string>
+			<string>Adler Store</string>
 		</array>
 	</dict>
 	<dict>
@@ -1104,7 +1107,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>planet_explorers_exit</string>
-			<string>adler_store</string>
+			<string>Adler Store</string>
 		</array>
 	</dict>
 	<dict>
@@ -1141,38 +1144,38 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>rainbow_lobby</string>
+		<string>Rainbow Lobby</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
 		<integer>611</integer>
 		<key>adjacent</key>
 		<array>
-			<string>coat_check</string>
+			<string>Coat Check</string>
 			<string>travel30</string>
-			<string>main_entrance</string>
+			<string>Main Entrance</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>coat_check</string>
+		<string>Coat Check</string>
 		<key>x</key>
 		<integer>288</integer>
 		<key>y</key>
 		<integer>601</integer>
 		<key>adjacent</key>
 		<array>
-			<string>welcome_gallery</string>
-			<string>rainbow_lobby</string>
+			<string>Welcome Gallery</string>
+			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>welcome_gallery</string>
+		<string>Welcome Gallery</string>
 		<key>x</key>
 		<integer>228</integer>
 		<key>y</key>
@@ -1181,14 +1184,14 @@
 		<array>
 			<string>travel20</string>
 			<string>travel21</string>
-			<string>coat_check</string>
+			<string>Coat Check</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>sky_theater</string>
+		<string>Sky Theater</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
@@ -1202,7 +1205,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>shoot_for_the_moon</string>
+		<string>Shoot For The Moon</string>
 		<key>x</key>
 		<integer>398</integer>
 		<key>y</key>
@@ -1217,7 +1220,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>cafe_galileo</string>
+		<string>Cafe Galileo</string>
 		<key>x</key>
 		<integer>64</integer>
 		<key>y</key>
@@ -1231,7 +1234,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>our_solar_system</string>
+		<string>Our Solar System</string>
 		<key>x</key>
 		<integer>210</integer>
 		<key>y</key>
@@ -1246,7 +1249,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>planet_explorers</string>
+		<string>Planet Explorers</string>
 		<key>x</key>
 		<integer>473</integer>
 		<key>y</key>
@@ -1261,7 +1264,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>adler_store</string>
+		<string>Adler Store</string>
 		<key>x</key>
 		<integer>617</integer>
 		<key>y</key>
@@ -1274,7 +1277,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>rainbow_lobby_exit</string>
 		<key>x</key>
@@ -1288,7 +1291,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>sky_theater_exit</string>
 		<key>x</key>
@@ -1302,7 +1305,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>planet_explorers_exit</string>
 		<key>x</key>
@@ -1317,7 +1320,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>cafe_galileo_exit</string>
 		<key>x</key>
@@ -1335,14 +1338,14 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>main_entrance</string>
+		<string>Main Entrance</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
 		<integer>694</integer>
 		<key>adjacent</key>
 		<array>
-			<string>rainbow_lobby</string>
+			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
 </array>
