@@ -36,8 +36,9 @@
     [arr addObject:pointA];
     [arr addObject:pointB];
     MapViewController * mv = [[MapViewController alloc] init];
-     _path.image =[UIImage imageNamed:@"top.png"];
-    [mv nextDirection:arr];
+    UIImage * image = [UIImage imageNamed:@"top.png"];
+    _path.image = [mv nextDirection:arr image:image];
+    
    
     
     
