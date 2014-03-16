@@ -35,6 +35,35 @@
             </objects>
             <point key="canvasLocation" x="4365" y="-287"/>
         </scene>
+        <!--Navigate Table View Controller-->
+        <scene sceneID="29B-g3-Eed">
+            <objects>
+                <tableViewController id="FZD-pB-YCd" customClass="NavigateTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DHx-Gh-pAt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="WmH-Gw-7CF">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WmH-Gw-7CF" id="Wta-Tv-x1o">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FZD-pB-YCd" id="geI-If-nC6"/>
+                            <outlet property="delegate" destination="FZD-pB-YCd" id="qmR-rh-ZrO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tVM-11-XNJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQD-7J-uJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4365" y="394"/>
+        </scene>
         <!--Collection View Controller - Exhibits-->
         <scene sceneID="s80-sk-bCD">
             <objects>
@@ -243,6 +272,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FZD-pB-YCd" kind="push" identifier="Navigate" id="4JU-2l-oO9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

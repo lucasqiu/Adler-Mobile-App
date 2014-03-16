@@ -55,6 +55,7 @@
 		FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */; };
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
 		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
+		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		FE5C87F418D634C3009E2CC2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FE5C87F518D634C3009E2CC2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FE5C87F618D634C3009E2CC2 /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home.jpg; sourceTree = "<group>"; };
+		FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
+		FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +197,10 @@
 		30E50259183607E100BCDA41 /* Adler Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				30E50262183607E100BCDA41 /* AppDelegate.h */,
+				30E50263183607E100BCDA41 /* AppDelegate.m */,
 				FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */,
+				FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */,
 				FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */,
 				FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */,
 				FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */,
@@ -206,12 +212,11 @@
 				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
 				FE5C87F518D634C3009E2CC2 /* HomeViewController.h */,
 				FE5C87E618D63449009E2CC2 /* TableViewController.m */,
-				FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */,
 				FE5C87E818D63449009E2CC2 /* TableViewController.h */,
-				30E502861836080B00BCDA41 /* Model */,
-				30E50262183607E100BCDA41 /* AppDelegate.h */,
-				30E50263183607E100BCDA41 /* AppDelegate.m */,
+				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
+				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
 				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
+				30E502861836080B00BCDA41 /* Model */,
 				30E50268183607E100BCDA41 /* Images.xcassets */,
 				30E50265183607E100BCDA41 /* Adler_Navigation.xcdatamodeld */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
@@ -423,6 +428,7 @@
 				30E3740B18403EAB00996B60 /* MapViewController.m in Sources */,
 				FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
+				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

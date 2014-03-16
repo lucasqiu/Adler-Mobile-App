@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "FloorViewController.h"
 #import "EachFloorViewController.h"
+#import "NavigateTableViewController.h"
 #import "MapGraph.h"
 
 @interface TableViewController ()
@@ -51,11 +52,17 @@
         fv.sourceORDestination = @"1";
         
     }
-    else
+    else if ([[segue identifier] isEqualToString:@"DestinationTableView"])
     {
         fv.sourceORDestination = @"2";
     }
-
+    
+    else if ([[segue identifier] isEqualToString:@"Navigate"])
+    {
+        NavigateTableViewController * navigate = [segue destinationViewController];
+        navigate.source = _source.text;
+        navigate.destination = _destination.text;
+    }
     
 }
 
