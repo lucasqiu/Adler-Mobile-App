@@ -52,7 +52,6 @@
 		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
 		FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */; };
 		FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */; };
-		FE5C87FB18D634C3009E2CC2 /* Map_stack_tabloid_top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F018D634C3009E2CC2 /* Map_stack_tabloid_top.pdf */; };
 		FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */; };
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
 		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
@@ -127,7 +126,6 @@
 		FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesViewController.m; sourceTree = "<group>"; };
 		FE5C87EE18D634C3009E2CC2 /* FacilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesViewController.h; sourceTree = "<group>"; };
 		FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachMapViewController.m; sourceTree = "<group>"; };
-		FE5C87F018D634C3009E2CC2 /* Map_stack_tabloid_top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Map_stack_tabloid_top.pdf; sourceTree = "<group>"; };
 		FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachMapViewController.h; sourceTree = "<group>"; };
 		FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFloorViewController.m; sourceTree = "<group>"; };
 		FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFloorViewController.h; sourceTree = "<group>"; };
@@ -202,13 +200,11 @@
 				FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */,
 				FE5C87EE18D634C3009E2CC2 /* FacilitiesViewController.h */,
 				FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */,
-				FE5C87F018D634C3009E2CC2 /* Map_stack_tabloid_top.pdf */,
 				FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */,
 				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
 				FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */,
 				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
 				FE5C87F518D634C3009E2CC2 /* HomeViewController.h */,
-				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
 				FE5C87E618D63449009E2CC2 /* TableViewController.m */,
 				FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */,
 				FE5C87E818D63449009E2CC2 /* TableViewController.h */,
@@ -231,6 +227,7 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
 				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
 				30E5025F183607E100BCDA41 /* main.m */,
@@ -386,7 +383,6 @@
 				F3F7AFAC18CFC47300150D8C /* star.pdf in Resources */,
 				F3555FF618D41F2D0059AFB0 /* star_new.plist in Resources */,
 				F3F7AFAD18CFC47300150D8C /* star.plist in Resources */,
-				FE5C87FB18D634C3009E2CC2 /* Map_stack_tabloid_top.pdf in Resources */,
 				F3555FF418D41F260059AFB0 /* mid_new.plist in Resources */,
 				F3F7AFA718CFC47300150D8C /* lower.plist in Resources */,
 				F3F7AFA618CFC47300150D8C /* lower.pdf in Resources */,

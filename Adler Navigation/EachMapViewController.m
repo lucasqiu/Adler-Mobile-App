@@ -26,19 +26,19 @@
     _Floor.text = _data;
     NSString *myPdfFilePath;
     if ([_data  isEqual: @"Top Floor"]) {
-        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Map_stack_tabloid_top" ofType: @"pdf"];
+        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"top" ofType: @"pdf"];
     }
     
     else if ([_data  isEqual: @"Mid Floor"]) {
-        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Map_stack_tabloid_mid" ofType: @"pdf"];
+        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"mid" ofType: @"pdf"];
     }
     
     else if ([_data  isEqual: @"Lower Floor"]) {
-        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Map_stack_tabloid_lower" ofType: @"pdf"];
+        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"lower" ofType: @"pdf"];
     }
     
     else if ([_data  isEqual: @"Star"]) {
-        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Map_stack_tabloid_star" ofType: @"pdf"];
+        myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"star" ofType: @"pdf"];
     }
     
     NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
