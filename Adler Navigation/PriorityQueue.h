@@ -15,6 +15,9 @@
 
 - (void)addItem:(NSObject *)obj withPriority:(float)priority;
 
+/*
+ * Return nil if queue is empty.
+ */
 - (NSObject *)getItemLeastPriority;
 
 - (Boolean)isEmpty;

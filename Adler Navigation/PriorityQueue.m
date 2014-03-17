@@ -52,10 +52,11 @@
 }
 
 /*  
-* make sure check Empty before pull.
+* Return nil if empty. Make sure check Empty before pull. 
 */
  - (NSObject *)getItemLeastPriority
 {
+    if(self.isEmpty){return nil;}
     return ((Item *)[items objectAtIndex:startIdx++]).obj;
 }
 

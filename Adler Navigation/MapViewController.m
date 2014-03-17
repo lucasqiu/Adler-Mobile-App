@@ -53,6 +53,7 @@ const integer_t INFINIT = FLT_MAX;
 
 /*
  * Find the shortest path between the source and the goal node.
+ * Return a list of nodes in the order from source to goal.
  */
 + (NSMutableArray *) dijkstra:     (MapGraph *)graph  from:(Node *)source to:(Node *)goal
 {
