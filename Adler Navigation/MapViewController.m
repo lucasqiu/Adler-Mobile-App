@@ -54,10 +54,10 @@
     // change image based on zCoord
     
     CGPoint points[2];
-    points[0].x = node1.xCoordinate;
-    points[0].y = node1.yCoordinate;
-    points[1].x = node2.xCoordinate;
-    points[1].y = node2.yCoordinate;
+    points[0].x = node1.xCoordinate * 603 / 701;
+    points[0].y = node1.yCoordinate * 631 / 725;
+    points[1].x = node2.xCoordinate * 603 / 701;
+    points[1].y = node2.yCoordinate * 631 / 725;
     
     return [self drawLineSegments:points count:2 image:image];
     
