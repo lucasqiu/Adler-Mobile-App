@@ -29,10 +29,36 @@
 		30E502891836084000BCDA41 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502881836084000BCDA41 /* Node.m */; };
 		30E502921836222000BCDA41 /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502911836222000BCDA41 /* Edge.m */; };
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
-		725F0C5F18D663D9003D8FD5 /* PriorityQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725F0C5E18D663D9003D8FD5 /* PriorityQueueTests.m */; };
+		725F0C5F18D663D9003D8FD5 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		725F0C6118D6B485003D8FD5 /* PriorityQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
-		F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3404B0D18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf */; };
-		F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* MapData.plist */; };
+		F3555FF018D41F1B0059AFB0 /* map_data_all.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */; };
+		F3555FF218D41F220059AFB0 /* lower_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF118D41F220059AFB0 /* lower_new.plist */; };
+		F3555FF418D41F260059AFB0 /* mid_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF318D41F260059AFB0 /* mid_new.plist */; };
+		F3555FF618D41F2D0059AFB0 /* star_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF518D41F2D0059AFB0 /* star_new.plist */; };
+		F3555FF818D41F320059AFB0 /* top_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF718D41F320059AFB0 /* top_new.plist */; };
+		F3F7AFA618CFC47300150D8C /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9A18CFC47300150D8C /* lower.pdf */; };
+		F3F7AFA718CFC47300150D8C /* lower.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9B18CFC47300150D8C /* lower.plist */; };
+		F3F7AFA818CFC47300150D8C /* lower_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9C18CFC47300150D8C /* lower_paths.pdf */; };
+		F3F7AFA918CFC47300150D8C /* mid.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9D18CFC47300150D8C /* mid.pdf */; };
+		F3F7AFAA18CFC47300150D8C /* mid.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9E18CFC47300150D8C /* mid.plist */; };
+		F3F7AFAB18CFC47300150D8C /* mid_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AF9F18CFC47300150D8C /* mid_paths.pdf */; };
+		F3F7AFAC18CFC47300150D8C /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AFA018CFC47300150D8C /* star.pdf */; };
+		F3F7AFAD18CFC47300150D8C /* star.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AFA118CFC47300150D8C /* star.plist */; };
+		F3F7AFAE18CFC47300150D8C /* star_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AFA218CFC47300150D8C /* star_paths.pdf */; };
+		F3F7AFAF18CFC47300150D8C /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AFA318CFC47300150D8C /* top.pdf */; };
+		F3F7AFB018CFC47300150D8C /* top.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AFA418CFC47300150D8C /* top.plist */; };
+		F3F7AFB118CFC47300150D8C /* top_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3F7AFA518CFC47300150D8C /* top_paths.pdf */; };
+		FE5C87E918D63449009E2CC2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* TableViewController.m */; };
+		FE5C87F718D634C3009E2CC2 /* EachFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */; };
+		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
+		FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */; };
+		FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */; };
+		FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */; };
+		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
+		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
+		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
+		FE5C880318D647C2009E2CC2 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = FE5C880218D647C2009E2CC2 /* top.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +102,8 @@
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
-		725F0C5E18D663D9003D8FD5 /* PriorityQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueueTests.m; sourceTree = "<group>"; };
+		725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueueTests.m; sourceTree = "<group>"; };
+		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = map_data_all.plist; sourceTree = "<group>"; };
 		F3555FF118D41F220059AFB0 /* lower_new.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lower_new.plist; sourceTree = "<group>"; };
@@ -223,11 +250,11 @@
 		30E50276183607E100BCDA41 /* Adler NavigationTests */ = {
 			isa = PBXGroup;
 			children = (
+				725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */,
+				30D1C674183DD41F00E71EDD /* MapGraphTests.m */,
+				30E3740C18408BCC00996B60 /* MapViewControllerTests.m */,
 				30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */,
 				30E50277183607E100BCDA41 /* Supporting Files */,
-				30D1C674183DD41F00E71EDD /* MapGraphTests.m */,
-				725F0C5E18D663D9003D8FD5 /* PriorityQueueTests.m */,
-				30E3740C18408BCC00996B60 /* MapViewControllerTests.m */,
 			);
 			path = "Adler NavigationTests";
 			sourceTree = "<group>";
@@ -362,8 +389,20 @@
 				FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */,
 				F3F7AFAE18CFC47300150D8C /* star_paths.pdf in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
-				F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */,
-				F3404B0E18A6FDF000581CA9 /* Map_stack_tabloid_lower_modified.pdf in Resources */,
+				F3F7AFB118CFC47300150D8C /* top_paths.pdf in Resources */,
+				F3555FF818D41F320059AFB0 /* top_new.plist in Resources */,
+				F3555FF218D41F220059AFB0 /* lower_new.plist in Resources */,
+				F3F7AFAC18CFC47300150D8C /* star.pdf in Resources */,
+				FE5C880318D647C2009E2CC2 /* top.png in Resources */,
+				F3555FF618D41F2D0059AFB0 /* star_new.plist in Resources */,
+				F3F7AFAD18CFC47300150D8C /* star.plist in Resources */,
+				F3555FF418D41F260059AFB0 /* mid_new.plist in Resources */,
+				F3F7AFA718CFC47300150D8C /* lower.plist in Resources */,
+				F3F7AFA618CFC47300150D8C /* lower.pdf in Resources */,
+				F3555FF018D41F1B0059AFB0 /* map_data_all.plist in Resources */,
+				F3F7AFB018CFC47300150D8C /* top.plist in Resources */,
+				F3F7AFAA18CFC47300150D8C /* mid.plist in Resources */,
+				F3F7AFA918CFC47300150D8C /* mid.pdf in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,9 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E5027D183607E100BCDA41 /* Adler_NavigationTests.m in Sources */,
-				725F0C5F18D663D9003D8FD5 /* PriorityQueueTests.m in Sources */,
+				725F0C5F18D663D9003D8FD5 /* (null) in Sources */,
 				30E3740D18408BCC00996B60 /* MapViewControllerTests.m in Sources */,
 				30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */,
+				725F0C6118D6B485003D8FD5 /* PriorityQueueTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

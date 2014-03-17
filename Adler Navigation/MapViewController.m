@@ -2,14 +2,12 @@
 //  MapViewController.m
 //  Adler Navigation
 //
+//  Created by Ahaan Ugale on 12/11/13.
 //  Copyright (c) 2013 Adler Planetarium. All rights reserved.
 //
 #import "MapViewController.h"
 #import "Node.h"
 #import "Edge.h"
-#import "ExitNode.h"
-#import "TravelNode.h"
-#import "ExhibitNode.h"
 #import "MapGraph.h"
 #import "PriorityQueue.h"
 
@@ -19,7 +17,7 @@
 
 @implementation MapViewController
 
-const integer_t INFINIT = -1;
+const integer_t INFINIT = FLT_MAX;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -59,6 +57,7 @@ const integer_t INFINIT = -1;
 + (NSMutableArray *) dijkstra:     (MapGraph *)graph  from:(Node *)source to:(Node *)goal
 {
     if( (!graph) || (!source) || (!goal) ){
+        NSLog(@"-------------------------------------  Nil para !");
         NSException *e;
         [e raise];
         return nil;
@@ -69,80 +68,69 @@ const integer_t INFINIT = -1;
     NSMutableDictionary *dist =  [[NSMutableDictionary alloc] init];
     PriorityQueue *Q = [[PriorityQueue alloc]init];
     
-    int i;
     if(graph.nodes){
-        for( Node* n in graph.nodes){
-            if(!n){NSLog(@"nil !!!!!!!!!!!!!!!!\n"); break;}
-            
-            
-            
-            NSLog(@"%@", [anObject class]);
-            
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            
-            
-            if(![n xCoord]){NSLog(@"nil !!!!!!!!!!!!!!!!\n"); break;}
-            else{NSLog(@"THE LOG SCORE : %f", n.xCoord);}
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            
-            //NSMutableString* mStr = [NSMutableString stringWithString:nil];
-            //NSLog(mStr);
-            
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            
-            
-            //NSLog(@"%@", mStr );
-            //[dist setValue:[NSNumber numberWithFloat:INFINIT] forKey: n.id];
-            //[visited setValue:NO forKey:[n id]];
-            //[previous setValue:nil forKey:[n id]];
+        for( NSString* key in graph.nodes){
+            [dist setValue:[NSNumber numberWithFloat:INFINIT] forKey: key];
+            [visited setValue:NO forKey:key];
+            [previous setValue:nil forKey:key];
         }
     }
- 
     
-//    [dist setValue: [NSNumber numberWithFloat:0.0] forKey: [source id]];
-//    
-//    [Q addItem:source withPriority: 0.0];
+    [dist setValue: [NSNumber numberWithFloat:0.0] forKey: source.id];
+    [Q addItem:source withPriority: 0.0];
+    
+    NSLog(@" -------------------------------------- Before while !");
+    
+    Node *cur;
+    while (![Q isEmpty]) {
+        NSLog(@"-------------------------------------- In While");
+        
+        for (Node * k in Q){
+            NSLog(@"%@",k.id);
+        }
+        
+        cur = (Node *)[Q getItemLeastPriority];  //objective c
+        NSLog(@"%@",cur.id);
+        
+        if(!cur){
+            break;
+            //NSLog(@"-------------------------------------- Nil cur !");
+        }
+        if (cur.id == goal.id){
+            NSLog(@"-------------------------------------- Found it !");
+            NSMutableArray *path = nil;
+            Node *temp = source;
+            while(temp){
+                [path addObject:temp];
+                temp = [previous objectForKey: cur.id];
+            }
+            [path addObject:goal];
+            return path;
+        }
 
-//    
-//    while (![Q isEmpty]) {
-//        
-//        Node *cur = (Node *)[Q getItemLeastPriority];
-//        if ([cur id] == [goal id]){
-//            NSMutableArray *path = nil;
-//            Node *temp = cur;
-//            while(temp){
-//                [path addObject:temp];
-//                temp = [previous objectForKey: [cur id]];
-//            }
-//            return path;
-//        }
-//        
-//        i = 0;
-//        NSSet *neighbors = [graph getAdjacentEdges:cur];
-//        for(Edge * e in neighbors){
-//            
-//            Node *otherNode;
-//            if (e.node1 == cur){ otherNode = e.node2;}
-//            else               { otherNode = e.node1;}
-//            
-//            float alternative = [[dist valueForKey:[cur id]] floatValue] + [e distance];
-//            
-//            if (alternative < [[dist valueForKey:[cur id]] floatValue]) {
-//                [dist setValue:[NSNumber numberWithFloat:alternative] forKey:[otherNode id]];
-//                [previous setValue:otherNode forKey:[cur id]];
-//                [Q addItem:[cur id] withPriority: alternative];
-//            }
-//        }
-//    }
+        NSSet *neighbors = [graph.adjacencyMatrix objectForKey:cur];
+        if (!neighbors){
+            NSLog(@"-------------------------------------- Nil neighbors !");
+        }
+
+        for(Edge * e in neighbors){
+            
+            NSLog(@"%f", e.distance);
+            
+            Node *otherNode;
+            if (e.node1 == cur){ otherNode = e.node2;}
+            else               { otherNode = e.node1;}
+            
+            float alternative = [[dist valueForKey:cur.id] floatValue] + e.distance;
+            NSLog(@"%f", alternative);
+            if (alternative < [[dist valueForKey:[otherNode id]] floatValue]) {
+                NSLog(@"-------------------------------------- Update Distance !");
+                [dist setValue:[NSNumber numberWithFloat:alternative] forKey:otherNode.id];
+                [previous setValue:otherNode forKey:cur.id];
+                [Q addItem:cur.id withPriority: alternative];
+            }
+        }
+    }
     return nil;
 }
 
@@ -173,19 +161,7 @@ const integer_t INFINIT = -1;
 }
 
 
-
-
-
-
-
-
-
-
-/*
- * Draw the step-by-step direction on screen
- *
- */
-+ (void)drawDirectionFrom:(Node *)n1 to:(Node *)n2
+- (UIImage *)drawLineSegments:(CGPoint *)points count:(size_t)count image:(UIImage *)image
 {
     //[sender setTitle:@"test" forState:UIControlStateNormal];
     
@@ -212,8 +188,5 @@ const integer_t INFINIT = -1;
     
     return retImage;
 }
-
-
-
 
 @end

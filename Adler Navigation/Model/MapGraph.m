@@ -72,7 +72,7 @@
 /**
  * Returns a set of Edge objects
  */
-- (NSSet *)getAdjacentEdges:(Node *)node
+- (NSSet *)getAdjacentNodes:(Node *)node
 {
     return [_adjacencyMatrix objectForKey:node];
 }
@@ -111,7 +111,7 @@
         NSNumber * zCoordinate = [nodeDict objectForKey:@"z"];
         
         Node * newNode = [[Node alloc] init];
-              
+        
         newNode.xCoordinate = [xCoordinate floatValue];
         newNode.yCoordinate = [yCoordinate floatValue];
         newNode.zCoordinate = [zCoordinate floatValue];

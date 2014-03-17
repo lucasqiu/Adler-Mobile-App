@@ -59,25 +59,30 @@
     Edge *e12;
     Edge *e13;
     Edge *e34;
+    Edge *e24;
     
     [super setUp];
     
     g = [[MapGraph alloc] init];
     
     n1 = [[Node alloc] init];
-    n1.xCoordinate = 1;
+    n1.id = @"n1";
+    n1.XCoordinate = 1;
     n1.yCoordinate = 1;
     
     n2 = [[Node alloc] init];
-    n2.xCoordinate = 2;
+    n2.id = @"n2";
+    n2.XCoordinate = 2;
     n2.yCoordinate = 13;
     
     n3 = [[Node alloc] init];
-    n3.xCoordinate = 2.5;
+    n3.id = @"n3";
+    n3.XCoordinate = 2.5;
     n3.yCoordinate = 7;
     
     n4 = [[Node alloc] init];
-    n4.xCoordinate = 4;
+    n4.id = @"n4";
+    n4.XCoordinate = 4;
     n4.yCoordinate = 14;
     
     [g addNode:n1];
@@ -90,23 +95,37 @@
     e12.node2 = n2;
     
     e13 = [[Edge alloc]init];
-    e13.node1 = n3;
-    e13.node2 = n1;
+    e13.node1 = n1;
+    e13.node2 = n3;
     
     e34 = [[Edge alloc] init];
     e34.node1 = n3;
     e34.node2 = n4;
+
+    e24 = [[Edge alloc] init];
+    e24.node1 = n2;
+    e24.node2 = n4;
     
     [g addEdge:e12];
     [g addEdge:e13];
     [g addEdge:e34];
+    [g addEdge:e24];
     
-//    NSArray *path = [MapViewController dijkstra:g from:n1 to:n3];
-    NSArray *expected = @[n1, n3];
-//    XCTAssertEqual(path, expected);
+    NSArray *path = [MapViewController dijkstra:g from:n1 to:n4];
+    NSArray *expected = @[n4, n3, n1];
+    
+    if(path){
+        for(Node* n in path){
+            NSLog(n.id);
+        }
+    }else{
+        NSLog(@"path is nil !!!");
+    }
+ //   XCTAssertEqual([path isEqualToArray:expected]);
+    //XCTAssertTrue([path isEqual:expected]);
     
 //    path = [MapViewController dijkstra:g from:n1 to:n4];
-    expected = @[n1, n3, n4];
+    //expected = @[n1, n3, n4];
 //    XCTAssertEqual(path, expected);
     return;
 }
@@ -126,44 +145,44 @@
     g = [[MapGraph alloc] init];
     
     n1 = [[Node alloc] init];
-    n1.nid = @"n1";
-    n1.xCoord = 0;
-    n1.yCoord = 0;
+    n1.id = @"n1";
+    n1.XCoordinate = 0;
+    n1.yCoordinate = 0;
     
     n2 = [[Node alloc] init];
-    n2.nid = @"n2";
-    n2.xCoord = 1;
-    n2.yCoord = -1;
+    n2.id = @"n2";
+    n2.XCoordinate = 1;
+    n2.yCoordinate = -1;
     
     n3 = [[Node alloc] init];
-    n3.nid = @"n3";
-    n3.xCoord = 2;
-    n3.yCoord = 10;
+    n3.id = @"n3";
+    n3.XCoordinate = 2;
+    n3.yCoordinate = 10;
     
     n4 = [[Node alloc] init];
-    n4.nid = @"n4";
-    n4.xCoord = 2;
-    n4.yCoord = 1;
+    n4.id = @"n4";
+    n4.XCoordinate = 2;
+    n4.yCoordinate = 1;
 
     n5 = [[Node alloc] init];
-    n5.nid = @"n5";
-    n5.xCoord = 5;
-    n5.yCoord = 5;
+    n5.id = @"n5";
+    n5.XCoordinate = 5;
+    n5.yCoordinate = 5;
     
     n6 = [[Node alloc] init];
-    n6.nid = @"n6";
-    n6.xCoord = 3;
-    n6.yCoord = 1;
+    n6.id = @"n6";
+    n6.XCoordinate = 3;
+    n6.yCoordinate = 1;
     
     n7 = [[Node alloc] init];
-    n7.nid = @"n7";
-    n7.xCoord = 4;
-    n7.yCoord = -1;
+    n7.id = @"n7";
+    n7.XCoordinate = 4;
+    n7.yCoordinate = -1;
     
     n8 = [[Node alloc] init];
-    n8.nid = @"n8";
-    n8.xCoord = 5;
-    n8.yCoord = 1;
+    n8.id = @"n8";
+    n8.XCoordinate = 5;
+    n8.yCoordinate = 1;
     
     [g addNode:n1]; [g addNode:n2];
     [g addNode:n3]; [g addNode:n4];
@@ -218,24 +237,12 @@
     
     
     NSMutableArray *path = [MapViewController dijkstra:g from:n1 to:n5];
+    if(!path){
+        NSLog(@"path is nil !!!");
+        return;
+    }
     
-    
-    
-//    if(path){
-//        NSLog(@"%@\n", @"++++++++++++++++++++");
-//    }
-//    else {
-//        NSLog(@"%@\n", @"--------------------");
-//    }
-
-    
-//    for(NSString *cur in path){
-//        NSLog(@"----------");
-//        NSLog(@"%@", cur);
-//        NSLog(@"\n");
-//    }
-    
-//    NSArray *expected = @[n1, n3, n5];
+    NSArray *expected = @[n1, n3, n5];
     
 //    NSArray *a = @[@"1", @"2"];
 //    NSArray *b = @[@"1", @"2"];
@@ -247,7 +254,7 @@
     
     //XCTAssertEqual(a, b);
 
-    //XCTAssertTrue([path isEqual:expected]);
+    XCTAssertTrue([path isEqual:expected]);
 
 
     
@@ -258,11 +265,11 @@
 //            
 //        
 //        }
-//        printf("x coordinate: %f\n", [cur xCoord]);
+//        printf("x coordinate: %f\n", [cur XCoordinate]);
 //    }
 //    i = 0;
 //    for (Node* cur in expected){
-//        printf("x coordinate: %f\n", [cur xCoord]);
+//        printf("x coordinate: %f\n", [cur XCoordinate]);
 //    }
     
     

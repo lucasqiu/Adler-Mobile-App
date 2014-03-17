@@ -78,6 +78,7 @@ Edge *e13;
     n.yCoordinate = 101;
     n.zCoordinate = 101;
     XCTAssertNil([g.adjacencyMatrix objectForKey:n]);
+    
 }
 
 - (void)testGetNodeById
@@ -96,8 +97,6 @@ Edge *e13;
 
 - (void)testAdjacent
 {
-    
-    
     NSSet *adjacent = [g getAdjacentNodes:n1];
     NSSet *expected = [NSSet setWithObjects:e12, e13, nil];
     

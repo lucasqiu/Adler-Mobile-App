@@ -15,23 +15,11 @@
 - (id)init;
 - (id)initWithObjects:(NSSet *)objects;
 
-#pragma mark - Request Info
-- (BOOL)isEmpty;
-- (id)peek;
-- (BOOL)contains:(id<comparable, NSObject>)object;
-- (Class)typeOfAllowedObjects;
-- (int)size;
-- (NSArray *)toArray;
-- (void)print;
-
-#pragma mark - Modification
-- (void)clear;
-- (BOOL)addWithObject:(id<comparable, NSObject>)object;
-- (void)addWithPriority:(NSObject *)item Priority:(float)priority;
-- (id)poll;
-- (void)remove:(id<comparable, NSObject>)object;
+- (void)addItem:(NSObject *)obj withPriority:(float)priority;
 
 - (NSObject *)getItemLeastPriority;
 
 - (Boolean)isEmpty;
+
+- (void)printQueue;
 @end

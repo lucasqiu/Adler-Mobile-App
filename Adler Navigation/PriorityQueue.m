@@ -6,6 +6,7 @@
 //
 
 #import "PriorityQueue.h"
+#import "Node.h"
 
 @interface Item : NSObject
 @property (nonatomic, strong) NSObject *obj;
@@ -32,13 +33,6 @@
 }
 
 
-- (BOOL)isEmpty{
-    if([items objectAtIndex:0] == nil){
-        return YES;
-    }
-    return NO;
-}
-
 
 - (id)peek{
     if ([self isEmpty]==YES){
@@ -62,14 +56,27 @@
     [items insertObject:item atIndex:i];
 }
 
+//make sure check Empty before pull
 - (NSObject *)getItemLeastPriority
 {
+//    if(self.isEmpty){return nil;}
     return ((Item *)[items objectAtIndex:startIdx++]).obj;
+    
 }
 
 - (Boolean)isEmpty
 {
     return (startIdx == [items count]);
+}
+
+- (void)printQueue
+{
+    int endIdx = startIdx + (int)items.count;
+    int c = startIdx;
+    while (c < endIdx){
+        NSLog(@"%@", ((Node *)((Item*)[items objectAtIndex:c]).obj).id);
+        c++;
+    }
 }
 
 @end
