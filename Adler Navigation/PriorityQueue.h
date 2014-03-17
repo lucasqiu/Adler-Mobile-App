@@ -7,10 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "comparable.h"
 
 @interface PriorityQueue : NSObject
 
-- (void)addItem:(NSObject *)item withPriority:(float)priority;
+#pragma mark - Init
+- (id)init;
+- (id)initWithObjects:(NSSet *)objects;
+
+#pragma mark - Request Info
+- (BOOL)isEmpty;
+- (id)peek;
+- (BOOL)contains:(id<comparable, NSObject>)object;
+- (Class)typeOfAllowedObjects;
+- (int)size;
+- (NSArray *)toArray;
+- (void)print;
+
+#pragma mark - Modification
+- (void)clear;
+- (BOOL)addWithObject:(id<comparable, NSObject>)object;
+- (void)addWithPriority:(NSObject *)item Priority:(float)priority;
+- (id)poll;
+- (void)remove:(id<comparable, NSObject>)object;
 
 - (NSObject *)getItemLeastPriority;
 
