@@ -5,7 +5,6 @@
 //  Created by Ahaan Ugale on 11/22/13.
 //  Copyright (c) 2013 Adler Planetarium. All rights reserved.
 //
-
 #import "MapViewController.h"
 #import "Node.h"
 #import "Edge.h"
@@ -34,13 +33,11 @@ const integer_t INFINIT = -1;
 }
 
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
-
 
 
 - (void)didReceiveMemoryWarning
@@ -49,6 +46,7 @@ const integer_t INFINIT = -1;
     // Dispose of any resources that can be recreated.
 }
 
+
 // Set the image view as the object to zoom when pinching.
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
@@ -56,63 +54,104 @@ const integer_t INFINIT = -1;
 }
 
 
-
-
-
-
-
 /*
  * Find the shortest path between the source and the goal node.
  */
-- (NSMutableArray *) dijkstra:(MapGraph *)graph  from:(Node *)source to:(Node *)goal
++ (NSMutableArray *) dijkstra:     (MapGraph *)graph  from:(Node *)source to:(Node *)goal
 {
+    if( (!graph) || (!source) || (!goal) ){
+        NSException *e;
+        [e raise];
+        return nil;
+    }
     
-    NSMutableArray *visited = [[NSMutableArray alloc] init];
-    NSMutableArray *previous = [[NSMutableArray alloc] init];
+    NSMutableDictionary *visited = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *previous = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *dist =  [[NSMutableDictionary alloc] init];
-    PriorityQueue *Q = NULL;
+    PriorityQueue *Q = [[PriorityQueue alloc]init];
     
     int i;
-    for( i = 0; i < [graph.nodes count]; i = i + 1 ){
-        [dist setValue:[NSNumber numberWithFloat:INFINIT] forKey: [source id]];
-        [visited addObject: false];
-        [previous addObject: NULL];
-    }
-    
-    [dist setValue: [NSNumber numberWithFloat:0.0] forKey: [source id]];
-    
-    [Q addItem:source withPriority: 0.0]; //set distance to source to 0
-    
-    while (![Q isEmpty]) {
-        
-        Node *cur = (Node *)[Q getItemLeastPriority]; // also removes the item underneath
-       
-        if ([cur id] == [goal id]){
-            return previous;
+    if(graph.nodes){
+        for( Node* n in graph.nodes){
+            if(!n){NSLog(@"nil !!!!!!!!!!!!!!!!\n"); break;}
+            
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            
+            
+            NSLog(@"%@", [n class]);
+            
+            
+            
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            
+            
+            if(![n xCoord]){NSLog(@"nil !!!!!!!!!!!!!!!!\n"); break;}
+            else{NSLog(@"THE LOG SCORE : %f", n.xCoord);}
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            
+            //NSMutableString* mStr = [NSMutableString stringWithString:nil];
+            //NSLog(mStr);
+            
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            NSLog(@"Ahaaaaa");
+            
+            
+            //NSLog(@"%@", mStr );
+            //[dist setValue:[NSNumber numberWithFloat:INFINIT] forKey: n.id];
+            //[visited setValue:NO forKey:[n id]];
+            //[previous setValue:nil forKey:[n id]];
         }
-        
-        i = 0;
-        NSSet *neighbors = [graph getAdjacentEdges:cur];
-        
-        for(Edge * e in neighbors){
-            float alternative = [[dist valueForKey:[cur id]] floatValue] + [e distance];
-            Node *v;
-            if (e.node1 == cur){
-                v = e.node2;
-            }
-            else{
-                v = e.node1;
-            }
-            if (alternative < [[dist valueForKey:[cur id]] floatValue]) {
-                [dist setValue:[NSNumber numberWithFloat:alternative] forKey:[v id]];
-            }
-        }
     }
-    return NULL;
+ 
+    
+//    [dist setValue: [NSNumber numberWithFloat:0.0] forKey: [source id]];
+//    
+//    [Q addItem:source withPriority: 0.0];
+
+//    
+//    while (![Q isEmpty]) {
+//        
+//        Node *cur = (Node *)[Q getItemLeastPriority];
+//        if ([cur id] == [goal id]){
+//            NSMutableArray *path = nil;
+//            Node *temp = cur;
+//            while(temp){
+//                [path addObject:temp];
+//                temp = [previous objectForKey: [cur id]];
+//            }
+//            return path;
+//        }
+//        
+//        i = 0;
+//        NSSet *neighbors = [graph getAdjacentEdges:cur];
+//        for(Edge * e in neighbors){
+//            
+//            Node *otherNode;
+//            if (e.node1 == cur){ otherNode = e.node2;}
+//            else               { otherNode = e.node1;}
+//            
+//            float alternative = [[dist valueForKey:[cur id]] floatValue] + [e distance];
+//            
+//            if (alternative < [[dist valueForKey:[cur id]] floatValue]) {
+//                [dist setValue:[NSNumber numberWithFloat:alternative] forKey:[otherNode id]];
+//                [previous setValue:otherNode forKey:[cur id]];
+//                [Q addItem:[cur id] withPriority: alternative];
+//            }
+//        }
+//    }
+    return nil;
 }
-
-
-
 
 
 
@@ -158,21 +197,6 @@ const integer_t INFINIT = -1;
 {
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

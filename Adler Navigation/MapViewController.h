@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Node.h"
+#import "MapGraph.h"
 
 @interface MapViewController : UIViewController <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
++ (NSMutableArray*) dijkstra: (MapGraph *)graph  from:(Node *)source to:(Node *)goal;
 + (void)nextDirection:(NSArray *)path;
 
 @end

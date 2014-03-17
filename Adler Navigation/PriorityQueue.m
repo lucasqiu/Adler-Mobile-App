@@ -54,7 +54,7 @@
 
 - (Boolean)isEmpty
 {
-    return ([items count]==0);
+    return (startIdx == [items count]);
 }
 
 @end
