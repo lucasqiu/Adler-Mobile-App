@@ -13,7 +13,6 @@
 
 #pragma mark - Init
 - (id)init;
-- (id)initWithObjects:(NSSet *)objects;
 
 - (void)addItem:(NSObject *)obj withPriority:(float)priority;
 
@@ -21,5 +20,4 @@
 
 - (Boolean)isEmpty;
 
-- (void)printQueue;
 @end

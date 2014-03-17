@@ -52,14 +52,8 @@
 - (void)testDijkstra1
 {
     MapGraph *g;
-    Node *n1;
-    Node *n2;
-    Node *n3;
-    Node *n4;
-    Edge *e12;
-    Edge *e13;
-    Edge *e34;
-    Edge *e24;
+    Node *n1, *n2, *n3, *n4;
+    Edge *e12, *e13, *e34, *e24;
     
     [super setUp];
     
@@ -111,23 +105,13 @@
     [g addEdge:e34];
     [g addEdge:e24];
     
-    NSArray *path = [MapViewController dijkstra:g from:n1 to:n4];
-    NSArray *expected = @[n4, n3, n1];
-    
-    if(path){
-        for(Node* n in path){
-            NSLog(n.id);
-        }
-    }else{
-        NSLog(@"path is nil !!!");
+    NSMutableArray *path = [MapViewController dijkstra:g from:n1 to:n4];
+    for(Node* k in path){
+         NSLog(@"%@",k.id);
     }
- //   XCTAssertEqual([path isEqualToArray:expected]);
-    //XCTAssertTrue([path isEqual:expected]);
+    NSArray *answer = @[n1, n3, n4];
     
-//    path = [MapViewController dijkstra:g from:n1 to:n4];
-    //expected = @[n1, n3, n4];
-//    XCTAssertEqual(path, expected);
-    return;
+    XCTAssertTrue([path isEqualToArray:answer]);
 }
 
 
@@ -139,7 +123,6 @@
     
     Edge *e12, *e13, *e35, *e14, *e46, *e67, *e78, *e85, *e27, *e58;
 
-    
     [super setUp];
     
     g = [[MapGraph alloc] init];
@@ -240,45 +223,15 @@
     if(!path){
         NSLog(@"path is nil !!!");
         return;
+    }else{
+        for(Node* k in path){
+            NSLog(@"%@",k.id);
+        }
     }
     
-    NSArray *expected = @[n1, n3, n5];
+    NSArray *expected = @[n1, n2, n7, n8, n5];
     
-//    NSArray *a = @[@"1", @"2"];
-//    NSArray *b = @[@"1", @"2"];
-    
-    
-    //NSString *fmt = [NSString stringWithFormat:@"My formatted string: %@", anObject];
-    
-    //printf("%s", [fmt cStringUsingEncoding:[NSString defaultCStringEncoding]]);
-    
-    //XCTAssertEqual(a, b);
-
-    XCTAssertTrue([path isEqual:expected]);
-
-
-    
-//    int i = 0;
-//    int j = 0;
-//    for (i in [path ]){
-//        for(j ){
-//            
-//        
-//        }
-//        printf("x coordinate: %f\n", [cur XCoordinate]);
-//    }
-//    i = 0;
-//    for (Node* cur in expected){
-//        printf("x coordinate: %f\n", [cur XCoordinate]);
-//    }
-    
-    
-    //    XCTAssertEquals(a==b);
-    //    path = [MapViewController dijkstra:g from:n1 to:n4];
-    //    expected = @[n1, n3, n4];
-    //    XCTAssertEqual(path, expected);
+    XCTAssertTrue([path isEqualToArray:expected]);
 }
-
-
 
 @end

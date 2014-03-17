@@ -69,14 +69,4 @@
     return (startIdx == [items count]);
 }
 
-- (void)printQueue
-{
-    int endIdx = startIdx + (int)items.count;
-    int c = startIdx;
-    while (c < endIdx){
-        NSLog(@"%@", ((Node *)((Item*)[items objectAtIndex:c]).obj).id);
-        c++;
-    }
-}
-
 @end

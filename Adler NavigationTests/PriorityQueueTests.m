@@ -34,16 +34,13 @@
     XCTAssertTrue(pq.isEmpty==YES);
     
     Node* n1 = [[Node alloc] init];
-    //Node* n2 = [[Node alloc] init];
+
     [pq addItem:n1 withPriority:8];
-    //[pq addItem:n2 withPriority:8];
     XCTAssertTrue(pq.isEmpty==NO);
     
     Node *t1 = [pq getItemLeastPriority];
     XCTAssertTrue(pq.isEmpty==YES);
-    //Node *t2 = [pq getItemLeastPriority];
-    //XCTAssertTrue(t1==n1);
-    //XCTAssertTrue(pq.isEmpty==YES);
+
 }
 
 - (void)testExample
@@ -76,7 +73,7 @@
     [pq addItem:n3 withPriority:2];
     [pq addItem:n4 withPriority:12];
     
-    [pq printQueue];
+    //[pq printQueue];
     
     
     Node* t1 = (Node*)[pq getItemLeastPriority];
@@ -84,7 +81,7 @@
     Node* t3 = (Node*)[pq getItemLeastPriority];
     Node* t4 = (Node*)[pq getItemLeastPriority];
     
-    [pq printQueue];
+    //[pq printQueue];
     
     XCTAssertEqual(t1, n3);
     XCTAssertEqual(t2, n2);
@@ -98,7 +95,7 @@
     [pq addItem:n3 withPriority:2];
     [pq addItem:n4 withPriority:1];
     
-    [pq printQueue];
+    //[pq printQueue];
     
     XCTAssertTrue(pq.isEmpty==NO);
     
@@ -107,7 +104,7 @@
     t3 = (Node*)[pq getItemLeastPriority];
     t4 = (Node*)[pq getItemLeastPriority];
     
-    [pq printQueue];
+    //[pq printQueue];
     
     
     XCTAssertEqual(t1, n4);
