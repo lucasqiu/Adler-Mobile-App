@@ -11,7 +11,6 @@
 
 @interface PriorityQueue : NSObject
 
-#pragma mark - Init
 - (id)init;
 
 - (void)addItem:(NSObject *)obj withPriority:(float)priority;

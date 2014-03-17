@@ -20,8 +20,6 @@
     int startIdx;
 }
 
-
-
 - (id)init{
     self = [super init];
     if (self)
@@ -32,15 +30,12 @@
     return self;
 }
 
-
-
 - (id)peek{
     if ([self isEmpty]==YES){
         return nil;
     }
     return [items objectAtIndex:0];
 }
-
 
 - (void)addItem:(NSObject *)obj withPriority:(float)priority
 {
@@ -56,12 +51,12 @@
     [items insertObject:item atIndex:i];
 }
 
-//make sure check Empty before pull
-- (NSObject *)getItemLeastPriority
+/*  
+* make sure check Empty before pull.
+*/
+ - (NSObject *)getItemLeastPriority
 {
-//    if(self.isEmpty){return nil;}
     return ((Item *)[items objectAtIndex:startIdx++]).obj;
-    
 }
 
 - (Boolean)isEmpty

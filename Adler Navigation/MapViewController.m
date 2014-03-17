@@ -57,40 +57,30 @@ const integer_t INFINIT = FLT_MAX;
 + (NSMutableArray *) dijkstra:     (MapGraph *)graph  from:(Node *)source to:(Node *)goal
 {
     if( (!graph) || (!source) || (!goal) ){
-        [NSException raise:@"Nil parameters exist!\n" format:@"Parameters nil"];
+        [NSException raise:@"Nil parameters exist!\n" format:@"Parameters nil."];
         return nil;
     }
     
-    NSMutableDictionary *visited = [[NSMutableDictionary alloc] init];
-    NSMutableDictionary *previous = [[NSMutableDictionary alloc] init];
-    NSMutableDictionary *dist =  [[NSMutableDictionary alloc] init];
-    PriorityQueue *Q = [[PriorityQueue alloc]init];  // unvisited nodes with smallest dist first
+    NSMutableDictionary *visited = [[NSMutableDictionary alloc] init]; //list of visited edges
+    NSMutableDictionary *previous = [[NSMutableDictionary alloc] init];// history of shortest path
+    NSMutableDictionary *dist =  [[NSMutableDictionary alloc] init];   //distance of each node to source
+    PriorityQueue *Q = [[PriorityQueue alloc]init];        // unvisited nodes with smallest dist first
     
     if(graph.nodes){
         for( NSString* key in graph.nodes){ // graph.nodes use id as key
             [dist setValue:[NSNumber numberWithFloat:INFINIT] forKey: key];
-            [visited setValue:[NSNumber numberWithBool:NO] forKey:key];  //list of visited edges
+            [visited setValue:[NSNumber numberWithBool:NO] forKey:key];
             [previous setValue:nil forKey:key];
         }
     }else{
-        [NSException raise:@"Invalid graph.nodes value" format:@"graph.nodes is invalid"];
+        [NSException raise:@"Invalid graph.nodes value." format:@"graph.nodes is invalid."];
     }
-    
     [dist setValue: [NSNumber numberWithFloat:0.0] forKey: source.id];
     [Q addItem:source withPriority: 0.0];
     
     while (![Q isEmpty]) {
-        NSLog(@"-------------------------------------- In While");
-        NSLog([Q isEmpty] ? @"Yes" : @"No");
-        
+  
         Node *cur = (Node *)[Q getItemLeastPriority];
-        //[visited setValue:[NSNumber numberWithBool:YES] forKey:cur.id];
-        
-        if(!cur){
-            NSLog(@"-------------------------------------- Nil cur !");
-            break;
-        }
-        
         NSSet *neighbors = [graph.adjacencyMatrix objectForKey:cur];
         Node *otherNode;
         
@@ -99,27 +89,20 @@ const integer_t INFINIT = FLT_MAX;
             if (e.node1 == cur){ otherNode = e.node2;}
             else               { otherNode = e.node1;}
             if ([[visited valueForKey:[otherNode id] ] boolValue] == YES){
-                continue;   // if othernode is visited, go to next
+                continue;
             }
-            
             float alternative = [[dist valueForKey:cur.id] floatValue] + e.distance;
-            NSLog(@"%f", e.distance);
-            NSLog(@"%f", alternative);
             
             if (alternative < [[dist valueForKey:otherNode.id] floatValue]) {
-                NSLog(@"-------------------------------------- Update Distance !");
                 [dist setValue:[NSNumber numberWithFloat:alternative] forKey:otherNode.id];
                 [previous setValue:cur forKey:otherNode.id];
                 [Q addItem:otherNode withPriority: alternative];
             }
         }
+        
         [visited setValue:[NSNumber numberWithBool:YES] forKey:cur.id]; // visited all neighbors of cur
         
         if(cur.id==goal.id){
-            NSLog(@"-------------------------------------- Found destination !");
-            NSLog(@"%@",cur.id);
-            NSLog(@"%@",goal.id);
-            
             NSMutableArray* path = [[NSMutableArray alloc] init];
             [path insertObject:goal atIndex:0];
             NSString* temp = goal.id;
@@ -130,7 +113,7 @@ const integer_t INFINIT = FLT_MAX;
             return path;
         }
     }
-    [NSException raise:@"Path not found" format:@"Path not found"];
+    [NSException raise:@"Path not found." format:@"Nil path."];
     return nil;
 }
 
