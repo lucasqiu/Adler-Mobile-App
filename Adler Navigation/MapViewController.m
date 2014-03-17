@@ -75,15 +75,9 @@ const integer_t INFINIT = -1;
         for( Node* n in graph.nodes){
             if(!n){NSLog(@"nil !!!!!!!!!!!!!!!!\n"); break;}
             
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
-            NSLog(@"Ahaaaaa");
             
             
-            NSLog(@"%@", [n class]);
-            
-            
+            NSLog(@"%@", [anObject class]);
             
             NSLog(@"Ahaaaaa");
             NSLog(@"Ahaaaaa");
