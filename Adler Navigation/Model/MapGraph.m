@@ -111,7 +111,7 @@
         NSNumber * zCoordinate = [nodeDict objectForKey:@"z"];
         
         Node * newNode = [[Node alloc] init];
-              
+        
         newNode.xCoordinate = [xCoordinate floatValue];
         newNode.yCoordinate = [yCoordinate floatValue];
         newNode.zCoordinate = [zCoordinate floatValue];

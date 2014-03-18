@@ -29,6 +29,8 @@
 		30E502891836084000BCDA41 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502881836084000BCDA41 /* Node.m */; };
 		30E502921836222000BCDA41 /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502911836222000BCDA41 /* Edge.m */; };
 		30E502951836263100BCDA41 /* MapGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E502941836263100BCDA41 /* MapGraph.m */; };
+		725F0C5F18D663D9003D8FD5 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		725F0C6118D6B485003D8FD5 /* PriorityQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
 		F3555FF018D41F1B0059AFB0 /* map_data_all.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */; };
 		F3555FF218D41F220059AFB0 /* lower_new.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3555FF118D41F220059AFB0 /* lower_new.plist */; };
@@ -100,6 +102,7 @@
 		30E502911836222000BCDA41 /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edge.m; path = Model/Edge.m; sourceTree = "<group>"; };
 		30E502931836263100BCDA41 /* MapGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGraph.h; path = Model/MapGraph.h; sourceTree = "<group>"; };
 		30E502941836263100BCDA41 /* MapGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGraph.m; path = Model/MapGraph.m; sourceTree = "<group>"; };
+		725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueueTests.m; sourceTree = "<group>"; };
 		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3555FEF18D41F1B0059AFB0 /* map_data_all.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = map_data_all.plist; sourceTree = "<group>"; };
@@ -247,10 +250,11 @@
 		30E50276183607E100BCDA41 /* Adler NavigationTests */ = {
 			isa = PBXGroup;
 			children = (
-				30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */,
-				30E50277183607E100BCDA41 /* Supporting Files */,
+				725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */,
 				30D1C674183DD41F00E71EDD /* MapGraphTests.m */,
 				30E3740C18408BCC00996B60 /* MapViewControllerTests.m */,
+				30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */,
+				30E50277183607E100BCDA41 /* Supporting Files */,
 			);
 			path = "Adler NavigationTests";
 			sourceTree = "<group>";
@@ -442,8 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E5027D183607E100BCDA41 /* Adler_NavigationTests.m in Sources */,
+				725F0C5F18D663D9003D8FD5 /* (null) in Sources */,
 				30E3740D18408BCC00996B60 /* MapViewControllerTests.m in Sources */,
 				30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */,
+				725F0C6118D6B485003D8FD5 /* PriorityQueueTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

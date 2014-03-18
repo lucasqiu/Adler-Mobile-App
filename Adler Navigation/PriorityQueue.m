@@ -6,6 +6,7 @@
 //
 
 #import "PriorityQueue.h"
+#import "Node.h"
 
 @interface Item : NSObject
 @property (nonatomic, strong) NSObject *obj;
@@ -19,8 +20,6 @@
     int startIdx;
 }
 
-
-
 - (id)init{
     self = [super init];
     if (self)
@@ -31,22 +30,12 @@
     return self;
 }
 
-
-- (BOOL)isEmpty{
-    if([items objectAtIndex:0] == nil){
-        return YES;
-    }
-    return NO;
-}
-
-
 - (id)peek{
     if ([self isEmpty]==YES){
         return nil;
     }
     return [items objectAtIndex:0];
 }
-
 
 - (void)addItem:(NSObject *)obj withPriority:(float)priority
 {
@@ -62,9 +51,18 @@
     [items insertObject:item atIndex:i];
 }
 
-- (NSObject *)getItemLeastPriority
+/*  
+* Return nil if empty. Make sure check Empty before pull. 
+*/
+ - (NSObject *)getItemLeastPriority
 {
+    if(self.isEmpty){return nil;}
     return ((Item *)[items objectAtIndex:startIdx++]).obj;
+}
+
+- (Boolean)isEmpty
+{
+    return (startIdx == [items count]);
 }
 
 @end
