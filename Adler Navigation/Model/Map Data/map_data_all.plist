@@ -896,6 +896,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel20</string>
+		<key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>210</integer>
 		<key>y</key>
@@ -911,6 +913,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel21</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>262</integer>
 		<key>y</key>
@@ -926,6 +930,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel22</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>290</integer>
 		<key>y</key>
@@ -941,6 +947,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel23</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>349</integer>
 		<key>y</key>
@@ -956,6 +964,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel24</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>349</integer>
 		<key>y</key>
@@ -973,6 +983,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel25</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>333</integer>
 		<key>y</key>
@@ -990,6 +1002,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel26</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>253</integer>
 		<key>y</key>
@@ -1007,6 +1021,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel27</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>169</integer>
 		<key>y</key>
@@ -1022,6 +1038,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel28</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>448</integer>
 		<key>y</key>
@@ -1037,6 +1055,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel29</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>448</integer>
 		<key>y</key>
@@ -1053,6 +1073,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel30</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>391</integer>
 		<key>y</key>
@@ -1069,6 +1091,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel31</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>416</integer>
 		<key>y</key>
@@ -1085,6 +1109,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel32</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>611</integer>
 		<key>y</key>
@@ -1100,6 +1126,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel33</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>530</integer>
 		<key>y</key>
@@ -1115,6 +1143,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel34</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>237</integer>
 		<key>y</key>
@@ -1130,6 +1160,8 @@
 		<false/>
 		<key>uid</key>
 		<string>travel35</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>268</integer>
 		<key>y</key>
@@ -1145,6 +1177,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Rainbow Lobby</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
@@ -1161,6 +1195,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Coat Check</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>288</integer>
 		<key>y</key>
@@ -1176,6 +1212,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Welcome Gallery</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>228</integer>
 		<key>y</key>
@@ -1192,6 +1230,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Sky Theater</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
@@ -1206,6 +1246,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Shoot For The Moon</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>398</integer>
 		<key>y</key>
@@ -1221,6 +1263,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Cafe Galileo</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>64</integer>
 		<key>y</key>
@@ -1235,6 +1279,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Our Solar System</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>210</integer>
 		<key>y</key>
@@ -1250,6 +1296,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Planet Explorers</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>473</integer>
 		<key>y</key>
@@ -1265,6 +1313,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Adler Store</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>617</integer>
 		<key>y</key>
@@ -1280,6 +1330,8 @@
 		<false/>
 		<key>uid</key>
 		<string>rainbow_lobby_exit</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>411</integer>
 		<key>y</key>
@@ -1294,6 +1346,8 @@
 		<false/>
 		<key>uid</key>
 		<string>sky_theater_exit</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>489</integer>
 		<key>y</key>
@@ -1308,6 +1362,8 @@
 		<false/>
 		<key>uid</key>
 		<string>planet_explorers_exit</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>497</integer>
 		<key>y</key>
@@ -1323,6 +1379,8 @@
 		<false/>
 		<key>uid</key>
 		<string>cafe_galileo_exit</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>204</integer>
 		<key>y</key>
@@ -1339,6 +1397,8 @@
 		<true/>
 		<key>uid</key>
 		<string>Main Entrance</string>
+        <key>floor</key>
+		<string>top</string>
 		<key>x</key>
 		<integer>352</integer>
 		<key>y</key>
