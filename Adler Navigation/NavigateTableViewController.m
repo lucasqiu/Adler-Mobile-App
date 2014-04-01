@@ -35,6 +35,10 @@
     
     MapViewController * mv = [[MapViewController alloc] init];
     arr = [mv dijkstra:mg from:pointA to:pointB];
+    for (int i = 0; i < [arr count]; i++) {
+        Node * n = [arr objectAtIndex:i];
+        NSLog(@"%@", n.id);
+    }
     
     UIImage * image = [UIImage imageNamed:@"top.png"];
     _path.image = [mv nextDirection:arr image:image];
