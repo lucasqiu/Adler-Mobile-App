@@ -45,7 +45,7 @@
     
     [[_adjacencyMatrix objectForKey:edge.node1] addObject:edge];
     
-    [[_adjacencyMatrix objectForKey:edge.node2] addObject:edge];
+    //[[_adjacencyMatrix objectForKey:edge.node2] addObject:edge];
 }
 
 - (void)addEdgeFromNode:(NSString *)nodeId1 toNode:(NSString *)nodeId2

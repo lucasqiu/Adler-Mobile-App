@@ -30,12 +30,16 @@
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"top" ofType:@"plist"];
     [mg createGraphFromFile:filePath];
     Node* pointA =  [mg getNodeById:_source];
-    NSLog(@"%@", pointA.id);
     Node* pointB = [mg getNodeById:_destination];
     NSMutableArray * arr = [[NSMutableArray alloc] init];
-    [arr addObject:pointA];
-    [arr addObject:pointB];
+    
     MapViewController * mv = [[MapViewController alloc] init];
+    arr = [mv dijkstra:mg from:pointA to:pointB];
+    for (int i = 0; i < [arr count]; i++) {
+        Node * n = [arr objectAtIndex:i];
+        NSLog(@"%@", n.id);
+    }
+    
     UIImage * image = [UIImage imageNamed:@"top.png"];
     _path.image = [mv nextDirection:arr image:image];
     
