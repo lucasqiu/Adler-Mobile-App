@@ -9,7 +9,6 @@
 #import "NavigateTableViewController.h"
 #import "MapGraph.h"
 #import "Node.h"
-#import "MapViewController.h"
 
 @interface NavigateTableViewController ()
 
@@ -21,31 +20,28 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     MapGraph * mg = [[MapGraph alloc] init];
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
     [mg createGraphFromFile:filePath];
     Node* pointA =  [mg getNodeById:_source];
     Node* pointB = [mg getNodeById:_destination];
-    NSMutableArray * arr = [[NSMutableArray alloc] init];
+    _arr = [[NSMutableArray alloc] init];
     
-    MapViewController * mv = [[MapViewController alloc] init];
-    arr = [mv dijkstra:mg from:pointA to:pointB];
-    for (int i = 0; i < [arr count]; i++) {
-        Node * n = [arr objectAtIndex:i];
+    _mv = [[MapViewController alloc] init];
+    _arr = [_mv dijkstra:mg from:pointA to:pointB];
+    for (int i = 0; i < [_arr count]; i++) {
+        Node * n = [_arr objectAtIndex:i];
         NSLog(@"%@", n.id);
     }
     
-    /*UIImage * image = [UIImage imageNamed:@"top.png"];
-    _path.image = [mv nextDirection:arr image:image];*/
+    self.nextImage.maximumValue = ([_arr count] - 2);
     
-   
+    Node * n1 = [_arr objectAtIndex:0];
     
+    Node * n2 = [_arr objectAtIndex:1];
     
+    UIImage * image = [UIImage imageNamed:@"top.png"];
+    _path.image = [_mv drawPathFromSource: n1 Destination:n2 image:image];
     
 }
 
@@ -54,6 +50,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)stepperValueChanged:(UIStepper *)sender
+{
+    NSUInteger value = sender.value;
+    Node * n1 = [_arr objectAtIndex:value];
+    Node * n2 = [_arr objectAtIndex:value+1];
+    UIImage * image = [UIImage imageNamed:@"top.png"];
+    _path.image = [_mv drawPathFromSource: n1 Destination:n2 image:image];
+    
+}
+
+
+
 
 
 @end

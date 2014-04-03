@@ -144,6 +144,28 @@ const integer_t INFINIT = FLT_MAX;
     //display text
 }
 
+/*
+ * Draws the path from node1 to node2 on the image being supplied.
+ * Returns image.
+ */
+- (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image
+{
+    Node *node1 = source;
+    Node *node2 = destination;
+    
+    // change image based on zCoord
+    
+    CGPoint points[2];
+    points[0].x = node1.xCoordinate * 603 / 701;
+    points[0].y = node1.yCoordinate * 631 / 725;
+    points[1].x = node2.xCoordinate * 603 / 701;
+    points[1].y = node2.yCoordinate * 631 / 725;
+    
+    return [self drawLineSegments:points count:2 image:image];
+    
+    //NSString *text = [NSString stringWithFormat:@"Go towards %@", node2.id];
+    //display text
+}
 
 - (UIImage *)drawLineSegments:(CGPoint *)points count:(size_t)count image:(UIImage *)image
 {

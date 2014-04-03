@@ -54,12 +54,16 @@
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Xiu-d6-FH8">
                                 <rect key="frame" x="206" y="93" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="aBc-ok-hIC" eventType="valueChanged" id="1nm-YN-xcN"/>
+                                </connections>
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Navigate" id="a7p-DH-VfU"/>
                     <connections>
+                        <outlet property="nextImage" destination="Xiu-d6-FH8" id="OfC-pN-cPV"/>
                         <outlet property="path" destination="c6G-Bz-JOy" id="jYO-QK-xIr"/>
                     </connections>
                 </viewController>

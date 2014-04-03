@@ -18,4 +18,6 @@
 
 - (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image;
 
+- (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image;
+
 @end

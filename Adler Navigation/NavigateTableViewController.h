@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapViewController.h"
+
 
 @interface NavigateTableViewController : UIViewController
 @property (strong, nonatomic) NSString * source;
 @property (strong, nonatomic) NSString * destination;
+@property (strong, nonatomic) NSMutableArray * arr;
 @property (strong, nonatomic) IBOutlet UIImageView *path;
+@property (strong, nonatomic) IBOutlet UIStepper *nextImage;
+@property (strong, atomic) MapViewController * mv;
+
+- (IBAction)stepperValueChanged:(UIStepper *)sender;
 
 @end
