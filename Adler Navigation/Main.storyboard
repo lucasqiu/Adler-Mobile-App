@@ -102,6 +102,25 @@
             </objects>
             <point key="canvasLocation" x="3796" y="378"/>
         </scene>
+        <!--View Controller - Hours-->
+        <scene sceneID="oRm-4d-GQN">
+            <objects>
+                <viewController id="c2f-CT-tsW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cWl-gF-EP4"/>
+                        <viewControllerLayoutGuide type="bottom" id="MH6-LB-tFQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pWb-aJ-zHx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hours" id="jU3-Yd-GYv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUa-wT-tuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3800" y="1031"/>
+        </scene>
         <!--Map Floor View Controller - Pick Floor-->
         <scene sceneID="oic-jB-690">
             <objects>
@@ -132,7 +151,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7A-ES-I3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3796" y="1060"/>
+            <point key="canvasLocation" x="5812" y="-304"/>
         </scene>
         <!--Facilities View Controller - Facilities-->
         <scene sceneID="9aO-vk-ys7">
@@ -199,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFN-o9-dzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4248" y="1060"/>
+            <point key="canvasLocation" x="6452" y="-304"/>
         </scene>
         <!--Each Floor View Controller - Exhibits-->
         <scene sceneID="z47-GP-Txz">
@@ -275,10 +294,23 @@
                                     <segue destination="aBc-ok-hIC" kind="push" identifier="Navigate" id="X99-HO-Ayy"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QY9-2L-fRO">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="View Maps" width="303" id="Jpy-bQ-HNw">
+                                        <connections>
+                                            <segue destination="MAT-3b-L0V" kind="push" id="M2l-dJ-WWO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Navigation" id="Zpu-3T-ACe"/>
+                    <navigationItem key="navigationItem" title="Navigation" id="Zpu-3T-ACe">
+                        <barButtonItem key="backBarButtonItem" title="Navigation" id="27c-lS-ZFE"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="destination" destination="C7z-GM-WKD" id="lN0-py-ljj"/>
                         <outlet property="source" destination="srR-rB-4QV" id="y5X-xe-QVf"/>
@@ -304,19 +336,19 @@
                                 <rect key="frame" x="0.0" y="519" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Navigation" width="86" id="HFL-RH-FDf">
+                                    <barButtonItem title="Navigation" id="HFL-RH-FDf">
                                         <connections>
                                             <segue destination="Ubn-9S-Wlv" kind="push" id="19w-zU-qJL"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Exhibits" width="69" id="Hc6-Ds-VVg">
+                                    <barButtonItem title="Exhibits" id="Hc6-Ds-VVg">
                                         <connections>
                                             <segue destination="y1V-Gn-vxM" kind="push" id="pcl-tE-7kI"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Maps" id="PRO-dg-052">
+                                    <barButtonItem title="Hours" id="PRO-dg-052">
                                         <connections>
-                                            <segue destination="MAT-3b-L0V" kind="push" id="p2y-ht-pVD"/>
+                                            <segue destination="c2f-CT-tsW" kind="push" id="6jq-ku-9l5"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Facilities" id="ral-0Y-b84">
@@ -342,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKa-kw-SmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3163" y="747"/>
+            <point key="canvasLocation" x="3187" y="649"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e0d-fd-vcu">
@@ -360,7 +392,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9c-Ue-jE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="753"/>
+            <point key="canvasLocation" x="2549" y="649"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

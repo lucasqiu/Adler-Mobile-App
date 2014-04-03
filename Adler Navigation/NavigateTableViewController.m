@@ -27,7 +27,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     MapGraph * mg = [[MapGraph alloc] init];
-    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"top" ofType:@"plist"];
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
     [mg createGraphFromFile:filePath];
     Node* pointA =  [mg getNodeById:_source];
     Node* pointB = [mg getNodeById:_destination];
@@ -40,8 +40,8 @@
         NSLog(@"%@", n.id);
     }
     
-    UIImage * image = [UIImage imageNamed:@"top.png"];
-    _path.image = [mv nextDirection:arr image:image];
+    /*UIImage * image = [UIImage imageNamed:@"top.png"];
+    _path.image = [mv nextDirection:arr image:image];*/
     
    
     

@@ -19,45 +19,23 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSLog(@"%@", _data);
     NSArray * exhibits = [[NSArray alloc] init];
     _exhibits_to_display = [[NSMutableArray alloc] init];
-    if ([_data  isEqual: @"Top Floor"]) {
-        NSString *myPlistFilePath = [[NSBundle mainBundle] pathForResource: @"top" ofType: @"plist"];
-        exhibits = [NSArray arrayWithContentsOfFile: myPlistFilePath];
-    }
-    
-    else if ([_data  isEqual: @"Mid Floor"]) {
-        NSString *myPlistFilePath = [[NSBundle mainBundle] pathForResource: @"mid" ofType: @"plist"];
-        exhibits = [NSArray arrayWithContentsOfFile: myPlistFilePath];
-    }
-    
-    else if ([_data  isEqual: @"Lower Floor"]) {
-        NSString *myPlistFilePath = [[NSBundle mainBundle] pathForResource: @"lower" ofType: @"plist"];
-        exhibits = [NSArray arrayWithContentsOfFile: myPlistFilePath];
-    }
-    
-    else if ([_data  isEqual: @"Star"]) {
-        NSString *myPlistFilePath = [[NSBundle mainBundle] pathForResource: @"star" ofType: @"plist"];
-        exhibits = [NSArray arrayWithContentsOfFile: myPlistFilePath];
-    }
 
-
+    NSString *myPlistFilePath = [[NSBundle mainBundle] pathForResource: @"map_data_all" ofType: @"plist"];
+    exhibits = [NSArray arrayWithContentsOfFile: myPlistFilePath];
 
     
         int counter = 0;
         for (int i = 0; i < [exhibits count]; i++) {
-            NSString * checkToDisplay = [exhibits[i] objectForKey:@"uid"];
-            if ([checkToDisplay rangeOfString:@"exit"].location == NSNotFound && [checkToDisplay rangeOfString:@"travel"].location == NSNotFound && [checkToDisplay rangeOfString:@"enter"].location == NSNotFound) {
-                _exhibits_to_display[counter] = checkToDisplay;
-                counter++;
+            BOOL checkIfSourceOrDestination = [[exhibits[i] objectForKey:@"isSourceOrDestination"] boolValue];
+            NSString * checkForFloor = [exhibits[i] objectForKey:@"floor"];
+            if ([checkForFloor isEqualToString:_data]) {
+                if (checkIfSourceOrDestination) {
+                    _exhibits_to_display[counter] = [exhibits[i] objectForKey:@"uid"];
+                    counter++;
+                }
             }
-            
         }
 
     

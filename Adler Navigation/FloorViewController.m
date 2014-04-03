@@ -89,16 +89,16 @@
         
         NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
         if (myIndexPath.row == 0) {
-            ViewController.data = @"Top Floor";
+            ViewController.data = @"top";
         }
         if (myIndexPath.row == 1) {
-            ViewController.data = @"Mid Floor";
+            ViewController.data = @"mid";
         }
         if (myIndexPath.row == 2) {
-            ViewController.data = @"Lower Floor";
+            ViewController.data = @"lower";
         }
         if (myIndexPath.row == 3) {
-            ViewController.data = @"Star";
+            ViewController.data = @"star";
         }
         
     }
