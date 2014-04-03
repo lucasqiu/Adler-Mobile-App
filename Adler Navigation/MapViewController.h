@@ -14,10 +14,10 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-- (NSMutableArray*) dijkstra: (MapGraph *)graph  from:(Node *)source to:(Node *)goal;
++ (NSMutableArray*) dijkstra: (MapGraph *)graph  from:(Node *)source to:(Node *)goal;
 
-- (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image;
++ (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image;
 
-- (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image;
++ (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image;
 
 @end
