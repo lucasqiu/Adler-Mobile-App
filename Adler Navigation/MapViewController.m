@@ -55,7 +55,7 @@ const integer_t INFINIT = FLT_MAX;
  * Find the shortest path between the source and the goal node.
  * Return a list of nodes in the order from source to goal.
  */
-- (NSMutableArray *) dijkstra:     (MapGraph *)graph  from:(Node *)source to:(Node *)goal
++ (NSMutableArray *) dijkstra:     (MapGraph *)graph  from:(Node *)source to:(Node *)goal
 {
     if( (!graph) || (!source) || (!goal) ){
         [NSException raise:@"Nil parameters exist!\n" format:@"Parameters nil."];
@@ -124,7 +124,7 @@ const integer_t INFINIT = FLT_MAX;
  * Draws the next direction and places the text direction on the view.
  * Removes the used Nodes from path.
  */
-- (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image
++ (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image
 {
     Node *node1 = [path firstObject];
     Node *node2 = [path objectAtIndex:1];
@@ -148,7 +148,7 @@ const integer_t INFINIT = FLT_MAX;
  * Draws the path from node1 to node2 on the image being supplied.
  * Returns image.
  */
-- (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image
++ (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image
 {
     Node *node1 = source;
     Node *node2 = destination;
@@ -167,7 +167,7 @@ const integer_t INFINIT = FLT_MAX;
     //display text
 }
 
-- (UIImage *)drawLineSegments:(CGPoint *)points count:(size_t)count image:(UIImage *)image
++ (UIImage *)drawLineSegments:(CGPoint *)points count:(size_t)count image:(UIImage *)image
 {
     //[sender setTitle:@"test" forState:UIControlStateNormal];
     

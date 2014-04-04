@@ -98,7 +98,7 @@ Edge *e13;
 - (void)testAdjacent
 {
     NSSet *adjacent = [g getAdjacentNodes:n1];
-    NSSet *expected = [NSSet setWithObjects:e12, e13, nil];
+    NSSet *expected = [NSSet setWithObjects:e12, nil];
     
     XCTAssertEqual([adjacent count], [expected count]);
     

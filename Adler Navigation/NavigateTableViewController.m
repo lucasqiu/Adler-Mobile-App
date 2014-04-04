@@ -27,8 +27,7 @@
     Node* pointB = [mg getNodeById:_destination];
     _arr = [[NSMutableArray alloc] init];
     
-    _mv = [[MapViewController alloc] init];
-    _arr = [_mv dijkstra:mg from:pointA to:pointB];
+    _arr = [MapViewController dijkstra:mg from:pointA to:pointB];
     for (int i = 0; i < [_arr count]; i++) {
         Node * n = [_arr objectAtIndex:i];
         NSLog(@"%@", n.id);
@@ -41,7 +40,7 @@
     Node * n2 = [_arr objectAtIndex:1];
     
     UIImage * image = [UIImage imageNamed:@"top.png"];
-    _path.image = [_mv drawPathFromSource: n1 Destination:n2 image:image];
+    _path.image = [MapViewController drawPathFromSource: n1 Destination:n2 image:image];
     
 }
 
@@ -57,7 +56,7 @@
     Node * n1 = [_arr objectAtIndex:value];
     Node * n2 = [_arr objectAtIndex:value+1];
     UIImage * image = [UIImage imageNamed:@"top.png"];
-    _path.image = [_mv drawPathFromSource: n1 Destination:n2 image:image];
+    _path.image = [MapViewController drawPathFromSource: n1 Destination:n2 image:image];
     
 }
 
