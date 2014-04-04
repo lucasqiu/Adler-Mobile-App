@@ -13,7 +13,7 @@
 @property (nonatomic) NSString *id;
 @property (nonatomic) float xCoordinate;
 @property (nonatomic) float yCoordinate;
-@property (nonatomic) float zCoordinate;
+@property (nonatomic) NSString * floor;
 @property (nonatomic) BOOL isSourceOrDestination;
 @property (nonatomic) NSString *location;
 

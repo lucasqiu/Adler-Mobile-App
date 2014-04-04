@@ -12,9 +12,12 @@
 
 - (float)distance
 {
-    return sqrtf( pow(_node1.xCoordinate-_node2.xCoordinate,2) +
-                 pow(_node1.yCoordinate-_node2.yCoordinate,2) +
-                 pow(_node1.zCoordinate-_node2.zCoordinate,2) );
+    int z = 1;
+    if ([_node1.floor isEqualToString:_node2.floor]) {
+        z = 0;
+    }
+    return (sqrtf( pow(_node1.xCoordinate-_node2.xCoordinate,2) +
+                 pow(_node1.yCoordinate-_node2.yCoordinate,2) ) + z);
 }
 
 - (BOOL)isEqual:(id)other

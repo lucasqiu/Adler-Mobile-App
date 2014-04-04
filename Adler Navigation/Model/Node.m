@@ -15,7 +15,7 @@
     copyNode.id = [_id copy];
     copyNode.xCoordinate = _xCoordinate;
     copyNode.yCoordinate = _yCoordinate;
-    copyNode.zCoordinate = _zCoordinate;
+    copyNode.floor = _floor;
     return copyNode;
 }
 
@@ -32,7 +32,7 @@
 - (BOOL)isEqualToNode:(Node *)otherNode{
     return _xCoordinate == otherNode.xCoordinate
             && _yCoordinate == otherNode.yCoordinate
-            && _zCoordinate == otherNode.zCoordinate;
+            && [_floor isEqualToString:otherNode.floor];
 }
 
 - (NSUInteger)hash{
@@ -41,7 +41,9 @@
     
     hash = hash * prime + _xCoordinate;
     hash = hash * prime + _yCoordinate;
-    hash = hash * prime + _zCoordinate;
+    for (int i = 0; i <[_floor length]; i++) {
+        hash = hash * prime + [_floor characterAtIndex:i];
+    }
     
     return hash;
 }
