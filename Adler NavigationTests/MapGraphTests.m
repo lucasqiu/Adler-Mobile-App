@@ -76,7 +76,7 @@ Edge *e13;
     Node *n = [[Node alloc] init];
     n.xCoordinate = 101;
     n.yCoordinate = 101;
-    n.zCoordinate = 101;
+    n.floor = @"top";
     XCTAssertNil([g.adjacencyMatrix objectForKey:n]);
     
 }
@@ -86,7 +86,7 @@ Edge *e13;
     Node *n = [[Node alloc] init];
     n.xCoordinate = 102;
     n.yCoordinate = 102;
-    n.zCoordinate = 102;
+    n.floor = @"mid";
     n.id = @"test";
     
     XCTAssertNil([g getNodeById:n.id]);
