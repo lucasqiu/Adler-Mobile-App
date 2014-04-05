@@ -261,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				30E50259183607E100BCDA41 /* Adler Navigation */,
+				30E5025A183607E100BCDA41 /* Supporting Files */,
 				30E50276183607E100BCDA41 /* Adler NavigationTests */,
 				30E50250183607E100BCDA41 /* Frameworks */,
 				30E5024F183607E100BCDA41 /* Products */,
@@ -318,7 +319,6 @@
 				30E502861836080B00BCDA41 /* Model */,
 				30E50268183607E100BCDA41 /* Images.xcassets */,
 				30E50265183607E100BCDA41 /* Adler_Navigation.xcdatamodeld */,
-				30E5025A183607E100BCDA41 /* Supporting Files */,
 			);
 			path = "Adler Navigation";
 			sourceTree = "<group>";
@@ -335,6 +335,7 @@
 				30E50261183607E100BCDA41 /* Adler Navigation-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = "Adler Navigation";
 			sourceTree = "<group>";
 		};
 		30E50276183607E100BCDA41 /* Adler NavigationTests */ = {
