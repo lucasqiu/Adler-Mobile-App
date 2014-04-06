@@ -15,6 +15,7 @@
 		<integer>441</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel14</string>
 			<string>Men&apos;s Restroom</string>
 			<string>Astronomy in Culture</string>
 		</array>
@@ -49,6 +50,7 @@
 		<integer>176</integer>
 		<key>adjacent</key>
 		<array>
+			<string>cyberspace_exit</string>
 			<string>Cyberspace</string>
 			<string>travel3</string>
 			<string>travel4</string>
@@ -144,6 +146,7 @@
 		<integer>452</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel19</string>
 			<string>Women&apos;s Restroom</string>
 			<string>Telescopes</string>
 			<string>womens_restroom_exit</string>
@@ -195,6 +198,7 @@
 		<integer>242</integer>
 		<key>adjacent</key>
 		<array>
+			<string>left_exit</string>
 			<string>travel1</string>
 			<string>travel2</string>
 		</array>
@@ -212,7 +216,7 @@
 		<integer>156</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Cyberspace</string>
+			<string>Citizen Science</string>
 			<string>travel3</string>
 			<string>travel2</string>
 		</array>
@@ -347,6 +351,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel7</string>
+			<string>South Stairs</string>
 		</array>
 	</dict>
 	<dict>
@@ -362,6 +367,7 @@
 		<integer>242</integer>
 		<key>adjacent</key>
 		<array>
+			<string>right_exit</string>
 			<string>travel5</string>
 			<string>travel6</string>
 		</array>
@@ -415,6 +421,8 @@
 		<integer>74</integer>
 		<key>adjacent</key>
 		<array>
+			<string>cafe_galileo_exit</string>
+			<string>cyberspace_exit</string>
 			<string>travel8</string>
 		</array>
 	</dict>
@@ -498,6 +506,8 @@
 		<integer>85</integer>
 		<key>adjacent</key>
 		<array>
+			<string>the_universe_exit</string>
+			<string>planet_explorers_exit</string>
 			<string>travel10</string>
 		</array>
 	</dict>
@@ -616,6 +626,7 @@
 		<integer>195</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Education Pavilion</string>
 			<string>Unknown Restroom 4</string>
 			<string>travel13</string>
 			<string>travel10</string>
@@ -669,6 +680,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>South Entrance</string>
+			<string>South Elevator</string>
 			<string>travel12</string>
 		</array>
 	</dict>
@@ -718,6 +730,8 @@
 		<integer>278</integer>
 		<key>adjacent</key>
 		<array>
+			<string>sky_theater_exit</string>
+			<string>womens_restroom_exit</string>
 			<string>South Elevator</string>
 		</array>
 	</dict>
@@ -736,6 +750,7 @@
 		<integer>46</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel0</string>
 			<string>travel15</string>
 		</array>
 	</dict>
@@ -803,7 +818,7 @@
 		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
-			<string>star_theather_enter</string>
+			<string>star_theater_enter</string>
 			<string>star_theater_exit</string>
 		</array>
 	</dict>
@@ -811,7 +826,7 @@
 		<key>isSourceOrDestination</key>
 		<false/>
 		<key>uid</key>
-		<string>star_theather_enter</string>
+		<string>star_theater_enter</string>
 		<key>floor</key>
 		<string>star</string>
 		<key>x</key>
@@ -838,7 +853,7 @@
 		<integer>290</integer>
 		<key>adjacent</key>
 		<array>
-			<string>star_theather_enter</string>
+			<string>star_theater_enter</string>
 			<string>travel18</string>
 		</array>
 	</dict>
@@ -872,6 +887,7 @@
 		<integer>46</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel7</string>
 			<string>travel18</string>
 		</array>
 	</dict>
@@ -913,7 +929,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel21</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>262</integer>
@@ -930,7 +946,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel22</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>290</integer>
@@ -947,7 +963,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel23</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>349</integer>
@@ -964,7 +980,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel24</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>349</integer>
@@ -972,7 +988,6 @@
 		<integer>379</integer>
 		<key>adjacent</key>
 		<array>
-			<string>travel23</string>
 			<string>travel25</string>
 			<string>travel35</string>
 			<string>Shoot For The Moon</string>
@@ -983,7 +998,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel25</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>333</integer>
@@ -1002,7 +1017,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel26</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>253</integer>
@@ -1021,7 +1036,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel27</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>169</integer>
@@ -1038,7 +1053,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel28</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>448</integer>
@@ -1055,7 +1070,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel29</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>448</integer>
@@ -1073,7 +1088,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel30</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>391</integer>
@@ -1091,7 +1106,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel31</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>416</integer>
@@ -1109,7 +1124,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel32</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>611</integer>
@@ -1126,7 +1141,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel33</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>530</integer>
@@ -1143,7 +1158,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel34</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>237</integer>
@@ -1151,7 +1166,7 @@
 		<integer>422</integer>
 		<key>adjacent</key>
 		<array>
-			<string>travel30</string>
+			<string>travel20</string>
 			<string>cafe_galileo_exit</string>
 		</array>
 	</dict>
@@ -1160,7 +1175,7 @@
 		<false/>
 		<key>uid</key>
 		<string>travel35</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>268</integer>
@@ -1177,7 +1192,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Rainbow Lobby</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>352</integer>
@@ -1195,7 +1210,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Coat Check</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>288</integer>
@@ -1212,7 +1227,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Welcome Gallery</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>228</integer>
@@ -1230,7 +1245,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Sky Theater</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>352</integer>
@@ -1246,7 +1261,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Shoot For The Moon</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>398</integer>
@@ -1263,7 +1278,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Cafe Galileo</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>64</integer>
@@ -1279,7 +1294,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Our Solar System</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>210</integer>
@@ -1296,7 +1311,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Planet Explorers</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>473</integer>
@@ -1313,7 +1328,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Adler Store</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>617</integer>
@@ -1330,7 +1345,7 @@
 		<false/>
 		<key>uid</key>
 		<string>rainbow_lobby_exit</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>411</integer>
@@ -1346,7 +1361,7 @@
 		<false/>
 		<key>uid</key>
 		<string>sky_theater_exit</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>489</integer>
@@ -1354,6 +1369,7 @@
 		<integer>530</integer>
 		<key>adjacent</key>
 		<array>
+			<string>South Stairs</string>
 			<string>travel29</string>
 		</array>
 	</dict>
@@ -1362,7 +1378,7 @@
 		<false/>
 		<key>uid</key>
 		<string>planet_explorers_exit</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>497</integer>
@@ -1370,6 +1386,7 @@
 		<integer>389</integer>
 		<key>adjacent</key>
 		<array>
+			<string>right_exit</string>
 			<string>travel31</string>
 			<string>travel33</string>
 		</array>
@@ -1379,7 +1396,7 @@
 		<false/>
 		<key>uid</key>
 		<string>cafe_galileo_exit</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>204</integer>
@@ -1387,6 +1404,7 @@
 		<integer>390</integer>
 		<key>adjacent</key>
 		<array>
+			<string>left_exit</string>
 			<string>travel26</string>
 			<string>travel34</string>
 			<string>travel27</string>
@@ -1397,7 +1415,7 @@
 		<true/>
 		<key>uid</key>
 		<string>Main Entrance</string>
-        <key>floor</key>
+		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
 		<integer>352</integer>
