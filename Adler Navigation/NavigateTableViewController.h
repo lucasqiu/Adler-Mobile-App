@@ -14,8 +14,9 @@
 @property (strong, nonatomic) NSString * source;
 @property (strong, nonatomic) NSString * destination;
 @property (strong, nonatomic) NSMutableArray * arr;
-@property (strong, nonatomic) IBOutlet UIImageView *path;
+@property (strong, nonatomic) IBOutlet UIWebView *path;
 @property (strong, nonatomic) IBOutlet UIStepper *nextImage;
+@property (nonatomic) CGPDFPageRef page;
 
 - (IBAction)stepperValueChanged:(UIStepper *)sender;
 

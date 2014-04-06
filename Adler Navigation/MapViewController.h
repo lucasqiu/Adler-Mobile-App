@@ -14,10 +14,12 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+// TODO: Move these to NavigateTableViewController
+
 + (NSMutableArray*) dijkstra: (MapGraph *)graph  from:(Node *)source to:(Node *)goal;
 
-+ (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image;
++ (NSMutableData *)drawPathFromSource: (Node*) source Destination: (Node*) destination onPDF:(CGPDFPageRef)page;
 
-+ (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image;
++ (NSMutableData *)drawLineSegments:(CGPoint *)points count:(size_t)count onPDF:(CGPDFPageRef)page;
 
 @end

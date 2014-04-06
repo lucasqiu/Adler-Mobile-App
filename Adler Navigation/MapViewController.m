@@ -119,65 +119,48 @@ const integer_t INFINIT = FLT_MAX;
 }
 
 
-
-/*
- * Draws the next direction and places the text direction on the view.
- * Removes the used Nodes from path.
- */
-+ (UIImage *)nextDirection:(NSMutableArray *)path image:(UIImage *)image
-{
-    Node *node1 = [path firstObject];
-    Node *node2 = [path objectAtIndex:1];
-    [path removeObjectAtIndex:0];
-    
-    // change image based on zCoord
-    
-    CGPoint points[2];
-    points[0].x = node1.xCoordinate * 603 / 701;
-    points[0].y = node1.yCoordinate * 631 / 725;
-    points[1].x = node2.xCoordinate * 603 / 701;
-    points[1].y = node2.yCoordinate * 631 / 725;
-    
-    return [self drawLineSegments:points count:2 image:image];
-    
-    //NSString *text = [NSString stringWithFormat:@"Go towards %@", node2.id];
-    //display text
-}
-
 /*
  * Draws the path from node1 to node2 on the image being supplied.
- * Returns image.
+ * Returns pdf in data array.
  */
-+ (UIImage *)drawPathFromSource: (Node*) source Destination: (Node*) destination image:(UIImage *)image
++ (NSMutableData *)drawPathFromSource: (Node*) source Destination: (Node*) destination onPDF:(CGPDFPageRef)page
 {
     Node *node1 = source;
     Node *node2 = destination;
     
-    // change image based on zCoord
-    
     CGPoint points[2];
-    points[0].x = node1.xCoordinate * 603 / 701;
-    points[0].y = node1.yCoordinate * 631 / 725;
-    points[1].x = node2.xCoordinate * 603 / 701;
-    points[1].y = node2.yCoordinate * 631 / 725;
+    points[0].x = node1.xCoordinate;
+    points[0].y = node1.yCoordinate;
+    points[1].x = node2.xCoordinate;
+    points[1].y = node2.yCoordinate;
     
-    return [self drawLineSegments:points count:2 image:image];
+    return [self drawLineSegments:points count:2  onPDF:page];
     
     //NSString *text = [NSString stringWithFormat:@"Go towards %@", node2.id];
     //display text
 }
 
-+ (UIImage *)drawLineSegments:(CGPoint *)points count:(size_t)count image:(UIImage *)image
++ (NSMutableData *)drawLineSegments:(CGPoint *)points count:(size_t)count onPDF:(CGPDFPageRef)page
 {
-    //[sender setTitle:@"test" forState:UIControlStateNormal];
+    CGRect pageRect = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
     
-    UIGraphicsBeginImageContext(image.size);
-    
-	// draw original image into the context
-	[image drawAtPoint:CGPointZero];
+    NSMutableData *data = [[NSMutableData alloc] init];
+    UIGraphicsBeginPDFContextToData(data, CGRectZero, nil);
+    UIGraphicsBeginPDFPageWithInfo(pageRect, nil);
     
 	// get the context for CoreGraphics
 	CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    // flip coordinates
+    CGContextTranslateCTM(ctx, 0.0, pageRect.size.height);
+    CGContextScaleCTM(ctx, 1.0, -1.0);
+    
+	// draw original image into the context
+	CGContextDrawPDFPage(ctx, page);
+    
+    // reset coordinates
+    CGContextScaleCTM(ctx, 1.0, -1.0);
+    CGContextTranslateCTM(ctx, 0.0, pageRect.size.height * -1);
     
 	// set stroking color and draw lines
 	[[UIColor redColor] setStroke];
@@ -186,13 +169,10 @@ const integer_t INFINIT = FLT_MAX;
     
     CGContextStrokeLineSegments(ctx, points, count);
     
-	// make image out of bitmap context
-	UIImage *retImage = UIGraphicsGetImageFromCurrentImageContext();
+	// save the image and free the context
+	UIGraphicsEndPDFContext();
     
-	// free the context
-	UIGraphicsEndImageContext();
-    
-    return retImage;
+    return data;
 }
 
 @end

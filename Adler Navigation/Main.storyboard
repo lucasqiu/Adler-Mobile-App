@@ -47,15 +47,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6G-Bz-JOy">
-                                <rect key="frame" x="0.0" y="70" width="320" height="506"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Xiu-d6-FH8">
-                                <rect key="frame" x="206" y="93" width="94" height="29"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FSK-sX-ce6">
+                                <rect key="frame" x="0.0" y="117" width="320" height="451"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6UP-05-I7G">
+                                <rect key="frame" x="213" y="80" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <action selector="stepperValueChanged:" destination="aBc-ok-hIC" eventType="valueChanged" id="1nm-YN-xcN"/>
+                                    <action selector="stepperValueChanged:" destination="aBc-ok-hIC" eventType="valueChanged" id="yCG-LQ-yPm"/>
                                 </connections>
                             </stepper>
                         </subviews>
@@ -63,8 +64,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Navigate" id="a7p-DH-VfU"/>
                     <connections>
-                        <outlet property="nextImage" destination="Xiu-d6-FH8" id="OfC-pN-cPV"/>
-                        <outlet property="path" destination="c6G-Bz-JOy" id="jYO-QK-xIr"/>
+                        <outlet property="nextImage" destination="6UP-05-I7G" id="FjV-BF-opY"/>
+                        <outlet property="path" destination="FSK-sX-ce6" id="5g9-Ph-zH5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Y1-7d-vjB" userLabel="First Responder" sceneMemberID="firstResponder"/>

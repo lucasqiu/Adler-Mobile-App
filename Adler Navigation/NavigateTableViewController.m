@@ -39,9 +39,15 @@
     
     Node * n2 = [_arr objectAtIndex:1];
     
-    UIImage * image = [UIImage imageNamed:@"top.png"];
-    _path.image = [MapViewController drawPathFromSource: n1 Destination:n2 image:image];
+    // Get the pdf image of the current floor. TODO: change "top" to n1.floor
+    NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"top" ofType: @"pdf"];
+    NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+    CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
+    _page = CGPDFDocumentGetPage(document, 1);
     
+    NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+    
+    [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,13 +61,9 @@
     NSUInteger value = sender.value;
     Node * n1 = [_arr objectAtIndex:value];
     Node * n2 = [_arr objectAtIndex:value+1];
-    UIImage * image = [UIImage imageNamed:@"top.png"];
-    _path.image = [MapViewController drawPathFromSource: n1 Destination:n2 image:image];
+    NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2  onPDF:_page];
     
+    [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
 }
-
-
-
-
 
 @end
