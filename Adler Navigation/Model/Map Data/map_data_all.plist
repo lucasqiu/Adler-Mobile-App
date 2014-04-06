@@ -15,6 +15,7 @@
 		<integer>441</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel14</string>
 			<string>Men&apos;s Restroom</string>
 			<string>Astronomy in Culture</string>
 		</array>
@@ -145,6 +146,7 @@
 		<integer>452</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel19</string>
 			<string>Women&apos;s Restroom</string>
 			<string>Telescopes</string>
 			<string>womens_restroom_exit</string>
@@ -196,6 +198,7 @@
 		<integer>242</integer>
 		<key>adjacent</key>
 		<array>
+			<string>left_exit</string>
 			<string>travel1</string>
 			<string>travel2</string>
 		</array>
@@ -348,6 +351,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel7</string>
+			<string>South Stairs</string>
 		</array>
 	</dict>
 	<dict>
@@ -363,6 +367,7 @@
 		<integer>242</integer>
 		<key>adjacent</key>
 		<array>
+			<string>right_exit</string>
 			<string>travel5</string>
 			<string>travel6</string>
 		</array>
@@ -416,6 +421,8 @@
 		<integer>74</integer>
 		<key>adjacent</key>
 		<array>
+			<string>cafe_galileo_exit</string>
+			<string>cyberspace_exit</string>
 			<string>travel8</string>
 		</array>
 	</dict>
@@ -499,6 +506,8 @@
 		<integer>85</integer>
 		<key>adjacent</key>
 		<array>
+			<string>the_universe_exit</string>
+			<string>planet_explorers_exit</string>
 			<string>travel10</string>
 		</array>
 	</dict>
@@ -721,6 +730,8 @@
 		<integer>278</integer>
 		<key>adjacent</key>
 		<array>
+			<string>sky_theater_exit</string>
+			<string>womens_restroom_exit</string>
 			<string>South Elevator</string>
 		</array>
 	</dict>
@@ -739,6 +750,7 @@
 		<integer>46</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel0</string>
 			<string>travel15</string>
 		</array>
 	</dict>
@@ -875,6 +887,7 @@
 		<integer>46</integer>
 		<key>adjacent</key>
 		<array>
+			<string>travel7</string>
 			<string>travel18</string>
 		</array>
 	</dict>
@@ -1356,6 +1369,7 @@
 		<integer>530</integer>
 		<key>adjacent</key>
 		<array>
+			<string>South Stairs</string>
 			<string>travel29</string>
 		</array>
 	</dict>
@@ -1372,6 +1386,7 @@
 		<integer>389</integer>
 		<key>adjacent</key>
 		<array>
+			<string>right_exit</string>
 			<string>travel31</string>
 			<string>travel33</string>
 		</array>
@@ -1389,6 +1404,7 @@
 		<integer>390</integer>
 		<key>adjacent</key>
 		<array>
+			<string>left_exit</string>
 			<string>travel26</string>
 			<string>travel34</string>
 			<string>travel27</string>
