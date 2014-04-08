@@ -10,6 +10,7 @@
 #import "MapGraph.h"
 #import "Node.h"
 
+
 @interface NavigateTableViewController ()
 
 @end
@@ -18,6 +19,11 @@
 
 - (void)viewDidLoad
 {
+    
+   // [_nextImage setTintColor:[UIColor blueColor]];
+   // [_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
+   // [_nextImage setDecrementImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
+
     [super viewDidLoad];
 
     MapGraph * mg = [[MapGraph alloc] init];
@@ -39,15 +45,83 @@
     
     Node * n2 = [_arr objectAtIndex:1];
     
-    // Get the pdf image of the current floor. TODO: change "top" to n1.floor
-    NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"top" ofType: @"pdf"];
-    NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
-    CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
-    _page = CGPDFDocumentGetPage(document, 1);
+    NSInteger sourceFloorLevel = 0;
+    NSInteger destinationFloorLevel = 0;
     
-    NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+    if ([n1.floor isEqualToString:n2.floor]) {
+        // Get the pdf image of the current floor. TODO: change "top" to n1.floor
+        NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:n1.floor ofType: @"pdf"];
+        NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+        CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
+        _page = CGPDFDocumentGetPage(document, 1);
+        
+        NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+        
+        [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+
+    }
     
-    [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+    else{
+        if ([n1.floor isEqualToString:@"top"]) {
+            sourceFloorLevel = 1;
+        }
+        else if ([n1.floor isEqualToString:@"mid"])
+        {
+            sourceFloorLevel = 2;
+        }
+        else if ([n1.floor isEqualToString:@"lower"])
+        {
+            sourceFloorLevel = 3;
+        }
+        else if ([n1.floor isEqualToString:@"star"])
+        {
+            sourceFloorLevel = 3;
+        }
+        
+        if ([n2.floor isEqualToString:@"top"]) {
+            destinationFloorLevel = 1;
+        }
+        else if ([n2.floor isEqualToString:@"mid"])
+        {
+            destinationFloorLevel = 2;
+        }
+        else if ([n2.floor isEqualToString:@"lower"])
+        {
+            destinationFloorLevel = 3;
+        }
+        else if ([n2.floor isEqualToString:@"star"])
+        {
+            destinationFloorLevel = 3;
+        }
+        
+        if ((sourceFloorLevel - destinationFloorLevel) < 0) {
+            NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"downstairs" ofType: @"pdf"];
+            NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+            CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
+            _page = CGPDFDocumentGetPage(document, 1);
+            
+            NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+            
+            [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+            
+
+        }
+        
+        else{
+            NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"upstairs" ofType: @"pdf"];
+            NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+            CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
+            _page = CGPDFDocumentGetPage(document, 1);
+            
+            NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+            
+            [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+            
+
+        }
+
+             
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,9 +135,84 @@
     NSUInteger value = sender.value;
     Node * n1 = [_arr objectAtIndex:value];
     Node * n2 = [_arr objectAtIndex:value+1];
-    NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2  onPDF:_page];
+    NSInteger sourceFloorLevel = 0;
+    NSInteger destinationFloorLevel = 0;
     
-    [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+    if ([n1.floor isEqualToString:n2.floor]) {
+        // Get the pdf image of the current floor. TODO: change "top" to n1.floor
+        NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:n1.floor ofType: @"pdf"];
+        NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+        CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
+        _page = CGPDFDocumentGetPage(document, 1);
+        
+        NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+        
+        [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+        
+    }
+    
+    else{
+        if ([n1.floor isEqualToString:@"top"]) {
+            sourceFloorLevel = 1;
+        }
+        else if ([n1.floor isEqualToString:@"mid"])
+        {
+            sourceFloorLevel = 2;
+        }
+        else if ([n1.floor isEqualToString:@"lower"])
+        {
+            sourceFloorLevel = 3;
+        }
+        else if ([n1.floor isEqualToString:@"star"])
+        {
+            sourceFloorLevel = 4;
+        }
+        
+        if ([n2.floor isEqualToString:@"top"]) {
+            destinationFloorLevel = 1;
+        }
+        else if ([n2.floor isEqualToString:@"mid"])
+        {
+            destinationFloorLevel = 2;
+        }
+        else if ([n2.floor isEqualToString:@"lower"])
+        {
+            destinationFloorLevel = 3;
+        }
+        else if ([n2.floor isEqualToString:@"star"])
+        {
+            destinationFloorLevel = 4;
+        }
+        
+        if ((sourceFloorLevel - destinationFloorLevel) < 0) {
+            NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"downstairs" ofType: @"pdf"];
+            NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+            CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
+            _page = CGPDFDocumentGetPage(document, 1);
+            
+            NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+            
+            [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+            
+            
+        }
+        
+        else{
+            NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"upstairs" ofType: @"pdf"];
+            NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+            CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
+            _page = CGPDFDocumentGetPage(document, 1);
+            
+            NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
+            
+            [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+            
+            
+        }
+        
+        
+    }
 }
+
 
 @end

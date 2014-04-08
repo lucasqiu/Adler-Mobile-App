@@ -84,8 +84,9 @@
 		72DF6DFC18F0BEE200B7B6F6 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DEA18F0BEE200B7B6F6 /* star.pdf */; };
 		72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */; };
 		72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DEE18F0BEE200B7B6F6 /* top.pdf */; };
-		72DF6E0218F0BEE200B7B6F6 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DF018F0BEE200B7B6F6 /* top.png */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
+		FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BD18F3692800319486 /* downstairs.pdf */; };
+		FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BE18F3692800319486 /* upstairs.pdf */; };
 		FE5C87E918D63449009E2CC2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* TableViewController.m */; };
 		FE5C87F718D634C3009E2CC2 /* EachFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */; };
 		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
@@ -194,8 +195,9 @@
 		72DF6DEA18F0BEE200B7B6F6 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = star.pdf; path = "Map Data/star.pdf"; sourceTree = "<group>"; };
 		72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top_paths.pdf; path = "Map Data/top_paths.pdf"; sourceTree = "<group>"; };
 		72DF6DEE18F0BEE200B7B6F6 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top.pdf; path = "Map Data/top.pdf"; sourceTree = "<group>"; };
-		72DF6DF018F0BEE200B7B6F6 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = top.png; path = "Map Data/top.png"; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE3AE8BD18F3692800319486 /* downstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = downstairs.pdf; sourceTree = "<group>"; };
+		FE3AE8BE18F3692800319486 /* upstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = upstairs.pdf; sourceTree = "<group>"; };
 		FE5C87E618D63449009E2CC2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachFloorViewController.h; sourceTree = "<group>"; };
 		FE5C87E818D63449009E2CC2 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -360,6 +362,8 @@
 		727A22EF18F0BA31005DF50E /* Map Data */ = {
 			isa = PBXGroup;
 			children = (
+				FE3AE8BD18F3692800319486 /* downstairs.pdf */,
+				FE3AE8BE18F3692800319486 /* upstairs.pdf */,
 				72DF6DE018F0BEE200B7B6F6 /* lower_paths.pdf */,
 				72DF6DE118F0BEE200B7B6F6 /* lower.pdf */,
 				72DF6DE318F0BEE200B7B6F6 /* map_data_all.plist */,
@@ -369,7 +373,6 @@
 				72DF6DEA18F0BEE200B7B6F6 /* star.pdf */,
 				72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */,
 				72DF6DEE18F0BEE200B7B6F6 /* top.pdf */,
-				72DF6DF018F0BEE200B7B6F6 /* top.png */,
 			);
 			name = "Map Data";
 			sourceTree = "<group>";
@@ -635,7 +638,6 @@
 				72DF6DBB18F0BECD00B7B6F6 /* long_description.txt in Resources */,
 				72DF6DF218F0BEE200B7B6F6 /* lower_paths.pdf in Resources */,
 				72DF6DF818F0BEE200B7B6F6 /* mid.pdf in Resources */,
-				72DF6E0218F0BEE200B7B6F6 /* top.png in Resources */,
 				72DF6DC718F0BECD00B7B6F6 /* img4.jpg in Resources */,
 				72DF6DCC18F0BECD00B7B6F6 /* img0.png in Resources */,
 				72DF6DF718F0BEE200B7B6F6 /* mid_paths.pdf in Resources */,
@@ -653,7 +655,9 @@
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 				72DF6DD918F0BECD00B7B6F6 /* img0.png in Resources */,
 				72DF6DD718F0BECD00B7B6F6 /* long_description.txt in Resources */,
+				FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */,
 				72DF6DB718F0BECD00B7B6F6 /* img0.jpg in Resources */,
+				FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */,
 				72DF6DB418F0BECD00B7B6F6 /* img0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
