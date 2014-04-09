@@ -23,7 +23,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _HomeImage.image =[UIImage imageNamed:@"Home.jpg"];
+    _HomeImage.image =[UIImage imageNamed:@"adlerHome.png"];
 }
 
 - (void)didReceiveMemoryWarning
