@@ -99,6 +99,7 @@
 		FEA4A88A18F4DF6E00A01AA8 /* adlerHome.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88918F4DF6E00A01AA8 /* adlerHome.png */; };
 		FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88B18F4E0D000A01AA8 /* black.png */; };
 		FEA4A88E18F4E0D900A01AA8 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88D18F4E0D900A01AA8 /* blue.png */; };
+		FED8ED8918F76290005A285B /* HoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8ED8818F76290005A285B /* HoursViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +222,8 @@
 		FEA4A88918F4DF6E00A01AA8 /* adlerHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adlerHome.png; sourceTree = "<group>"; };
 		FEA4A88B18F4E0D000A01AA8 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		FEA4A88D18F4E0D900A01AA8 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		FED8ED8718F76290005A285B /* HoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursViewController.h; sourceTree = "<group>"; };
+		FED8ED8818F76290005A285B /* HoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +310,8 @@
 				30E374151858464500996B60 /* PriorityQueue.m */,
 				728FD49F18D0F66D0073C43F /* comparable.h */,
 				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
+				FED8ED8718F76290005A285B /* HoursViewController.h */,
+				FED8ED8818F76290005A285B /* HoursViewController.m */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
 				30E50265183607E100BCDA41 /* Adler_Navigation.xcdatamodeld */,
@@ -705,6 +710,7 @@
 				30E502891836084000BCDA41 /* Node.m in Sources */,
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
+				FED8ED8918F76290005A285B /* HoursViewController.m in Sources */,
 				FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
