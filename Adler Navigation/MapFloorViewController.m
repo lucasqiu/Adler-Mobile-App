@@ -56,7 +56,6 @@
         cell.textLabel.text = @"Top Floor";
     }
     
-    
     if (indexPath.row == 1) {
         cell.textLabel.text = @"Mid Floor";
     }

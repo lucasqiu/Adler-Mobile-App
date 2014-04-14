@@ -10,6 +10,8 @@
 
 @interface FacilitiesViewController ()
 
+@property NSArray *tableViewItems;
+
 @end
 
 @implementation FacilitiesViewController
@@ -18,8 +20,18 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
+    _tableViewItems = @[ @"Coat Check",
+                         @"Exit",
+                         @"Information",
+                         @"Restrooms",
+                         @"Lockers",
+                         @"ATM",
+                         @"Café",
+                         @"Store"
+                         ];
+    
     // self.clearsSelectionOnViewWillAppear = NO;
+    // Uncomment the following line to preserve selection between presentations.
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -33,7 +45,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 4;
+    return _tableViewItems.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -51,23 +63,7 @@
     }
     //Retrieve information form each dictionary in array and display them in labels.
     
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Coat Check";
-    }
-    
-    
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"Exit";
-    }
-    
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"Information";
-    }
-    
-    
-    if (indexPath.row == 3) {
-        cell.textLabel.text = @"Restrooms";
-    }
+    cell.textLabel.text = _tableViewItems[indexPath.row];
     
     return cell;
 }
