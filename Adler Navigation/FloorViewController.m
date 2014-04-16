@@ -56,7 +56,6 @@
         cell.textLabel.text = @"Upper Level";
     }
     
-    
     if (indexPath.row == 1) {
         cell.textLabel.text = @"Mid Level";
     }
