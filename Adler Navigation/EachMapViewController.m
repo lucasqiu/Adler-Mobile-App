@@ -18,26 +18,21 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _Floor.text = _data;
+    _Floor.text = _levelToDisplay;
     NSString *myPdfFilePath;
-    if ([_data  isEqual: @"Top Floor"]) {
+    if ([_levelToDisplay  isEqual: @"Upper Level"]) {
         myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"top" ofType: @"pdf"];
     }
     
-    else if ([_data  isEqual: @"Mid Floor"]) {
+    else if ([_levelToDisplay  isEqual: @"Middle Level"]) {
         myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"mid" ofType: @"pdf"];
     }
     
-    else if ([_data  isEqual: @"Lower Floor"]) {
+    else if ([_levelToDisplay  isEqual: @"Lower Level"]) {
         myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"lower" ofType: @"pdf"];
     }
     
-    else if ([_data  isEqual: @"Star"]) {
+    else if ([_levelToDisplay  isEqual: @"Star Theater"]) {
         myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"star" ofType: @"pdf"];
     }
     
@@ -45,9 +40,6 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
     
     [_FloorMap loadRequest:request];
-    
-
-
 }
 
 - (void)didReceiveMemoryWarning
