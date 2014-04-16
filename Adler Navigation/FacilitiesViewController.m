@@ -44,7 +44,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 7;
+    return _tableViewItems.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -67,9 +67,7 @@
     }
     //Retrieve information form each dictionary in array and display them in labels.
     
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Coat Check";
-    }
+    cell.textLabel.text = _tableViewItems[indexPath.row];
     
     
     if (indexPath.row == 1) {
