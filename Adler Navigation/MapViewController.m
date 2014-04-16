@@ -162,13 +162,41 @@ const integer_t INFINIT = FLT_MAX;
     CGContextScaleCTM(ctx, 1.0, -1.0);
     CGContextTranslateCTM(ctx, 0.0, pageRect.size.height * -1);
     
-	// set stroking color and draw lines
-	[[UIColor redColor] setStroke];
+	// set draw color
+    UIColor *color = [[UIColor redColor] colorWithAlphaComponent:0.55];
+	[color setStroke];
+    [color setFill];
     
-    CGContextSetLineWidth(ctx, 5.0f);
+    // find the points of the triangle arrowhead
+    float triLength = 20.0;
+    float triWidth = 11.0;
     
-    CGContextStrokeLineSegments(ctx, points, count);
+    float x1 = points[count-2].x;
+    float y1 = points[count-2].y;
+    float x2 = points[count-1].x;
+    float y2 = points[count-1].y;
+    double theta = atan2(y2-y1, x2-x1);
+    float x = x2 - cos(theta) * triLength;
+    float y = y2 - sin(theta) * triLength;
+    theta += M_PI_2;
     
+    float x3 = x + cos(theta) * triWidth;
+    float y3 = y + sin(theta) * triWidth;
+    float x4 = x - cos(theta) * triWidth;
+    float y4 = y - sin(theta) * triWidth;
+    
+    // draw the line upto the arrowhead
+    CGContextSetLineWidth(ctx, 4.0f);
+    CGPoint linePoints[2] = {points[0], (CGPoint){.x=x,.y=y}};
+    CGContextStrokeLineSegments(ctx, linePoints, 2);
+
+    // draw the arrowhead
+    CGContextMoveToPoint(ctx, x2, y2);
+    CGContextAddLineToPoint(ctx, x3, y3);
+    CGContextAddLineToPoint(ctx, x4, y4);
+    CGContextClosePath(ctx);
+    CGContextFillPath(ctx);
+ 
 	// save the image and free the context
 	UIGraphicsEndPDFContext();
     

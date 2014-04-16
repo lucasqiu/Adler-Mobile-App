@@ -173,7 +173,7 @@
             </objects>
             <point key="canvasLocation" x="4322" y="1085"/>
         </scene>
-        <!--Map Floor View Controller - Pick Floor-->
+        <!--Map Floor View Controller - Pick Level-->
         <scene sceneID="oic-jB-690">
             <objects>
                 <tableViewController id="MAT-3b-L0V" customClass="MapFloorViewController" sceneMemberID="viewController">
@@ -199,7 +199,7 @@
                             <outlet property="delegate" destination="MAT-3b-L0V" id="qD2-Bz-aT8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pick Floor" id="xmH-1o-TcP"/>
+                    <navigationItem key="navigationItem" title="Pick Level" id="xmH-1o-TcP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7A-ES-I3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

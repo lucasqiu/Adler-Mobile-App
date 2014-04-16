@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FloorViewController : UITableViewController
-@property (nonatomic, strong) NSString * sourceORDestination;
+@property (nonatomic, strong) NSString *sourceORDestination;
 @end

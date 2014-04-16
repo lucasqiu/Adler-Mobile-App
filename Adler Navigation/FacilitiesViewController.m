@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
 
+    // Listed in the order they appear in the table view.
     _tableViewItems = @[ @"Coat Check",
                          @"Exit",
                          @"Information",
@@ -32,8 +33,6 @@
 
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"facilitiesBackground.png"]];
     self.tableView.backgroundView.contentMode = UIViewContentModeScaleAspectFit;
-    
-
 }
 
 - (void)didReceiveMemoryWarning

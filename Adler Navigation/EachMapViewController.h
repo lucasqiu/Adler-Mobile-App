@@ -11,5 +11,8 @@
 @interface EachMapViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *Floor;
 @property (strong, nonatomic) IBOutlet UIWebView *FloorMap;
-@property (strong, nonatomic) NSString * data;
+
+/// Adler level to be displayed by the map view (passed by segue).
+@property (strong, nonatomic) NSString *levelToDisplay;
+
 @end
