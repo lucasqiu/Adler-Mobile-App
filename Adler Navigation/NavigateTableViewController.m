@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad
 {
+    [_path2 setHidden:YES];
     
     [_nextImage setTintColor:[UIColor blueColor]];
     [_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
@@ -135,11 +136,15 @@
     NSUInteger value = sender.value;
     Node * n1 = [_arr objectAtIndex:value];
     Node * n2 = [_arr objectAtIndex:value+1];
-    NSInteger sourceFloorLevel = 0;
-    NSInteger destinationFloorLevel = 0;
+    
+    UIWebView * __strong *nextPath;
+    if ([_path isHidden]) {
+        nextPath = &_path;
+    } else {
+        nextPath = &_path2;
+    }
     
     if ([n1.floor isEqualToString:n2.floor]) {
-        // Get the pdf image of the current floor. TODO: change "top" to n1.floor
         NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:n1.floor ofType: @"pdf"];
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
         CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
@@ -147,11 +152,12 @@
         
         NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
         
-        [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
-        
+        [*nextPath loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
     }
-    
-    else{
+    else {
+        NSInteger sourceFloorLevel = 0;
+        NSInteger destinationFloorLevel = 0;
+        
         if ([n1.floor isEqualToString:@"top"]) {
             sourceFloorLevel = 1;
         }
@@ -184,33 +190,32 @@
             destinationFloorLevel = 4;
         }
         
+        NSString *myPdfFilePath;
         if ((sourceFloorLevel - destinationFloorLevel) < 0) {
-            NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"downstairs" ofType: @"pdf"];
-            NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
-            CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
-            _page = CGPDFDocumentGetPage(document, 1);
-            
-            NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
-            
-            [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
-            
-            
+            myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"downstairs" ofType: @"pdf"];
+        }
+        else {
+            myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"upstairs" ofType: @"pdf"];
         }
         
-        else{
-            NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"upstairs" ofType: @"pdf"];
-            NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
-            CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
-            _page = CGPDFDocumentGetPage(document, 1);
-            
-            NSData * data = [MapViewController drawPathFromSource:n1 Destination:n2 onPDF:_page];
-            
-            [_path loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
-            
-            
-        }
+        NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+        [*nextPath loadRequest:[NSURLRequest requestWithURL:targetURL]];
         
-        
+        // TODO: display how many floors to go up/down
+    }
+    
+    // instead of this, use 3 webviews and keep next and previous views pre rendered?
+    [NSTimer scheduledTimerWithTimeInterval:.04 target:self selector:@selector(swapViews) userInfo:nil repeats:NO];
+}
+
+- (void)swapViews
+{
+    if ([_path isHidden]) {
+        [_path setHidden:NO];
+        [_path2 setHidden:YES];
+    } else {
+        [_path2 setHidden:NO];
+        [_path setHidden:YES];
     }
 }
 

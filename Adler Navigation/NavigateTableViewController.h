@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSString * destination;
 @property (strong, nonatomic) NSMutableArray * arr;
 @property (strong, nonatomic) IBOutlet UIWebView *path;
+@property (strong, nonatomic) IBOutlet UIWebView *path2;
 @property (strong, nonatomic) IBOutlet UIStepper *nextImage;
 @property (nonatomic) CGPDFPageRef page;
 
