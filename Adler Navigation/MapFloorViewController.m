@@ -24,9 +24,9 @@
 
     // Listed in order of appearance in the table view.
     _levelChoices = @[ @"Upper Level",
-                       @"Middle Level",
+                       @"Mid Level",
                        @"Lower Level",
-                       @"Star Theater"
+                       @"Star Level"
                        ];
 }
 
