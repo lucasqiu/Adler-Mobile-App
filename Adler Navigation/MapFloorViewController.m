@@ -11,6 +11,9 @@
 
 @interface MapFloorViewController ()
 
+/// List of choices for the map level to view.
+@property NSArray *levelChoices;
+
 @end
 
 @implementation MapFloorViewController
@@ -18,12 +21,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    // Listed in order of appearance in the table view.
+    _levelChoices = @[ @"Upper Level",
+                       @"Mid Level",
+                       @"Lower Level",
+                       @"Star Level"
+                       ];
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,9 +36,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     
-    return 4;
+    return _levelChoices.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -42,7 +47,8 @@
     return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -52,27 +58,13 @@
     }
     //Retrieve information form each dictionary in array and display them in labels.
     
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Top Floor";
-    }
-    
-    
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"Mid Floor";
-    }
-    
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"Lower Floor";
-    }
-    
-    if (indexPath.row == 3) {
-        cell.textLabel.text = @"Star";
-    }
+    cell.textLabel.text = _levelChoices[indexPath.row];
     
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
     [self performSegueWithIdentifier:@"DisplayMap" sender:self];
     
@@ -87,19 +79,7 @@
         EachMapViewController *ViewController = [segue destinationViewController];
         
         NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
-        if (myIndexPath.row == 0) {
-            ViewController.data = @"Top Floor";
-        }
-        if (myIndexPath.row == 1) {
-            ViewController.data = @"Mid Floor";
-        }
-        if (myIndexPath.row == 2) {
-            ViewController.data = @"Lower Floor";
-        }
-        if (myIndexPath.row == 3) {
-            ViewController.data = @"Star";
-        }
-        
+        ViewController.levelToDisplay = _levelChoices[myIndexPath.row];
     }
 }
 

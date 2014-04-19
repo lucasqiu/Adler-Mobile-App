@@ -53,20 +53,19 @@
     //Retrieve information form each dictionary in array and display them in labels.
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"Top Floor";
+        cell.textLabel.text = @"Upper Level";
     }
     
-    
     if (indexPath.row == 1) {
-        cell.textLabel.text = @"Mid Floor";
+        cell.textLabel.text = @"Mid Level";
     }
     
     if (indexPath.row == 2) {
-        cell.textLabel.text = @"Lower Floor";
+        cell.textLabel.text = @"Lower Level";
     }
     
     if (indexPath.row == 3) {
-        cell.textLabel.text = @"Star";
+        cell.textLabel.text = @"Star Level";
     }
     
     return cell;
