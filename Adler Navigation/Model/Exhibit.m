@@ -10,11 +10,4 @@
 
 @implementation Exhibit
 
-- (NSArray*)getImageByIndex:(int)n{
-    return _images;
-}
-
-- (NSString*)getDescription{
-    return _description;
-}
 @end
