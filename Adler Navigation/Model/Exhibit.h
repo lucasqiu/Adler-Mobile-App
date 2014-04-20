@@ -10,11 +10,9 @@
 
 @interface Exhibit : NSObject
 
-@property NSString* exhibitID;
+@property NSString* ID;
 @property NSString* description;
-@property NSArray* images;
-
-- (NSArray*)getImageByIndex:(int)n;
-- (NSString*)getDescription;
+@property NSMutableArray* images;
+@property BOOL displayed;
 
 @end

@@ -12,7 +12,7 @@
 
 - (float)distance
 {
-    int z = 1;
+    int z = 100;
     if ([_node1.floor isEqualToString:_node2.floor]) {
         z = 0;
     }

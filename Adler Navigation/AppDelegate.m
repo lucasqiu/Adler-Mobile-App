@@ -22,8 +22,8 @@
     UIImage* tabBarBackground = [UIImage imageNamed:@"black.png"];
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];
     
-    UIImage* navBarBackground = [UIImage imageNamed:@"blue.png"];
-    [[UINavigationBar appearance] setBackgroundImage:navBarBackground forBarMetrics:UIBarMetricsDefault];
+    //UIImage* navBarBackground = [UIImage imageNamed:@"blue.png"];
+    //[[UINavigationBar appearance] setBackgroundImage:navBarBackground forBarMetrics:UIBarMetricsDefault];
    
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    // Override point for customization after application launch.
