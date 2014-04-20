@@ -93,7 +93,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExhibitCell" id="KBC-MA-PiC">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -111,7 +111,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Il5-4s-eIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4322" y="410"/>
+            <point key="canvasLocation" x="5010" y="698"/>
         </scene>
         <!--Hours View Controller-->
         <scene sceneID="oRm-4d-GQN">
