@@ -719,7 +719,7 @@
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<true/>
+		<false/>
 		<key>uid</key>
 		<string>south_stairs_exitnode</string>
 		<key>floor</key>
