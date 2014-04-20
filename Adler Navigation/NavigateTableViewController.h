@@ -13,9 +13,9 @@
 @interface NavigateTableViewController : UIViewController
 @property (strong, nonatomic) NSString * source;
 @property (strong, nonatomic) NSString * destination;
-@property (strong, nonatomic) NSMutableArray * arr;
-@property (strong, nonatomic) IBOutlet UIWebView *path;
-@property (strong, nonatomic) IBOutlet UIWebView *path2;
+@property (strong, nonatomic) NSMutableArray * path;
+@property (strong, nonatomic) IBOutlet UIWebView *view1;
+@property (strong, nonatomic) IBOutlet UIWebView *view2;
 @property (strong, nonatomic) IBOutlet UIStepper *nextImage;
 @property (nonatomic) CGPDFPageRef page;
 

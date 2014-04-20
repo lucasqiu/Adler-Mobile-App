@@ -70,8 +70,8 @@
                     <navigationItem key="navigationItem" title="Navigate" id="a7p-DH-VfU"/>
                     <connections>
                         <outlet property="nextImage" destination="6UP-05-I7G" id="FjV-BF-opY"/>
-                        <outlet property="path" destination="FSK-sX-ce6" id="5g9-Ph-zH5"/>
-                        <outlet property="path2" destination="tjV-Oc-Cea" id="B9S-tf-BUz"/>
+                        <outlet property="view1" destination="FSK-sX-ce6" id="CD2-Tu-z26"/>
+                        <outlet property="view2" destination="tjV-Oc-Cea" id="dNS-aA-kA1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Y1-7d-vjB" userLabel="First Responder" sceneMemberID="firstResponder"/>

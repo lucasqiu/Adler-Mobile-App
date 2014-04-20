@@ -123,7 +123,7 @@ const integer_t INFINIT = FLT_MAX;
  * Draws the path from node1 to node2 on the image being supplied.
  * Returns pdf in data array.
  */
-+ (NSMutableData *)drawPathFromSource: (Node*) source Destination: (Node*) destination onPDF:(CGPDFPageRef)page
++ (NSMutableData *)drawPathFromSource:(Node *)source destination:(Node *)destination path:(NSMutableArray *)path onPDF:(CGPDFPageRef)page
 {
     Node *node1 = source;
     Node *node2 = destination;
@@ -134,13 +134,26 @@ const integer_t INFINIT = FLT_MAX;
     points[1].x = node2.xCoordinate;
     points[1].y = node2.yCoordinate;
     
-    return [self drawLineSegments:points count:2  onPDF:page];
+    int pathPointsSize = [path count]*2-2;
+    CGPoint pathPoints[pathPointsSize];
+    int j = 0;
+    for (int i = 0; i < [path count]-1; i++) {
+        Node *n1 = [path objectAtIndex:i];
+        Node *n2 = [path objectAtIndex:i+1];
+        if (! [n1 isEqual:source]) {
+            pathPoints[2*j] = CGPointMake(n1.xCoordinate, n1.yCoordinate);
+            pathPoints[2*j+1] = CGPointMake(n2.xCoordinate, n2.yCoordinate);
+            j++;
+        }
+    }
+    
+    return [self drawLineSegments:points path:pathPoints count:pathPointsSize onPDF:page];
     
     //NSString *text = [NSString stringWithFormat:@"Go towards %@", node2.id];
     //display text
 }
 
-+ (NSMutableData *)drawLineSegments:(CGPoint *)points count:(size_t)count onPDF:(CGPDFPageRef)page
++ (NSMutableData *)drawLineSegments:(CGPoint *)points path:(CGPoint *)path count:(size_t)count onPDF:(CGPDFPageRef)page
 {
     CGRect pageRect = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
     
@@ -162,19 +175,27 @@ const integer_t INFINIT = FLT_MAX;
     CGContextScaleCTM(ctx, 1.0, -1.0);
     CGContextTranslateCTM(ctx, 0.0, pageRect.size.height * -1);
     
-	// set draw color
-    UIColor *color = [[UIColor redColor] colorWithAlphaComponent:0.55];
+	// set draw color for the path and draw it
+    UIColor *color = [[UIColor redColor] colorWithAlphaComponent:0.2];
 	[color setStroke];
     [color setFill];
+    CGContextSetLineWidth(ctx, 2.0f);
+    CGContextStrokeLineSegments(ctx, path, count);
+    
+    // set draw color for arrow
+    color = [[UIColor redColor] colorWithAlphaComponent:0.55];
+	[color setStroke];
+    [color setFill];
+    CGContextSetLineWidth(ctx, 4.0f);
     
     // find the points of the triangle arrowhead
     float triLength = 20.0;
     float triWidth = 11.0;
     
-    float x1 = points[count-2].x;
-    float y1 = points[count-2].y;
-    float x2 = points[count-1].x;
-    float y2 = points[count-1].y;
+    float x1 = points[0].x;
+    float y1 = points[0].y;
+    float x2 = points[1].x;
+    float y2 = points[1].y;
     double theta = atan2(y2-y1, x2-x1);
     float x = x2 - cos(theta) * triLength;
     float y = y2 - sin(theta) * triLength;
@@ -186,7 +207,6 @@ const integer_t INFINIT = FLT_MAX;
     float y4 = y - sin(theta) * triWidth;
     
     // draw the line upto the arrowhead
-    CGContextSetLineWidth(ctx, 4.0f);
     CGPoint linePoints[2] = {points[0], (CGPoint){.x=x,.y=y}};
     CGContextStrokeLineSegments(ctx, linePoints, 2);
 
