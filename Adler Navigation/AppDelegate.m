@@ -17,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       [UIColor whiteColor], UITextAttributeTextColor,
+                                                       [UIColor whiteColor], NSForegroundColorAttributeName,
                                                        nil] forState:UIControlStateNormal];
     UIImage* tabBarBackground = [UIImage imageNamed:@"black.png"];
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];

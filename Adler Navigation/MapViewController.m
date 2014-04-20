@@ -134,7 +134,7 @@ const integer_t INFINIT = FLT_MAX;
     points[1].x = node2.xCoordinate;
     points[1].y = node2.yCoordinate;
     
-    int pathPointsSize = [path count]*2-2;
+    unsigned long pathPointsSize = [path count]*2-2;
     CGPoint pathPoints[pathPointsSize];
     int j = 0;
     for (int i = 0; i < [path count]-1; i++) {
