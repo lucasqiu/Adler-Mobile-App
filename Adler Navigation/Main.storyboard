@@ -366,7 +366,7 @@
             </objects>
             <point key="canvasLocation" x="3804" y="-423"/>
         </scene>
-        <!--Exhibit View Controller-->
+        <!--Exhibit View Controller - Exhibits-->
         <scene sceneID="Gwu-2Y-Qht">
             <objects>
                 <tableViewController id="gCv-Nq-5Yw" customClass="ExhibitViewController" sceneMemberID="viewController">
@@ -404,7 +404,7 @@
                             <outlet property="delegate" destination="gCv-Nq-5Yw" id="XgY-1b-Qb0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hJe-Cg-K6b"/>
+                    <navigationItem key="navigationItem" title="Exhibits" id="hJe-Cg-K6b"/>
                 </tableViewController>
                 <navigationBar contentMode="scaleToFill" id="CDj-1s-RRB">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
