@@ -27,135 +27,50 @@
 {
     [super viewDidLoad];
     
-    _exhibits = [NSMutableArray arrayWithCapacity:50];
+    _exhibits = [NSMutableArray arrayWithCapacity:20];
     UIImage *img;
     NSString* path;
+    NSArray *ex = @[@"ast", @"cla", @"cyb", @"hid", @"hist", @"solar", @"pe", \
+                    @"sund", @"tele", @"sfm", @"unv"];
     
-    Exhibit *exh1 = [[Exhibit alloc] init];
-    exh1.ID = @"Astronomy in Culture";
-    path = [[NSBundle mainBundle] pathForResource:@"ast_short"
-                                                     ofType:@"txt"];
-    exh1.description = [NSString stringWithContentsOfFile:path
-                                                encoding:NSUTF8StringEncoding
-                                                    error:NULL];
-    exh1.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"ast0.jpg"];
-    [exh1.images addObject:img];
-    [_exhibits addObject:exh1];
-    
-    Exhibit *exh2 = [[Exhibit alloc] init];
-    exh2.ID = @"ClarkFamilyWelcomeGallery";
-    path = [[NSBundle mainBundle] pathForResource:@"cla_short"
-                                           ofType:@"txt"];
-    exh2.description = [NSString stringWithContentsOfFile:path
-                                                 encoding:NSUTF8StringEncoding
-                                                    error:NULL];
-    exh2.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"cla0.jpg"];
-    [exh2.images addObject:img];
-    [_exhibits addObject:exh2];
-    
-    Exhibit *exh3 = [[Exhibit alloc] init];
-    exh3.ID = @"CyberSpace";
-    path = [[NSBundle mainBundle] pathForResource:@"cyb_short"
-                                           ofType:@"txt"];
-    exh3.description = [NSString stringWithContentsOfFile:path
-                                                 encoding:NSUTF8StringEncoding
-                                                    error:NULL];
-    exh3.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"cyb0.jpg"];
-    [exh3.images addObject:img];
-    [_exhibits addObject:exh3];
-    
-    Exhibit *exh4 = [[Exhibit alloc] init];
-    exh4.ID = @"HiddenWonders";
-    path = [[NSBundle mainBundle] pathForResource:@"hid_short"
-                                           ofType:@"txt"];
-    exh4.description = [NSString stringWithContentsOfFile:path
-                                                 encoding:NSUTF8StringEncoding
-                                                    error:NULL];
-    exh4.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"hid0.jpg"];
-    [exh4.images addObject:img];
-    [_exhibits addObject:exh4];
-    
-    Exhibit *exh5 = [[Exhibit alloc] init];
-    exh5.ID = @"HistoricAtwoodSphere";
-    exh5.description = @"lalala.";
-    exh5.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"hist0.png"];
-    [exh5.images addObject:img];
-    [_exhibits addObject:exh5];
-    
-    Exhibit *exh6 = [[Exhibit alloc] init];
-    exh6.ID = @"OurSolarSystem";
-    exh6.description = @"lalala.";
-    exh6.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"solar0.png"];
-    [exh6.images addObject:img];
-    img = [UIImage imageNamed:@"solar1.jpg"];
-    [exh6.images addObject:img];
-    img = [UIImage imageNamed:@"solar2.jpg"];
-    [exh6.images addObject:img];
-    img = [UIImage imageNamed:@"solar3.jpg"];
-    [exh6.images addObject:img];
-    img = [UIImage imageNamed:@"solar4.jpg"];
-    [exh6.images addObject:img];
-    img = [UIImage imageNamed:@"solar5.jpg"];
-    [exh6.images addObject:img];
-    img = [UIImage imageNamed:@"solar6.jpg"];
-    [exh6.images addObject:img];
-    [_exhibits addObject:exh6];
-    
-    Exhibit *exh7 = [[Exhibit alloc] init];
-    exh7.ID = @"PlanetExplorers";
-    exh7.description = @"lalala.";
-    exh7.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"pe0.png"];
-    [exh7.images addObject:img];
-    [_exhibits addObject:exh7];
-    
-    Exhibit *exh8 = [[Exhibit alloc] init];
-    exh8.ID = @"ShootForTheMoon";
-    exh8.description = @"lalala.";
-    exh8.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"sfm0.png"];
-    [exh8.images addObject:img];
-    [_exhibits addObject:exh8];
-    
-    Exhibit *exh9 = [[Exhibit alloc] init];
-    exh9.ID = @"Sundials";
-    exh9.description = @"Collecting and Conserving Sundials focuses on themes \
-    of consumers, collecting, and conservation.";
-    exh9.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"sund0.jpg"];
-    [exh9.images addObject:img];
-    img = [UIImage imageNamed:@"sund1.jpg"];
-    [exh9.images addObject:img];
-    img = [UIImage imageNamed:@"sund2.jpg"];
-    [exh9.images addObject:img];
-    img = [UIImage imageNamed:@"sund3.jpg"];
-    [exh9.images addObject:img];
-    img = [UIImage imageNamed:@"sund4.jpg"];
-    [exh9.images addObject:img];
-    [_exhibits addObject:exh9];
-    
-    Exhibit *exh10 = [[Exhibit alloc] init];
-    exh10.ID = @"Telescope";
-    exh10.description = @"lalala.";
-    exh10.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"tele0.png"];
-    [exh10.images addObject:img];
-    [_exhibits addObject:exh10];
-
-    Exhibit *exh11 = [[Exhibit alloc] init];
-    exh11.ID = @"TheUniverse";
-    exh11.description = @"lalala.";
-    exh11.images = [[NSMutableArray alloc] init];
-    img = [UIImage imageNamed:@"unv0.png"];
-    [exh11.images addObject:img];
-    [_exhibits addObject:exh11];
-    
+    NSUInteger arrayLength = [ex count];
+    for(int i=0; i< arrayLength; i++){
+        Exhibit *exh = [[Exhibit alloc] init];
+        NSMutableString *prefix = [[ex  objectAtIndex:i] mutableCopy];
+        
+        NSMutableString *name = [prefix mutableCopy];
+        [name appendString:@"_name"];
+        path = [[NSBundle mainBundle] pathForResource:name
+                                               ofType:@"txt"];
+        exh.ID = [NSString stringWithContentsOfFile:path
+                                                    encoding:NSUTF8StringEncoding
+                                                       error:NULL];
+        NSMutableString *shortdes = [prefix mutableCopy];
+        [shortdes appendString:@"_short"];
+        path = [[NSBundle mainBundle] pathForResource:shortdes
+                                               ofType:@"txt"];
+        exh.description = [NSString stringWithContentsOfFile:path
+                                                     encoding:NSUTF8StringEncoding
+                                                        error:NULL];
+        exh.images = [[NSMutableArray alloc] init];
+        for (int j=0; j<10; j++){
+            NSMutableString *imgname = [prefix mutableCopy];
+            [imgname appendString:[@(j) stringValue]];
+            [imgname appendString:@".png"];
+            if ([UIImage imageNamed:imgname] != NULL){
+                img = [UIImage imageNamed:imgname];
+                [exh.images addObject:img];
+            }
+            imgname = [prefix mutableCopy];
+            [imgname appendString:[@(j) stringValue]];
+            [imgname appendString:@".jpg"];
+            if ([UIImage imageNamed:imgname] != NULL){
+                img = [UIImage imageNamed:imgname];
+                [exh.images addObject:img];
+            }
+        }
+        [_exhibits addObject:exh];
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -190,17 +105,17 @@
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     
-    UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"ExhibitCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExhibitCell" forIndexPath:indexPath];
     
     Exhibit *exhibit = (self.exhibits)[indexPath.row];
     
-    UILabel *nameLabel = (UILabel *)[cell1 viewWithTag:100];
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:100];
     nameLabel.text = exhibit.ID;
-    UITextView *t = (UITextView *)[cell1 viewWithTag:105];
+    UITextView *t = (UITextView *)[cell viewWithTag:105];
     t.text = exhibit.description;
     t.editable = NO;
     
-    UIImageView *imageView = (UIImageView *)[cell1 viewWithTag:110];
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:110];
     if (exhibit.images == NULL){
     }
     else if ( [exhibit.images count] == 0){
@@ -208,7 +123,7 @@
     else{ imageView.image = exhibit.images[0];}
 
     
-    return cell1;
+    return cell;
 }
 
 
