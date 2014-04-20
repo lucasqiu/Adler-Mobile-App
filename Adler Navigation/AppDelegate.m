@@ -76,8 +76,10 @@
 
 #pragma mark - Core Data stack
 
-// Returns the managed object context for the application.
-// If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+/**
+ * Returns the managed object context for the application.
+ * If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+ */
 - (NSManagedObjectContext *)managedObjectContext
 {
     if (_managedObjectContext != nil) {
@@ -92,8 +94,10 @@
     return _managedObjectContext;
 }
 
-// Returns the managed object model for the application.
-// If the model doesn't already exist, it is created from the application's model.
+/**
+ * Returns the managed object model for the application.
+ * If the model doesn't already exist, it is created from the application's model.
+ */
 - (NSManagedObjectModel *)managedObjectModel
 {
     if (_managedObjectModel != nil) {
@@ -104,8 +108,10 @@
     return _managedObjectModel;
 }
 
-// Returns the persistent store coordinator for the application.
-// If the coordinator doesn't already exist, it is created and the application's store added to it.
+/**
+ * Returns the persistent store coordinator for the application.
+ * If the coordinator doesn't already exist, it is created and the application's store added to it.
+ */
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
     if (_persistentStoreCoordinator != nil) {
@@ -149,7 +155,9 @@
 
 #pragma mark - Application's Documents directory
 
-// Returns the URL to the application's Documents directory.
+/**
+ * Returns the URL to the application's Documents directory.
+ */
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];

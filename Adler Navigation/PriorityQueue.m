@@ -51,9 +51,9 @@
     [items insertObject:item atIndex:i];
 }
 
-/*  
-* Return nil if empty. Make sure check Empty before pull. 
-*/
+/**
+ * Return nil if empty. Make sure check Empty before pull.
+ */
  - (NSObject *)getItemLeastPriority
 {
     if(self.isEmpty){return nil;}

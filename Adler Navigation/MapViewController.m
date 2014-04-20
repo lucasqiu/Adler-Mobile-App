@@ -44,14 +44,16 @@ const integer_t INFINIT = FLT_MAX;
 }
 
 
-// Set the image view as the object to zoom when pinching.
+/**
+ * Set the image view as the object to zoom when pinching.
+ */
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
     return self.imageView;
 }
 
 
-/*
+/**
  * Find the shortest path between the source and the goal node.
  * Return a list of nodes in the order from source to goal.
  */
@@ -119,7 +121,7 @@ const integer_t INFINIT = FLT_MAX;
 }
 
 
-/*
+/**
  * Draws the path from node1 to node2 on the image being supplied.
  * Returns pdf in data array.
  */
