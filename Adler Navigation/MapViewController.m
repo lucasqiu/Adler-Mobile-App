@@ -123,7 +123,7 @@ const integer_t INFINIT = FLT_MAX;
  * Draws the path from node1 to node2 on the image being supplied.
  * Returns pdf in data array.
  */
-+ (NSMutableData *)drawPathFromSource:(Node *)source destination:(Node *)destination path:(NSMutableArray *)path onPDF:(CGPDFPageRef)page
++ (NSMutableData *)drawPathFromSource:(Node *)source destination:(Node *)destination path:(NSMutableArray *)path graph:(MapGraph *)mg onPDF:(CGPDFPageRef)page
 {
     Node *node1 = source;
     Node *node2 = destination;
@@ -140,7 +140,10 @@ const integer_t INFINIT = FLT_MAX;
     for (int i = 0; i < [path count]-1; i++) {
         Node *n1 = [path objectAtIndex:i];
         Node *n2 = [path objectAtIndex:i+1];
-        if (! [n1 isEqual:source]) {
+        Edge *e = [[Edge alloc] init];
+        e.node1 = n1;
+        e.node2 = n2;
+        if (![n1 isEqual:source] && [[mg getAdjacentNodes:n1] containsObject:e]) {
             pathPoints[2*j] = CGPointMake(n1.xCoordinate, n1.yCoordinate);
             pathPoints[2*j+1] = CGPointMake(n2.xCoordinate, n2.yCoordinate);
             j++;
