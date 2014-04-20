@@ -27,59 +27,134 @@
 {
     [super viewDidLoad];
     
-    _exhibits = [NSMutableArray arrayWithCapacity:10];
-    _displayed = [NSMutableArray arrayWithCapacity:10];
+    _exhibits = [NSMutableArray arrayWithCapacity:50];
+    UIImage *img;
+    NSString* path;
     
     Exhibit *exh1 = [[Exhibit alloc] init];
     exh1.ID = @"Astronomy in Culture";
-    exh1.description = @"Go back in history and learn from ancient Egypt to medieval Europe.";
+    path = [[NSBundle mainBundle] pathForResource:@"ast_short"
+                                                     ofType:@"txt"];
+    exh1.description = [NSString stringWithContentsOfFile:path
+                                                encoding:NSUTF8StringEncoding
+                                                    error:NULL];
     exh1.images = [[NSMutableArray alloc] init];
-    UIImage *img1 = [UIImage imageNamed:@"img0.jpg"];
-    [exh1.images addObject:img1];
-    exh1.displayed = false;
+    img = [UIImage imageNamed:@"ast0.jpg"];
+    [exh1.images addObject:img];
     [_exhibits addObject:exh1];
     
-    
     Exhibit *exh2 = [[Exhibit alloc] init];
-    exh2.ID = @"Sundials";
-    exh2.description = @"Collecting and Conserving Sundials focuses on themes of consumers, collecting, and conservation.";
+    exh2.ID = @"ClarkFamilyWelcomeGallery";
+    path = [[NSBundle mainBundle] pathForResource:@"cla_short"
+                                           ofType:@"txt"];
+    exh2.description = [NSString stringWithContentsOfFile:path
+                                                 encoding:NSUTF8StringEncoding
+                                                    error:NULL];
     exh2.images = [[NSMutableArray alloc] init];
-    UIImage *img2 = [UIImage imageNamed:@"img1.jpg"];
-    [exh2.images addObject:img2];
-    exh2.displayed = false;
+    img = [UIImage imageNamed:@"cla0.jpg"];
+    [exh2.images addObject:img];
     [_exhibits addObject:exh2];
     
     Exhibit *exh3 = [[Exhibit alloc] init];
-    exh3.ID = @"Our Solar System";
-    exh3.description = @"Explore the many worlds — planets, moons, dwarf planets, comets, and asteroids.";
+    exh3.ID = @"CyberSpace";
+    path = [[NSBundle mainBundle] pathForResource:@"cyb_short"
+                                           ofType:@"txt"];
+    exh3.description = [NSString stringWithContentsOfFile:path
+                                                 encoding:NSUTF8StringEncoding
+                                                    error:NULL];
     exh3.images = [[NSMutableArray alloc] init];
-    UIImage *img3 = [UIImage imageNamed:@"img5.jpg"];
-    [exh3.images addObject:img3];
-    exh3.displayed = false;
+    img = [UIImage imageNamed:@"cyb0.jpg"];
+    [exh3.images addObject:img];
     [_exhibits addObject:exh3];
     
+    Exhibit *exh4 = [[Exhibit alloc] init];
+    exh4.ID = @"HiddenWonders";
+    path = [[NSBundle mainBundle] pathForResource:@"hid_short"
+                                           ofType:@"txt"];
+    exh4.description = [NSString stringWithContentsOfFile:path
+                                                 encoding:NSUTF8StringEncoding
+                                                    error:NULL];
+    exh4.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"hid0.jpg"];
+    [exh4.images addObject:img];
+    [_exhibits addObject:exh4];
     
+    Exhibit *exh5 = [[Exhibit alloc] init];
+    exh5.ID = @"HistoricAtwoodSphere";
+    exh5.description = @"lalala.";
+    exh5.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"hist0.png"];
+    [exh5.images addObject:img];
+    [_exhibits addObject:exh5];
     
-    //    Exhibit *exh2 = [[Exhibit alloc] init];
-    //    exh2.ID = @"ClarkFamilyWelcomeGallery";
-    //    exh2.description = @"It is cool.";
-    //    exh2.images = [NSArray arrayWithObjects:@"Aston Martin",
-    //                   @"Lotus", @"Jaguar", @"Bentley", nil]; ;
-    //    [_exhibits addObject:exh2];
-    //
-    //    Exhibit *exh3 = [[Exhibit alloc] init];
-    //    exh3.ID = @"Cyberspace";
-    //    exh3.description = @"It is cool.";
-    //    exh3.images = [NSArray arrayWithObjects:@"Aston Martin",
-    //                   @"Lotus", @"Jaguar", @"Bentley", nil]; ;
-    //    [_exhibits addObject:exh3];
-    //
-    //    Exhibit *exh4 = [[Exhibit alloc] init];
-    //    exh4.ID = @"HiddenWonders";
-    //    exh4.description = @"It is cool.";
-    //    exh4.images = [NSArray arrayWithObjects:@"Aston Martin",
-    //                   @"Lotus", @"Jaguar", @"Bentley", nil]; ;
-    //    [_exhibits addObject:exh4];
+    Exhibit *exh6 = [[Exhibit alloc] init];
+    exh6.ID = @"OurSolarSystem";
+    exh6.description = @"lalala.";
+    exh6.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"solar0.png"];
+    [exh6.images addObject:img];
+    img = [UIImage imageNamed:@"solar1.jpg"];
+    [exh6.images addObject:img];
+    img = [UIImage imageNamed:@"solar2.jpg"];
+    [exh6.images addObject:img];
+    img = [UIImage imageNamed:@"solar3.jpg"];
+    [exh6.images addObject:img];
+    img = [UIImage imageNamed:@"solar4.jpg"];
+    [exh6.images addObject:img];
+    img = [UIImage imageNamed:@"solar5.jpg"];
+    [exh6.images addObject:img];
+    img = [UIImage imageNamed:@"solar6.jpg"];
+    [exh6.images addObject:img];
+    [_exhibits addObject:exh6];
+    
+    Exhibit *exh7 = [[Exhibit alloc] init];
+    exh7.ID = @"PlanetExplorers";
+    exh7.description = @"lalala.";
+    exh7.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"pe0.png"];
+    [exh7.images addObject:img];
+    [_exhibits addObject:exh7];
+    
+    Exhibit *exh8 = [[Exhibit alloc] init];
+    exh8.ID = @"ShootForTheMoon";
+    exh8.description = @"lalala.";
+    exh8.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"sfm0.png"];
+    [exh8.images addObject:img];
+    [_exhibits addObject:exh8];
+    
+    Exhibit *exh9 = [[Exhibit alloc] init];
+    exh9.ID = @"Sundials";
+    exh9.description = @"Collecting and Conserving Sundials focuses on themes \
+    of consumers, collecting, and conservation.";
+    exh9.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"sund0.jpg"];
+    [exh9.images addObject:img];
+    img = [UIImage imageNamed:@"sund1.jpg"];
+    [exh9.images addObject:img];
+    img = [UIImage imageNamed:@"sund2.jpg"];
+    [exh9.images addObject:img];
+    img = [UIImage imageNamed:@"sund3.jpg"];
+    [exh9.images addObject:img];
+    img = [UIImage imageNamed:@"sund4.jpg"];
+    [exh9.images addObject:img];
+    [_exhibits addObject:exh9];
+    
+    Exhibit *exh10 = [[Exhibit alloc] init];
+    exh10.ID = @"Telescope";
+    exh10.description = @"lalala.";
+    exh10.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"tele0.png"];
+    [exh10.images addObject:img];
+    [_exhibits addObject:exh10];
+
+    Exhibit *exh11 = [[Exhibit alloc] init];
+    exh11.ID = @"TheUniverse";
+    exh11.description = @"lalala.";
+    exh11.images = [[NSMutableArray alloc] init];
+    img = [UIImage imageNamed:@"unv0.png"];
+    [exh11.images addObject:img];
+    [_exhibits addObject:exh11];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -115,7 +190,7 @@
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     
-    UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"av" forIndexPath:indexPath];
+    UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"ExhibitCell" forIndexPath:indexPath];
     
     Exhibit *exhibit = (self.exhibits)[indexPath.row];
     
@@ -123,9 +198,14 @@
     nameLabel.text = exhibit.ID;
     UITextView *t = (UITextView *)[cell1 viewWithTag:105];
     t.text = exhibit.description;
+    t.editable = NO;
     
     UIImageView *imageView = (UIImageView *)[cell1 viewWithTag:110];
-    imageView.image = exhibit.images[0];
+    if (exhibit.images == NULL){
+    }
+    else if ( [exhibit.images count] == 0){
+    }
+    else{ imageView.image = exhibit.images[0];}
 
     
     return cell1;
