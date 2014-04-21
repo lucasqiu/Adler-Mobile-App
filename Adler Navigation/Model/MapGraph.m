@@ -117,6 +117,11 @@
         newNode.floor = floor;
         newNode.id = uniqueID;
         
+        // This is a hack: remove this after fixing plist files
+        if ([floor isEqualToString:@"lower"]) {
+            newNode.xCoordinate -= 14.5;
+        }
+        
         [self addNode:newNode];
     }
 }
