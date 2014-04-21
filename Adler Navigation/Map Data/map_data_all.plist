@@ -1044,7 +1044,7 @@
 		<integer>475</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Cafe Galileo</string>
+			<string>Café Galileo&apos;s</string>
 			<string>cafe_galileo_exitnode</string>
 		</array>
 	</dict>
@@ -1277,7 +1277,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Cafe Galileo</string>
+		<string>Café Galileo&apos;s</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>

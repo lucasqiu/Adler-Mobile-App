@@ -29,8 +29,8 @@
                              @"Restrooms",
                              @"Lockers",
                              @"ATM",
-                             @"Café",
-                             @"Store"
+                             @"Café Galileo's",
+                             @"Adler Store"
                              ];
 
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"facilitiesBackground.png"]];
@@ -77,7 +77,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"ToNavigationView" sender:self];
-    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -87,6 +86,15 @@
     NSString *str = cell.textLabel.text;
     
     if ([[segue identifier] isEqualToString:@"ToNavigationView"]) {
+        if ([str isEqualToString:@"ATM"]) {
+            // Closest node to the acual position of the ATMs?
+            // TODO: add a new node for ATM
+            str = @"Café Galileo's";
+        }
+        else if ([str isEqualToString:@"Lockers"]) {
+            // TODO: add a new node for lockers
+            str = @"travel10";
+        }
         TableViewController *viewController = [segue destinationViewController];
         viewController.destinationFromFacilities = str;
     }
