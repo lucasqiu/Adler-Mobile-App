@@ -56,7 +56,8 @@
     cell.alpha = .9;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -64,37 +65,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    //Retrieve information form each dictionary in array and display them in labels.
+    // Retrieve information from each dictionary in array and display them in labels.
     
     cell.textLabel.text = _tableViewItems[indexPath.row];
-    
-    
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"Exits";
-    }
-    
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"Help Desk";
-    }
-    
-    
-    if (indexPath.row == 3) {
-        cell.textLabel.text = @"Restrooms";
-    }
-    
-    if (indexPath.row == 4) {
-        cell.textLabel.text = @"Adler Cafe";
-    }
-    
-    if (indexPath.row == 5) {
-        cell.textLabel.text = @"Adler Store";
-    }
-    
-    if (indexPath.row == 6) {
-        cell.textLabel.text = @"ATM";
-    }
-    
-    
     
     return cell;
 }
