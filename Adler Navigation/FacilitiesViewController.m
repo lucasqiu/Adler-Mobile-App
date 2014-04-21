@@ -10,6 +10,7 @@
 
 @interface FacilitiesViewController ()
 
+/// List of items to be displayed in this view's table.
 @property NSArray *tableViewItems;
 
 @end
@@ -21,15 +22,15 @@
     [super viewDidLoad];
 
     // Listed in the order they appear in the table view.
-    _tableViewItems = @[ @"Coat Check",
-                         @"Exit",
-                         @"Information",
-                         @"Restrooms",
-                         @"Lockers",
-                         @"ATM",
-                         @"Café",
-                         @"Store"
-                         ];
+    self.tableViewItems = @[ @"Coat Check",
+                             @"Exit",
+                             @"Information",
+                             @"Restrooms",
+                             @"Lockers",
+                             @"ATM",
+                             @"Café",
+                             @"Store"
+                             ];
 
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"facilitiesBackground.png"]];
     self.tableView.backgroundView.contentMode = UIViewContentModeScaleAspectFit;
@@ -42,8 +43,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return _tableViewItems.count;
+
+    return self.tableViewItems.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -67,7 +68,7 @@
     }
     // Retrieve information from each dictionary in array and display them in labels.
     
-    cell.textLabel.text = _tableViewItems[indexPath.row];
+    cell.textLabel.text = self.tableViewItems[indexPath.row];
     
     return cell;
 }
