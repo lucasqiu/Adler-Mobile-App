@@ -25,6 +25,10 @@
     self.source.delegate = self;
     self.destination.delegate = self;
     
+    if (self.destinationFromFacilities) {
+        self.destination.text = self.destinationFromFacilities;
+    }
+        
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,8 +79,5 @@
 {
     _destination.text = _data;
 }
-
-
-
 
 @end

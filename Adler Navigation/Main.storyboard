@@ -193,6 +193,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ubn-9S-Wlv" kind="push" identifier="ToNavigationView" id="Bs0-rc-VlB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -204,7 +207,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24N-iV-TGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4322" y="1780"/>
+            <point key="canvasLocation" x="3906" y="-1276"/>
         </scene>
         <!--Each Map View Controller - Maps-->
         <scene sceneID="taN-Xl-h7L">
@@ -305,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eY6-W4-Rh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3796" y="-1130"/>
+            <point key="canvasLocation" x="3804" y="1846"/>
         </scene>
         <!--Table View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
@@ -367,7 +370,7 @@
                         <barButtonItem key="backBarButtonItem" title="Navigation" id="27c-lS-ZFE"/>
                         <barButtonItem key="rightBarButtonItem" title="Maps" id="9wK-aC-0hG">
                             <connections>
-                                <segue destination="MAT-3b-L0V" kind="push" id="0SE-JP-JoA"/>
+                                <segue destination="MAT-3b-L0V" kind="push" identifier="ToFloorSelectionView" id="0SE-JP-JoA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -556,7 +559,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6D8-kM-u64" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3796" y="1780"/>
+            <point key="canvasLocation" x="3380" y="-1276"/>
         </scene>
         <!--Navigation Controller - Exihibits-->
         <scene sceneID="0f7-bB-w8Z">
@@ -585,6 +588,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Bs0-rc-VlB"/>
         <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>

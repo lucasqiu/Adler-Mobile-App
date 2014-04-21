@@ -7,6 +7,7 @@
 //
 
 #import "FacilitiesViewController.h"
+#import "TableViewController.h"
 
 @interface FacilitiesViewController ()
 
@@ -73,20 +74,22 @@
     return cell;
 }
 
-/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self performSegueWithIdentifier:@"FloorView" sender:self];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"ToNavigationView" sender:self];
     
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];
+    NSString *str = cell.textLabel.text;
     
-    //Sends data to the view controller to display details of the tapped individual.
-    if ([[segue identifier] isEqualToString:@"FloorView"])
-    {
-        
+    if ([[segue identifier] isEqualToString:@"ToNavigationView"]) {
+        TableViewController *viewController = [segue destinationViewController];
+        viewController.destinationFromFacilities = str;
     }
-}*/
+}
 
 @end

@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewController : UIViewController <UITextFieldDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *source;
 @property (strong, nonatomic) IBOutlet UITextField *destination;
-@property (strong, nonatomic) NSString * data;
+@property (strong, nonatomic) NSString *data;
+
+/// A destination passed to this view from the facilities view.
+@property NSString *destinationFromFacilities;
+
 @end
