@@ -25,6 +25,7 @@
     self.source.delegate = self;
     self.destination.delegate = self;
     
+    // Did we navigate here from facilities?
     if (self.destinationFromFacilities) {
         self.destination.text = self.destinationFromFacilities;
     }
