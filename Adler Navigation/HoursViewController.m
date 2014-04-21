@@ -19,6 +19,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSString *str=@"http://adlersiteserver.herokuapp.com/open_hours";
+    NSURL *url=[NSURL URLWithString:str];
+    NSData *data=[NSData dataWithContentsOfURL:url];
+    NSError *error=nil;
+    id response=[NSJSONSerialization JSONObjectWithData:data options:
+                 NSJSONReadingMutableContainers error:&error];
+    
+    NSLog(@"%@", response);
+    
 }
 
 - (void)didReceiveMemoryWarning
