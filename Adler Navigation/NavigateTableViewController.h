@@ -14,6 +14,7 @@
 @property (strong, nonatomic) NSString * source;
 @property (strong, nonatomic) NSString * destination;
 @property (strong, nonatomic) NSMutableArray * path;
+@property (strong, nonatomic) MapGraph *mg;
 @property (strong, nonatomic) IBOutlet UIWebView *view1;
 @property (strong, nonatomic) IBOutlet UIWebView *view2;
 @property (strong, nonatomic) IBOutlet UIStepper *nextImage;

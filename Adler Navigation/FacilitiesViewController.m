@@ -7,9 +7,11 @@
 //
 
 #import "FacilitiesViewController.h"
+#import "TableViewController.h"
 
 @interface FacilitiesViewController ()
 
+/// List of items to be displayed in this view's table.
 @property NSArray *tableViewItems;
 
 @end
@@ -21,15 +23,15 @@
     [super viewDidLoad];
 
     // Listed in the order they appear in the table view.
-    _tableViewItems = @[ @"Coat Check",
-                         @"Exit",
-                         @"Information",
-                         @"Restrooms",
-                         @"Lockers",
-                         @"ATM",
-                         @"Café",
-                         @"Store"
-                         ];
+    self.tableViewItems = @[ @"Coat Check",
+                             @"Exit",
+                             @"Information",
+                             @"Restrooms",
+                             @"Lockers",
+                             @"ATM",
+                             @"Café Galileo's",
+                             @"Adler Store"
+                             ];
 
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"facilitiesBackground.png"]];
     self.tableView.backgroundView.contentMode = UIViewContentModeScaleAspectFit;
@@ -42,8 +44,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return _tableViewItems.count;
+
+    return self.tableViewItems.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -56,7 +58,8 @@
     cell.alpha = .9;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -64,55 +67,37 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    //Retrieve information form each dictionary in array and display them in labels.
+    // Retrieve information from each dictionary in array and display them in labels.
     
-    cell.textLabel.text = _tableViewItems[indexPath.row];
-    
-    
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"Exits";
-    }
-    
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"Help Desk";
-    }
-    
-    
-    if (indexPath.row == 3) {
-        cell.textLabel.text = @"Restrooms";
-    }
-    
-    if (indexPath.row == 4) {
-        cell.textLabel.text = @"Adler Cafe";
-    }
-    
-    if (indexPath.row == 5) {
-        cell.textLabel.text = @"Adler Store";
-    }
-    
-    if (indexPath.row == 6) {
-        cell.textLabel.text = @"ATM";
-    }
-    
-    
+    cell.textLabel.text = self.tableViewItems[indexPath.row];
     
     return cell;
 }
 
-/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self performSegueWithIdentifier:@"FloorView" sender:self];
-    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"ToNavigationView" sender:self];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];
+    NSString *str = cell.textLabel.text;
     
-    //Sends data to the view controller to display details of the tapped individual.
-    if ([[segue identifier] isEqualToString:@"FloorView"])
-    {
-        
+    if ([[segue identifier] isEqualToString:@"ToNavigationView"]) {
+        if ([str isEqualToString:@"ATM"]) {
+            // Closest node to the acual position of the ATMs?
+            // TODO: add a new node for ATM
+            str = @"Café Galileo's";
+        }
+        else if ([str isEqualToString:@"Lockers"]) {
+            // TODO: add a new node for lockers
+            str = @"travel10";
+        }
+        TableViewController *viewController = [segue destinationViewController];
+        viewController.destinationFromFacilities = str;
     }
-}*/
+}
 
 @end

@@ -18,7 +18,7 @@
 
 + (NSMutableArray*) dijkstra: (MapGraph *)graph  from:(Node *)source to:(Node *)goal;
 
-+ (NSMutableData *)drawPathFromSource:(Node *)source destination:(Node *)destination path:(NSArray *)path onPDF:(CGPDFPageRef)page;
++ (NSMutableData *)drawPathFromSource:(Node *)source destination:(Node *)destination path:(NSArray *)path graph:(MapGraph *)mg onPDF:(CGPDFPageRef)page;
 
 + (NSMutableData *)drawLineSegments:(CGPoint *)points path:(CGPoint *)path count:(size_t)count onPDF:(CGPDFPageRef)page;
 

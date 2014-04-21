@@ -27,14 +27,14 @@
 
     [super viewDidLoad];
 
-    MapGraph * mg = [[MapGraph alloc] init];
+    _mg = [[MapGraph alloc] init];
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
-    [mg createGraphFromFile:filePath];
-    Node* pointA =  [mg getNodeById:_source];
-    Node* pointB = [mg getNodeById:_destination];
+    [_mg createGraphFromFile:filePath];
+    Node* pointA =  [_mg getNodeById:_source];
+    Node* pointB = [_mg getNodeById:_destination];
     _path = [[NSMutableArray alloc] init];
     
-    _path = [MapViewController dijkstra:mg from:pointA to:pointB];
+    _path = [MapViewController dijkstra:_mg from:pointA to:pointB];
     
     self.nextImage.maximumValue = ([_path count] - 2);
     
@@ -84,7 +84,7 @@
             }
         }
         
-        NSData *data = [MapViewController drawPathFromSource:n1 destination:n2 path:pathVisible onPDF:_page];
+        NSData *data = [MapViewController drawPathFromSource:n1 destination:n2 path:pathVisible graph:_mg onPDF:_page];
         
         [view loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
     }
