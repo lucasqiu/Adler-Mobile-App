@@ -8,11 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HoursViewController : UIViewController
+@interface HoursViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UILabel *today;
+
+@property (strong, nonatomic) IBOutlet UILabel *weekday;
+@property (strong, nonatomic) IBOutlet UILabel *weekend;
+@property (strong, nonatomic) IBOutlet UITableView *showsTable;
 
 @property (strong, nonatomic) IBOutlet UIView *HoursView;
 @property (strong, nonatomic) IBOutlet UIView *ShowTimesView;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+
+@property (strong, nonatomic) NSArray * allShows;
+@property (strong, nonatomic) NSMutableDictionary * allTimings;
+
 - (IBAction)segmentedValueChanged:(id)sender;
+
+- (void) displayHoursSegment;
+- (void) displayShowTimesSegment;
 
 @end

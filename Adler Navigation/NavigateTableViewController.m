@@ -21,9 +21,9 @@
 {
     [_view2 setHidden:YES];
     
-    [_nextImage setTintColor:[UIColor blueColor]];
-    [_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
-    [_nextImage setDecrementImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
+    //[_nextImage setTintColor:[UIColor blueColor]];
+    //[_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
+    //[_nextImage setDecrementImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
 
     [super viewDidLoad];
 

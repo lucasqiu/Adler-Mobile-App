@@ -25,6 +25,8 @@
     
     UIImage* navBarBackground = [UIImage imageNamed:@"blue.png"];
     [[UINavigationBar appearance] setBackgroundImage:navBarBackground forBarMetrics:UIBarMetricsDefault];
+    
+    
    
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    // Override point for customization after application launch.
