@@ -15,6 +15,6 @@
 @property (strong, nonatomic) NSString *data;
 
 /// A destination passed to this view from the facilities view.
-@property NSString *destinationFromFacilities;
+@property NSString *dest;
 
 @end

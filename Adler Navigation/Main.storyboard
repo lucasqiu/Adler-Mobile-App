@@ -207,7 +207,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24N-iV-TGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3906" y="-1276"/>
+            <point key="canvasLocation" x="3970" y="-1156"/>
         </scene>
         <!--Each Map View Controller - Maps-->
         <scene sceneID="taN-Xl-h7L">
@@ -313,7 +313,7 @@
         <!--Table View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
             <objects>
-                <viewController id="Ubn-9S-Wlv" customClass="TableViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="prepareNavigate" id="Ubn-9S-Wlv" customClass="TableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PFr-52-9ci"/>
                         <viewControllerLayoutGuide type="bottom" id="hN8-Z7-dws"/>
@@ -381,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yc-DB-A2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4358" y="-655"/>
+            <point key="canvasLocation" x="4368" y="-353"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PUH-IY-pQG">
@@ -417,7 +417,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ubn-9S-Wlv" kind="relationship" relationship="rootViewController" id="Zam-pZ-w4d"/>
+                        <segue destination="Ubn-9S-Wlv" kind="relationship" relationship="rootViewController" id="6aJ-if-al2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsA-D2-Tcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -453,7 +453,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="8HV-Uj-rhw" kind="push" id="2VL-Q9-Uly"/>
+                                    <segue destination="hFn-Lw-tlt" kind="push" identifier="viewExhibitDetail" id="emF-fd-fPr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -473,22 +473,9 @@
                 </navigationBar>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKt-KH-OL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4302" y="304"/>
+            <point key="canvasLocation" x="4248" y="304"/>
         </scene>
-        <!--Image Pages Controller-->
-        <scene sceneID="PqU-gs-9wL">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="8HV-Uj-rhw" customClass="ImagePagesController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Kot-eE-TKC"/>
-                    <connections>
-                        <segue destination="hFn-Lw-tlt" kind="push" id="99u-gp-3eQ"/>
-                    </connections>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="puJ-ci-dz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4817" y="304"/>
-        </scene>
-        <!--Image View Controller-->
+        <!--Image View Controller - ok-->
         <scene sceneID="n1w-E2-b4z">
             <objects>
                 <viewController id="hFn-Lw-tlt" customClass="ImageViewController" sceneMemberID="viewController">
@@ -500,28 +487,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ak2-H7-WdQ" customClass="ImageView">
-                                <rect key="frame" x="0.0" y="-5" width="320" height="523"/>
+                            <imageView userInteractionEnabled="NO" tag="50" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ak2-H7-WdQ" customClass="ImageView">
+                                <rect key="frame" x="0.0" y="66" width="320" height="316"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHH-v5-Vzs">
-                                <rect key="frame" x="139" y="33" width="42" height="21"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVX-N4-yDQ">
+                                <rect key="frame" x="0.0" y="377" width="320" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolmollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEe-BL-xLa">
+                                <rect key="frame" x="68" y="478" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Navigate to Here">
+                                    <color key="titleColor" red="1" green="0.62800799223198589" blue="0.4289560380759927" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toNavigate:" destination="hFn-Lw-tlt" eventType="touchUpInside" id="ctF-ea-6iG"/>
+                                    <segue destination="Ubn-9S-Wlv" kind="push" identifier="NavigateToExhibit" id="JOX-VC-a77"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="K34-bv-s3d"/>
+                    <navigationItem key="navigationItem" title="ok" id="K34-bv-s3d"/>
                     <connections>
-                        <outlet property="backgroundImageView" destination="Ak2-H7-WdQ" id="sls-4d-Pxv"/>
-                        <outlet property="titleLabel" destination="BHH-v5-Vzs" id="J6y-UY-uEB"/>
+                        <outlet property="display" destination="Ak2-H7-WdQ" id="5Sv-TT-3Uh"/>
+                        <outlet property="longDetails" destination="jVX-N4-yDQ" id="jzb-LA-Q1Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2h-4e-sa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5271" y="304"/>
+            <point key="canvasLocation" x="4679" y="310"/>
         </scene>
         <!--Navigation Controller - Hours-->
         <scene sceneID="fIB-Zq-Eux">
@@ -559,7 +560,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6D8-kM-u64" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="-1276"/>
+            <point key="canvasLocation" x="3500" y="-1156"/>
         </scene>
         <!--Navigation Controller - Exihibits-->
         <scene sceneID="0f7-bB-w8Z">
@@ -588,7 +589,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Bs0-rc-VlB"/>
+        <segue reference="JOX-VC-a77"/>
         <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>

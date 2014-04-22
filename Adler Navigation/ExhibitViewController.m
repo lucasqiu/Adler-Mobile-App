@@ -71,19 +71,11 @@
         }
         [_exhibits addObject:exh];
     }
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
 
 #pragma mark - Table view data source
 
@@ -121,11 +113,17 @@
     else if ( [exhibit.images count] == 0){
     }
     else{ imageView.image = exhibit.images[0];}
-
+    
     
     return cell;
 }
 
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -165,15 +163,28 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"viewExhibitDetail"]) {
+        
+        NSLog(@"in prepare for segue   .");
+        
+        ImageViewController *vc = [segue destinationViewController];
+        vc.exhibits = _exhibits;;
+        
+        if(!vc.exhibits){
+            NSLog(@"exhibits nil");
+        }
+        
+        //self.imageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ImageViewController"];
+        //self.imageViewController.exhibits = _exhibits;
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Exhibit *exhibit = (self.exhibits)[indexPath.row];
+        [vc setCurrentExhibit:exhibit];
+    }
 }
-*/
+
 
 @end

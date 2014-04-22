@@ -13,6 +13,5 @@
 @property NSString* ID;
 @property NSString* description;
 @property NSMutableArray* images;
-@property BOOL displayed;
 
 @end

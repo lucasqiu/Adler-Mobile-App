@@ -7,11 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Exhibit.h"
+#import "TableViewController.h"
+
+
 
 @interface ImageViewController : UIViewController
 
-@property NSUInteger pageIndex;
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property NSMutableArray *exhibits;
+@property (weak, nonatomic) Exhibit* curExhibit;
+
+@property (weak, nonatomic) IBOutlet UILabel *exhibitName;
+@property (weak, nonatomic) IBOutlet UIImageView *display;
+@property (weak, nonatomic) IBOutlet UITextView *longDetails;
+
+- (IBAction)toNavigate:(id)sender;
+- (void) setCurrentExhibit:(Exhibit*)value;
 @end

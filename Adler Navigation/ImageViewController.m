@@ -27,9 +27,28 @@
 {
     [super viewDidLoad];
     
-   // self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
-    //self.titleLabel.text = self.titleText;
+    if(self.curExhibit){
+        //self.display.image = self.curExhibit.images[0];
+
+        self.longDetails.editable = NO;
+        if (self.curExhibit){
+            self.longDetails.text = self.curExhibit.description;
+            self.display.image = self.curExhibit.images[0];
+        }
+    }
+    else{
+        NSLog(@"nil exhibit passed");
+    }
+    
 }
+
+- (IBAction)toNavigate:(id)sender {
+}
+
+- (void) setCurrentExhibit:(Exhibit*)value {
+    _curExhibit = value;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -37,15 +56,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"NavigateToExhibit"]) {
+        TableViewController *tc = [segue destinationViewController];
+        tc.dest = _curExhibit.ID;
+    }
 }
-*/
+
 
 @end

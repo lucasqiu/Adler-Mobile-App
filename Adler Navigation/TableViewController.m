@@ -26,8 +26,9 @@
     self.destination.delegate = self;
     
     // Did we navigate here from facilities?
-    if (self.destinationFromFacilities) {
-        self.destination.text = self.destinationFromFacilities;
+    if (self.dest) {
+        NSLog(self.dest);
+        self.destination.text = self.dest;
     }
         
 }
@@ -66,6 +67,8 @@
     {
         NavigateTableViewController * navigate = [segue destinationViewController];
         navigate.source = _source.text;
+        NSLog(@"%@", _destination.text);
+        NSLog(@"#######################################");
         navigate.destination = _destination.text;
     }
     
