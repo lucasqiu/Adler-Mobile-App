@@ -8,6 +8,7 @@
 
 #import "HoursViewController.h"
 #import "TableViewController.h"
+#import "MapViewController.h"
 
 @interface HoursViewController ()
 
@@ -249,8 +250,15 @@
     {
         _today.text = times[1];
     }
-
 }
+
+
+- (NSString*) findNearestBathroom{
+
+    return @"";
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

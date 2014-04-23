@@ -628,6 +628,7 @@
                     <connections>
                         <outlet property="display" destination="Ak2-H7-WdQ" id="5Sv-TT-3Uh"/>
                         <outlet property="longDetails" destination="jVX-N4-yDQ" id="jzb-LA-Q1Y"/>
+                        <outlet property="naviButton" destination="LEe-BL-xLa" id="MA0-AN-0cl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2h-4e-sa5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -706,7 +707,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6aJ-if-al2"/>
         <segue reference="dCW-N5-2nI"/>
+        <segue reference="JOX-VC-a77"/>
     </inferredMetricsTieBreakers>
 </document>

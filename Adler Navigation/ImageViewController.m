@@ -31,9 +31,14 @@
         self.longDetails.editable = NO;
         self.longDetails.text = self.curExhibit.description;
         self.display.image = self.curExhibit.images[0];
-    
+        if ([self.curExhibit.ID isEqualToString: @"Hidden Wonders"]||
+            [self.curExhibit.ID isEqualToString: @"Sundials"]){
+            _naviButton.hidden = YES;
+        }
     }
 }
+
+
 
 - (IBAction)toNavigate:(id)sender {
 }
@@ -52,11 +57,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
     if ([segue.identifier isEqualToString:@"NavigateToExhibit"]) {
         TableViewController *tc = [segue destinationViewController];
         NSString *str = _curExhibit.ID;
-        tc.dest = str;// @"Telescopes"; // have to use string literal, not NSString here.
+        tc.dest = str;
     }
 }
 
