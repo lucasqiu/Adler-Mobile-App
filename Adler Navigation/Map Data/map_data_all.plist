@@ -74,7 +74,7 @@
 			<string>Citizen Science</string>
 			<string>Cyberspace</string>
 			<string>travel2</string>
-			<string>Atwood Sphere</string>
+			<string>Historic Atwood Sphere</string>
 		</array>
 	</dict>
 	<dict>
@@ -243,7 +243,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Atwood Sphere</string>
+		<string>Historic Atwood Sphere</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -403,7 +403,7 @@
 		<integer>134</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Atwood Sphere</string>
+			<string>Historic Atwood Sphere</string>
 			<string>travel4</string>
 			<string>travel2</string>
 		</array>

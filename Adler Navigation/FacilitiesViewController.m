@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
     // Listed in the order they appear in the table view.
     self.tableViewItems = @[ @"Coat Check",
                              @"Exit",

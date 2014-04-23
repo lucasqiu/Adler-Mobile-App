@@ -28,18 +28,11 @@
     [super viewDidLoad];
     
     if(self.curExhibit){
-        //self.display.image = self.curExhibit.images[0];
-
         self.longDetails.editable = NO;
-        if (self.curExhibit){
-            self.longDetails.text = self.curExhibit.description;
-            self.display.image = self.curExhibit.images[0];
-        }
-    }
-    else{
-        NSLog(@"nil exhibit passed");
-    }
+        self.longDetails.text = self.curExhibit.description;
+        self.display.image = self.curExhibit.images[0];
     
+    }
 }
 
 - (IBAction)toNavigate:(id)sender {
@@ -62,9 +55,19 @@
     // Get the new view controller using [segue destinationViewController].
     if ([segue.identifier isEqualToString:@"NavigateToExhibit"]) {
         TableViewController *tc = [segue destinationViewController];
-        tc.dest = _curExhibit.ID;
+        NSString *str = _curExhibit.ID;
+        tc.dest = str;// @"Telescopes"; // have to use string literal, not NSString here.
     }
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    UITextView *tv = self.longDetails;
+    tv.backgroundColor = [UIColor blackColor];
+    tv.textColor = [UIColor whiteColor];
+    
+    UIButton *btn = (UIButton *)[self.view viewWithTag:100];
+    //UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor blackColor];
+}
 
 @end

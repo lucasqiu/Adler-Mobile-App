@@ -17,14 +17,7 @@
 
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,21 +82,19 @@
         
         NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
         if (myIndexPath.row == 0) {
-            ViewController.data = @"top";
+            ViewController.currentFloor = @"top";
         }
         if (myIndexPath.row == 1) {
-            ViewController.data = @"mid";
+            ViewController.currentFloor = @"mid";
         }
         if (myIndexPath.row == 2) {
-            ViewController.data = @"lower";
+            ViewController.currentFloor = @"lower";
         }
         if (myIndexPath.row == 3) {
-            ViewController.data = @"star";
+            ViewController.currentFloor = @"star";
         }
         
     }
 }
-
-
 
 @end

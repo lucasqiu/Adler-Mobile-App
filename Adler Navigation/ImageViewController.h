@@ -14,14 +14,12 @@
 
 @interface ImageViewController : UIViewController
 
-
-@property NSMutableArray *exhibits;
-@property (weak, nonatomic) Exhibit* curExhibit;
-
 @property (weak, nonatomic) IBOutlet UILabel *exhibitName;
 @property (weak, nonatomic) IBOutlet UIImageView *display;
 @property (weak, nonatomic) IBOutlet UITextView *longDetails;
 
-- (IBAction)toNavigate:(id)sender;
+@property NSMutableArray *exhibits;
+@property (weak, nonatomic) Exhibit* curExhibit;
+
 - (void) setCurrentExhibit:(Exhibit*)value;
 @end

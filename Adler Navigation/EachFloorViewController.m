@@ -24,22 +24,18 @@
 
     NSString *myPlistFilePath = [[NSBundle mainBundle] pathForResource: @"map_data_all" ofType: @"plist"];
     exhibits = [NSArray arrayWithContentsOfFile: myPlistFilePath];
-
     
         int counter = 0;
         for (int i = 0; i < [exhibits count]; i++) {
             BOOL checkIfSourceOrDestination = [[exhibits[i] objectForKey:@"isSourceOrDestination"] boolValue];
             NSString * checkForFloor = [exhibits[i] objectForKey:@"floor"];
-            if ([checkForFloor isEqualToString:_data]) {
+            if ([checkForFloor isEqualToString:_currentFloor]) {
                 if (checkIfSourceOrDestination) {
                     _exhibits_to_display[counter] = [exhibits[i] objectForKey:@"uid"];
                     counter++;
                 }
             }
         }
-
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,12 +104,7 @@
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];
         NSString *str = cell.textLabel.text;
         ViewController.data = str;
-        
     }
-    
 }
-
-    
-
 
 @end

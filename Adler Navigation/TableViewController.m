@@ -25,12 +25,13 @@
     self.source.delegate = self;
     self.destination.delegate = self;
     
+    self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
+    
     // Did we navigate here from facilities?
     if (self.dest) {
         NSLog(self.dest);
         self.destination.text = self.dest;
     }
-        
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,11 +68,8 @@
     {
         NavigateTableViewController * navigate = [segue destinationViewController];
         navigate.source = _source.text;
-        NSLog(@"%@", _destination.text);
-        NSLog(@"#######################################");
         navigate.destination = _destination.text;
     }
-    
 }
 
 - (IBAction)sourceUnwindToViewController:(UIStoryboardSegue *)sourceUnwindSegue

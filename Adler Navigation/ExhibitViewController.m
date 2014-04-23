@@ -98,6 +98,7 @@
     
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExhibitCell" forIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
     
     Exhibit *exhibit = (self.exhibits)[indexPath.row];
     

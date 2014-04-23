@@ -38,6 +38,7 @@
 		720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */; };
 		725F0C5F18D663D9003D8FD5 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		725F0C6118D6B485003D8FD5 /* PriorityQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */; };
+		7269812B1907658D003D3C60 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7269812A1907658D003D3C60 /* home2.png */; };
 		726E853F19039777007F5803 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726E853E19039777007F5803 /* ImageViewController.m */; };
 		726E85711903B332007F5803 /* cyb0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 726E85441903B332007F5803 /* cyb0.jpg */; };
 		726E85721903B332007F5803 /* cyb_long.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85451903B332007F5803 /* cyb_long.txt */; };
@@ -166,6 +167,7 @@
 		720700DD18F8F2C400B17AD3 /* ExhibitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitViewController.h; sourceTree = "<group>"; };
 		720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ExhibitViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueueTests.m; sourceTree = "<group>"; };
+		7269812A1907658D003D3C60 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
 		726E853D19039777007F5803 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		726E853E19039777007F5803 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		726E85441903B332007F5803 /* cyb0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cyb0.jpg; sourceTree = "<group>"; };
@@ -358,9 +360,10 @@
 				FEA4A88918F4DF6E00A01AA8 /* adlerHome.png */,
 				FEA4A88B18F4E0D000A01AA8 /* black.png */,
 				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
+				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
+				7269812A1907658D003D3C60 /* home2.png */,
 				727A22F018F0BA36005DF50E /* Exhibit Data */,
 				727A22EF18F0BA31005DF50E /* Map Data */,
-				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
 				30E5025F183607E100BCDA41 /* main.m */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
 				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
@@ -706,6 +709,7 @@
 				726E85821903B332007F5803 /* solar_short.txt in Resources */,
 				726E85831903B332007F5803 /* pe0.png in Resources */,
 				72DF6DF718F0BEE200B7B6F6 /* mid_paths.pdf in Resources */,
+				7269812B1907658D003D3C60 /* home2.png in Resources */,
 				726E85871903B332007F5803 /* sfm_long.txt in Resources */,
 				726E85741903B332007F5803 /* hid0.jpg in Resources */,
 				726E85A71903C8C4007F5803 /* unv_name.txt in Resources */,
