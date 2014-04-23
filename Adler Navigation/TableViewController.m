@@ -30,7 +30,6 @@
     
     // Did we navigate here from facilities?
     if (self.dest) {
-        NSLog(self.dest);
         self.destination.text = self.dest;
     }
 }
