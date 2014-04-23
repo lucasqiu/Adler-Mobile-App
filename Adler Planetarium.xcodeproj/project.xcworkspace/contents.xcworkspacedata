@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Adler Navigation.xcodeproj">
+      location = "self:Adler Planetarium.xcodeproj">
    </FileRef>
 </Workspace>

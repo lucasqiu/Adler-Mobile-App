@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor blackColor];
     if(self.curExhibit){
         self.longDetails.editable = NO;
         self.longDetails.text = self.curExhibit.description;
@@ -70,7 +70,6 @@
     tv.textColor = [UIColor whiteColor];
     
     UIButton *btn = (UIButton *)[self.view viewWithTag:100];
-    //UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor blackColor];
 }
 

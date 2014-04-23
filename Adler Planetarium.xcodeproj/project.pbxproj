@@ -131,22 +131,22 @@
 		30E3740C18408BCC00996B60 /* MapViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewControllerTests.m; sourceTree = "<group>"; };
 		30E374141858464500996B60 /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
 		30E374151858464500996B60 /* PriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueue.m; sourceTree = "<group>"; };
-		30E5024E183607E100BCDA41 /* Adler Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adler Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E5024E183607E100BCDA41 /* Adler Planetarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adler Planetarium.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E50251183607E100BCDA41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30E50253183607E100BCDA41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		30E50255183607E100BCDA41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30E50257183607E100BCDA41 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler Navigation-Info.plist"; sourceTree = "<group>"; };
+		30E5025B183607E100BCDA41 /* Adler Planetarium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler Planetarium-Info.plist"; sourceTree = "<group>"; };
 		30E5025D183607E100BCDA41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30E5025F183607E100BCDA41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		30E50261183607E100BCDA41 /* Adler Navigation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Adler Navigation-Prefix.pch"; sourceTree = "<group>"; };
+		30E50261183607E100BCDA41 /* Adler Planetarium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Adler Planetarium-Prefix.pch"; sourceTree = "<group>"; };
 		30E50262183607E100BCDA41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30E50263183607E100BCDA41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		30E50266183607E100BCDA41 /* Adler_Navigation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adler_Navigation.xcdatamodel; sourceTree = "<group>"; };
 		30E50268183607E100BCDA41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		30E5026E183607E100BCDA41 /* Adler NavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adler NavigationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E5026E183607E100BCDA41 /* Adler PlanetariumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adler PlanetariumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E5026F183607E100BCDA41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		30E50278183607E100BCDA41 /* Adler NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler NavigationTests-Info.plist"; sourceTree = "<group>"; };
+		30E50278183607E100BCDA41 /* Adler PlanetariumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler PlanetariumTests-Info.plist"; sourceTree = "<group>"; };
 		30E5027A183607E100BCDA41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adler_NavigationTests.m; sourceTree = "<group>"; };
 		30E502871836084000BCDA41 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = Model/Node.h; sourceTree = "<group>"; };
@@ -290,8 +290,8 @@
 		30E5024F183607E100BCDA41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30E5024E183607E100BCDA41 /* Adler Navigation.app */,
-				30E5026E183607E100BCDA41 /* Adler NavigationTests.xctest */,
+				30E5024E183607E100BCDA41 /* Adler Planetarium.app */,
+				30E5026E183607E100BCDA41 /* Adler PlanetariumTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -355,8 +355,8 @@
 				727A22EF18F0BA31005DF50E /* Map Data */,
 				30E5025F183607E100BCDA41 /* main.m */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
-				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
-				30E50261183607E100BCDA41 /* Adler Navigation-Prefix.pch */,
+				30E5025B183607E100BCDA41 /* Adler Planetarium-Info.plist */,
+				30E50261183607E100BCDA41 /* Adler Planetarium-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -376,7 +376,7 @@
 		30E50277183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				30E50278183607E100BCDA41 /* Adler NavigationTests-Info.plist */,
+				30E50278183607E100BCDA41 /* Adler PlanetariumTests-Info.plist */,
 				30E50279183607E100BCDA41 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -581,9 +581,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30E5024D183607E100BCDA41 /* Adler Navigation */ = {
+		30E5024D183607E100BCDA41 /* Adler Planetarium */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Navigation" */;
+			buildConfigurationList = 30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Planetarium" */;
 			buildPhases = (
 				30E5024A183607E100BCDA41 /* Sources */,
 				30E5024B183607E100BCDA41 /* Frameworks */,
@@ -593,14 +593,14 @@
 			);
 			dependencies = (
 			);
-			name = "Adler Navigation";
+			name = "Adler Planetarium";
 			productName = "Adler Navigation";
-			productReference = 30E5024E183607E100BCDA41 /* Adler Navigation.app */;
+			productReference = 30E5024E183607E100BCDA41 /* Adler Planetarium.app */;
 			productType = "com.apple.product-type.application";
 		};
-		30E5026D183607E100BCDA41 /* Adler NavigationTests */ = {
+		30E5026D183607E100BCDA41 /* Adler PlanetariumTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler NavigationTests" */;
+			buildConfigurationList = 30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler PlanetariumTests" */;
 			buildPhases = (
 				30E5026A183607E100BCDA41 /* Sources */,
 				30E5026B183607E100BCDA41 /* Frameworks */,
@@ -611,9 +611,9 @@
 			dependencies = (
 				30E50275183607E100BCDA41 /* PBXTargetDependency */,
 			);
-			name = "Adler NavigationTests";
+			name = "Adler PlanetariumTests";
 			productName = "Adler NavigationTests";
-			productReference = 30E5026E183607E100BCDA41 /* Adler NavigationTests.xctest */;
+			productReference = 30E5026E183607E100BCDA41 /* Adler PlanetariumTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -630,7 +630,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Navigation" */;
+			buildConfigurationList = 30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Planetarium" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -642,8 +642,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30E5024D183607E100BCDA41 /* Adler Navigation */,
-				30E5026D183607E100BCDA41 /* Adler NavigationTests */,
+				30E5024D183607E100BCDA41 /* Adler Planetarium */,
+				30E5026D183607E100BCDA41 /* Adler PlanetariumTests */,
 			);
 		};
 /* End PBXProject section */
@@ -782,7 +782,7 @@
 /* Begin PBXTargetDependency section */
 		30E50275183607E100BCDA41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 30E5024D183607E100BCDA41 /* Adler Navigation */;
+			target = 30E5024D183607E100BCDA41 /* Adler Planetarium */;
 			targetProxy = 30E50274183607E100BCDA41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -883,9 +883,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Adler Navigation/Adler Navigation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
+				INFOPLIST_FILE = "Adler Navigation/Adler Planetarium-Info.plist";
+				PRODUCT_NAME = "Adler Planetarium";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -896,9 +896,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Adler Navigation/Adler Navigation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
+				INFOPLIST_FILE = "Adler Navigation/Adler Planetarium-Info.plist";
+				PRODUCT_NAME = "Adler Planetarium";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -918,8 +918,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Adler NavigationTests/Adler NavigationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Adler NavigationTests/Adler PlanetariumTests-Info.plist";
+				PRODUCT_NAME = "Adler PlanetariumTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -936,8 +936,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Adler NavigationTests/Adler NavigationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Adler NavigationTests/Adler PlanetariumTests-Info.plist";
+				PRODUCT_NAME = "Adler PlanetariumTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -946,7 +946,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Navigation" */ = {
+		30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Planetarium" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E5027E183607E100BCDA41 /* Debug */,
@@ -955,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Navigation" */ = {
+		30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Planetarium" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E50281183607E100BCDA41 /* Debug */,
@@ -964,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler NavigationTests" */ = {
+		30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler PlanetariumTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E50284183607E100BCDA41 /* Debug */,
