@@ -14,13 +14,16 @@
 @property (strong, nonatomic) IBOutlet UILabel *weekday;
 @property (strong, nonatomic) IBOutlet UILabel *weekend;
 @property (strong, nonatomic) IBOutlet UITableView *showsTable;
+@property (strong, nonatomic) IBOutlet UITableView *facilitiesTable;
 
 @property (strong, nonatomic) IBOutlet UIView *HoursView;
 @property (strong, nonatomic) IBOutlet UIView *ShowTimesView;
+@property (strong, nonatomic) IBOutlet UIView *FacilitiesView;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @property (strong, nonatomic) NSArray * allShows;
 @property (strong, nonatomic) NSMutableDictionary * allTimings;
+@property (strong, nonatomic) NSArray * facilitiesTableViewItems;
 
 - (IBAction)segmentedValueChanged:(id)sender;
 

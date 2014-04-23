@@ -7,13 +7,14 @@
 //
 
 #import "HoursViewController.h"
+#import "TableViewController.h"
 
 @interface HoursViewController ()
 
 @end
 
 @implementation HoursViewController
-@synthesize HoursView, ShowTimesView, showsTable;
+@synthesize HoursView, ShowTimesView, FacilitiesView,showsTable;
 
 - (void)viewDidLoad
 {
@@ -22,6 +23,16 @@
     
     [self displayHoursSegment];
     [self displayShowTimesSegment];
+    
+    _facilitiesTableViewItems = @[ @"Coat Check",
+                             @"Exit",
+                             @"Information",
+                             @"Restrooms",
+                             @"Lockers",
+                             @"ATM",
+                             @"Café Galileo's",
+                             @"Adler Store"
+                             ];
         
 }
 
@@ -59,6 +70,35 @@
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([tableView isEqual:_facilitiesTable]) {
+        [self performSegueWithIdentifier:@"takeToFacility" sender:self];
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *myIndexPath = [self.facilitiesTable indexPathForSelectedRow];
+    UITableViewCell *cell = [self.facilitiesTable cellForRowAtIndexPath:myIndexPath];
+    NSString *str = cell.textLabel.text;
+    
+    if ([[segue identifier] isEqualToString:@"takeToFacility"]) {
+        if ([str isEqualToString:@"ATM"]) {
+            // Closest node to the acual position of the ATMs?
+            // TODO: add a new node for ATM
+            str = @"Café Galileo's";
+        }
+        else if ([str isEqualToString:@"Lockers"]) {
+            // TODO: add a new node for lockers
+            str = @"travel10";
+        }
+        TableViewController *viewController = [segue destinationViewController];
+        viewController.destinationFromFacilities = str;
+    }
+}
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -66,11 +106,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_allShows count];
+    if ([tableView isEqual:showsTable]) {
+        return [_allShows count];
+    }
+    
+    else {
+        return [_facilitiesTableViewItems count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if ([tableView isEqual:showsTable]) {
+        
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -84,6 +132,21 @@
     NSString *timings = [_allTimings objectForKey:shows];
     cell.detailTextLabel.text = timings;
     return cell;
+    }
+    
+    else {
+        static NSString *CellIdentifier = @"Cell";
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        }
+        
+        cell.textLabel.text = _facilitiesTableViewItems[indexPath.row];
+        return cell;
+
+    }
 }
 
 - (void) displayHoursSegment
@@ -224,12 +287,20 @@
     switch (sender.selectedSegmentIndex) {
         case 0:
             self.HoursView.hidden = NO;
+            self.FacilitiesView.hidden = YES;
             self.ShowTimesView.hidden = YES;
             break;
             
         case 1:
             self.HoursView.hidden = YES;
             self.ShowTimesView.hidden = NO;
+            self.FacilitiesView.hidden = YES;
+            break;
+            
+        case 2:
+            self.FacilitiesView.hidden = NO;
+            self.ShowTimesView.hidden = YES;
+            self.HoursView.hidden = YES;
             
         default:
             break;
