@@ -56,7 +56,7 @@
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:@"Navigate"]){
         if ([_source.text isEqualToString:@""]||[_destination.text isEqualToString:@""]){
-            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"Navigation Error" message:@"Please fill in both fields."
+            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"Ummm.." message:@"\nPlease fill in both fields.\n\n"
                                             delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
                                                           otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
             [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
