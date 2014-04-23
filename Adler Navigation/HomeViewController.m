@@ -18,20 +18,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     aboutTableView.backgroundColor = [UIColor clearColor];
     _HomeImage.image = [UIImage imageNamed:@"home2.png"];
+    
+    UIButton *btn = (UIButton *)[self.view viewWithTag:100];
+    btn.backgroundColor = [UIColor clearColor];
+    btn.layer.borderWidth = 1.5f;
+    btn.layer.borderColor = [[UIColor whiteColor] CGColor];
+    btn.layer.cornerRadius = 10.0f;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -41,7 +42,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,19 +56,7 @@
         }
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"About Us";
-    }
-    
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"About Adler";
-    }
-    
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"How to use this app";
-    }
-    
-    if (indexPath.row == 3) {
-        cell.textLabel.text = @"Adler Website";
+        cell.textLabel.text = @"How to use the app";
     }
     
     cell.backgroundColor = [UIColor clearColor];

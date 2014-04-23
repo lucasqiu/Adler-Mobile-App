@@ -26,7 +26,7 @@
     //[_nextImage setDecrementImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
 
     [super viewDidLoad];
-
+    
     _mg = [[MapGraph alloc] init];
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
     [_mg createGraphFromFile:filePath];

@@ -20,8 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
+    
     [self displayHoursSegment];
     [self displayShowTimesSegment];
     
@@ -34,7 +33,6 @@
                              @"Café Galileo's",
                              @"Adler Store"
                              ];
-        
 }
 
 - (void) displayShowTimesSegment
@@ -67,8 +65,6 @@
         }
         [_allTimings setValue:allTimes forKey:[_allShows objectAtIndex:i]];
     }
-
-    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -253,17 +249,10 @@
 }
 
 
-- (NSString*) findNearestBathroom{
-
-    return @"";
-}
-
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

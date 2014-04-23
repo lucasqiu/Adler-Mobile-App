@@ -10,6 +10,7 @@
 
 @interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *HomeImage;
+@property (weak, nonatomic) IBOutlet UIButton *tutorial;
 
 @property (strong, nonatomic) IBOutlet UITableView *aboutTableView;
 

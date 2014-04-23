@@ -25,11 +25,23 @@
     //[_giveDirections setEnabled:NO];
     self.source.delegate = self;
     self.destination.delegate = self;
-    self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
     
     if (self.dest) {
         self.destination.text = self.dest;
     }
+    UITextField *src = (UITextField *)[self.view viewWithTag:1];
+    UITextField *des = (UITextField *)[self.view viewWithTag:2];
+    NSMutableArray *arr = [[NSMutableArray alloc]init];
+    [arr addObject:src];
+    [arr addObject:des];
+    for (int i=0;i<2;i++){
+        UITextField *t = [arr objectAtIndex:i];
+        t.layer.borderWidth = 1.5f;
+        t.layer.borderColor = [[UIColor blackColor] CGColor];
+    }
+    UIButton *btn = (UIButton *)[self.view viewWithTag:3];
+    btn.layer.borderWidth = 1.5f;
+    btn.layer.cornerRadius = 9.0f;
 }
 
 - (IBAction)editingChanged {

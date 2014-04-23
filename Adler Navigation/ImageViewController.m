@@ -35,6 +35,12 @@
             [self.curExhibit.ID isEqualToString: @"Sundials"]){
             _naviButton.hidden = YES;
         }
+        UITextView *tv = self.longDetails;
+        tv.backgroundColor = [UIColor blackColor];
+        tv.textColor = [UIColor whiteColor];
+        
+        UIButton *btn = (UIButton *)[self.view viewWithTag:100];
+        btn.backgroundColor = [UIColor blackColor];
     }
 }
 
@@ -64,13 +70,5 @@
     }
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    UITextView *tv = self.longDetails;
-    tv.backgroundColor = [UIColor blackColor];
-    tv.textColor = [UIColor whiteColor];
-    
-    UIButton *btn = (UIButton *)[self.view viewWithTag:100];
-    btn.backgroundColor = [UIColor blackColor];
-}
 
 @end
