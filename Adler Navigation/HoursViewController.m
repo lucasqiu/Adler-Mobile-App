@@ -109,7 +109,6 @@
     if ([tableView isEqual:showsTable]) {
         return [_allShows count];
     }
-    
     else {
         return [_facilitiesTableViewItems count];
     }
@@ -142,10 +141,8 @@
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         }
-        
         cell.textLabel.text = _facilitiesTableViewItems[indexPath.row];
         return cell;
-
     }
 }
 
@@ -176,34 +173,25 @@
         NSNumber * min_close = [close objectForKey:@"min"];
         
         int flagForPM = 0;
-        
         int modifyHour;
         NSString * closingHour,*closingMin, *openingHour, *openingMin;
-        
         
         /************* Opening Hour & Min ***************/
         if ([hour_open intValue] > 12) {
             modifyHour = [hour_open intValue] - 12;
             flagForPM = 1;
-            
         }
-        
-        
-        else
-        {
+        else{
             modifyHour = [hour_open intValue];
         }
         openingHour = [NSString stringWithFormat:@"%d", modifyHour];
         
-        
         if ([min_open isEqualToNumber:[NSNumber numberWithInt:0]]) {
             openingMin = @"00";
         }
-        else
-        {
+        else{
             openingMin = [min_open stringValue];
         }
-        
         NSString * timings = [[NSString alloc] init];
         timings = [timings stringByAppendingString:openingHour];
         timings = [timings stringByAppendingString:@" : "];
@@ -212,12 +200,9 @@
         if (flagForPM) {
             timings = [timings stringByAppendingString:@" PM - "];
         }
-        
-        else {
+        else{
             timings = [timings stringByAppendingString:@" AM - "];
         }
-        
-        
         flagForPM = 0;
         
         /*************** Closing Hour & Min *******************/
@@ -225,24 +210,17 @@
             modifyHour = [hour_close intValue] - 12;
             flagForPM = 1;
         }
-        
-        
-        else
-        {
+        else{
             modifyHour = [hour_close intValue];
         }
         closingHour = [NSString stringWithFormat:@"%d", modifyHour];
         
-        
-        
         if ([min_close isEqualToNumber:[NSNumber numberWithInt:0]]) {
             closingMin = @"00";
         }
-        else
-        {
+        else{
             closingMin = [min_close stringValue];
         }
-        
         timings = [timings stringByAppendingString:closingHour];
         timings = [timings stringByAppendingString:@" : "];
         timings = [timings stringByAppendingString:closingMin];
@@ -250,12 +228,10 @@
         if (flagForPM) {
             timings = [timings stringByAppendingString:@" PM"];
         }
-        
-        else {
+        else{
             timings = [timings stringByAppendingString:@" AM"];
         }
         [times addObject:timings];
-        
     }
     
     

@@ -643,11 +643,11 @@
             </objects>
             <point key="canvasLocation" x="4679" y="310"/>
         </scene>
-        <!--Navigation Controller - Hours-->
+        <!--Navigation Controller - Info-->
         <scene sceneID="fIB-Zq-Eux">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YMc-Z3-TOm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hours" image="Hourcon" id="LBR-Tf-XVI"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="Infocon" id="LBR-Tf-XVI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Do-qd-mVB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -706,7 +706,7 @@
         <image name="Exhibitcon" width="30" height="30"/>
         <image name="Facicon" width="30" height="30"/>
         <image name="Homecon" width="30" height="30"/>
-        <image name="Hourcon" width="29" height="30"/>
+        <image name="Infocon" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="0.0053233662489999998" green="0.0018636604199999999" blue="0.061587126360000001" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -715,7 +715,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="htW-Mt-HYX"/>
+        <segue reference="6aJ-if-al2"/>
         <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>
