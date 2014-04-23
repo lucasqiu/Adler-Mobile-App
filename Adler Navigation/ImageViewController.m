@@ -27,9 +27,21 @@
 {
     [super viewDidLoad];
     
-   // self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
-    //self.titleLabel.text = self.titleText;
+    if(self.curExhibit){
+        self.longDetails.editable = NO;
+        self.longDetails.text = self.curExhibit.description;
+        self.display.image = self.curExhibit.images[0];
+    
+    }
 }
+
+- (IBAction)toNavigate:(id)sender {
+}
+
+- (void) setCurrentExhibit:(Exhibit*)value {
+    _curExhibit = value;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -37,15 +49,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"NavigateToExhibit"]) {
+        TableViewController *tc = [segue destinationViewController];
+        NSString *str = _curExhibit.ID;
+        tc.dest = str;// @"Telescopes"; // have to use string literal, not NSString here.
+    }
 }
-*/
+
+-(void)viewWillAppear:(BOOL)animated{
+    UITextView *tv = self.longDetails;
+    tv.backgroundColor = [UIColor blackColor];
+    tv.textColor = [UIColor whiteColor];
+    
+    UIButton *btn = (UIButton *)[self.view viewWithTag:100];
+    //UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor blackColor];
+}
 
 @end

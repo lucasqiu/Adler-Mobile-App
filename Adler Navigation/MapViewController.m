@@ -59,8 +59,8 @@ const integer_t INFINIT = FLT_MAX;
  */
 + (NSMutableArray *) dijkstra:     (MapGraph *)graph  from:(Node *)source to:(Node *)goal
 {
-    if( (!graph) || (!source) || (!goal) ){
-        [NSException raise:@"Nil parameters exist!\n" format:@"Parameters nil."];
+    if((!source) ||  (!goal) ||  (!graph)) {
+        [NSException raise:@"Nil Parameter(s)!\n" format:@"Parameters nil."];
         return nil;
     }
     

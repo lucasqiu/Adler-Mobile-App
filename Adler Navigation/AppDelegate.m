@@ -18,18 +18,16 @@
 {
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                        [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                       [UIFont fontWithName:@"ArialRoundedMTBold" size:10.0f], NSFontAttributeName,
                                                        nil] forState:UIControlStateNormal];
     
     UIImage* tabBarBackground = [UIImage imageNamed:@"black.png"];
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];
-    
-    UIImage* navBarBackground = [UIImage imageNamed:@"blue.png"];
-    [[UINavigationBar appearance] setBackgroundImage:navBarBackground forBarMetrics:UIBarMetricsDefault];
-    
-    
+    [[UINavigationBar appearance] setBackgroundColor: [UIColor blackColor]];
+    //[[UINavigationBar appearance] setBackgroundImage:navBarBackground forBarMetrics:UIBarMetricsDefault];
    
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
+      //Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
     return YES;

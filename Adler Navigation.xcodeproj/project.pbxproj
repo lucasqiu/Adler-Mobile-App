@@ -38,8 +38,8 @@
 		720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */; };
 		725F0C5F18D663D9003D8FD5 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		725F0C6118D6B485003D8FD5 /* PriorityQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */; };
+		7269812B1907658D003D3C60 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7269812A1907658D003D3C60 /* home2.png */; };
 		726E853F19039777007F5803 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726E853E19039777007F5803 /* ImageViewController.m */; };
-		726E85421903A51C007F5803 /* ImagePagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726E85411903A51C007F5803 /* ImagePagesController.m */; };
 		726E85711903B332007F5803 /* cyb0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 726E85441903B332007F5803 /* cyb0.jpg */; };
 		726E85721903B332007F5803 /* cyb_long.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85451903B332007F5803 /* cyb_long.txt */; };
 		726E85731903B332007F5803 /* cyb_short.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85461903B332007F5803 /* cyb_short.txt */; };
@@ -167,10 +167,9 @@
 		720700DD18F8F2C400B17AD3 /* ExhibitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitViewController.h; sourceTree = "<group>"; };
 		720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ExhibitViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueueTests.m; sourceTree = "<group>"; };
+		7269812A1907658D003D3C60 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
 		726E853D19039777007F5803 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		726E853E19039777007F5803 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		726E85401903A51C007F5803 /* ImagePagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePagesController.h; sourceTree = "<group>"; };
-		726E85411903A51C007F5803 /* ImagePagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePagesController.m; sourceTree = "<group>"; };
 		726E85441903B332007F5803 /* cyb0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cyb0.jpg; sourceTree = "<group>"; };
 		726E85451903B332007F5803 /* cyb_long.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyb_long.txt; sourceTree = "<group>"; };
 		726E85461903B332007F5803 /* cyb_short.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyb_short.txt; sourceTree = "<group>"; };
@@ -331,26 +330,21 @@
 				FE5C87EE18D634C3009E2CC2 /* FacilitiesViewController.h */,
 				FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */,
 				FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */,
-				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
-				FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */,
 				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
 				FE5C87F518D634C3009E2CC2 /* HomeViewController.h */,
-				726E85401903A51C007F5803 /* ImagePagesController.h */,
-				726E85411903A51C007F5803 /* ImagePagesController.m */,
-				726E853D19039777007F5803 /* ImageViewController.h */,
-				726E853E19039777007F5803 /* ImageViewController.m */,
-				FE5C87E618D63449009E2CC2 /* TableViewController.m */,
-				FE5C87E818D63449009E2CC2 /* TableViewController.h */,
-				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
-				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
-				30E3740918403EAB00996B60 /* MapViewController.h */,
-				30E3740A18403EAB00996B60 /* MapViewController.m */,
-				30E374141858464500996B60 /* PriorityQueue.h */,
-				30E374151858464500996B60 /* PriorityQueue.m */,
-				728FD49F18D0F66D0073C43F /* comparable.h */,
-				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
 				FED8ED8718F76290005A285B /* HoursViewController.h */,
 				FED8ED8818F76290005A285B /* HoursViewController.m */,
+				726E853D19039777007F5803 /* ImageViewController.h */,
+				726E853E19039777007F5803 /* ImageViewController.m */,
+				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
+				FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */,
+				30E3740918403EAB00996B60 /* MapViewController.h */,
+				30E3740A18403EAB00996B60 /* MapViewController.m */,
+				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
+				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
+				FE5C87E618D63449009E2CC2 /* TableViewController.m */,
+				FE5C87E818D63449009E2CC2 /* TableViewController.h */,
+				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
 				30E50265183607E100BCDA41 /* Adler_Navigation.xcdatamodeld */,
@@ -366,9 +360,10 @@
 				FEA4A88918F4DF6E00A01AA8 /* adlerHome.png */,
 				FEA4A88B18F4E0D000A01AA8 /* black.png */,
 				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
+				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
+				7269812A1907658D003D3C60 /* home2.png */,
 				727A22F018F0BA36005DF50E /* Exhibit Data */,
 				727A22EF18F0BA31005DF50E /* Map Data */,
-				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
 				30E5025F183607E100BCDA41 /* main.m */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
 				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
@@ -401,6 +396,9 @@
 		30E502861836080B00BCDA41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30E374141858464500996B60 /* PriorityQueue.h */,
+				30E374151858464500996B60 /* PriorityQueue.m */,
+				728FD49F18D0F66D0073C43F /* comparable.h */,
 				30E502901836222000BCDA41 /* Edge.h */,
 				30E502911836222000BCDA41 /* Edge.m */,
 				30E502871836084000BCDA41 /* Node.h */,
@@ -711,6 +709,7 @@
 				726E85821903B332007F5803 /* solar_short.txt in Resources */,
 				726E85831903B332007F5803 /* pe0.png in Resources */,
 				72DF6DF718F0BEE200B7B6F6 /* mid_paths.pdf in Resources */,
+				7269812B1907658D003D3C60 /* home2.png in Resources */,
 				726E85871903B332007F5803 /* sfm_long.txt in Resources */,
 				726E85741903B332007F5803 /* hid0.jpg in Resources */,
 				726E85A71903C8C4007F5803 /* unv_name.txt in Resources */,
@@ -773,7 +772,6 @@
 				720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */,
 				FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
-				726E85421903A51C007F5803 /* ImagePagesController.m in Sources */,
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
 				FED8ED8918F76290005A285B /* HoursViewController.m in Sources */,

@@ -26,11 +26,13 @@
     self.source.delegate = self;
     self.destination.delegate = self;
     
+    self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
+    
     // Did we navigate here from facilities?
-    if (self.destinationFromFacilities) {
-        self.destination.text = self.destinationFromFacilities;
+    if (self.dest) {
+        NSLog(self.dest);
+        self.destination.text = self.dest;
     }
-        
 }
 
 - (IBAction)editingChanged {
@@ -78,7 +80,6 @@
         navigate.source = _source.text;
         navigate.destination = _destination.text;
     }
-    
 }
 
 - (IBAction)sourceUnwindToViewController:(UIStoryboardSegue *)sourceUnwindSegue
