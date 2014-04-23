@@ -7,13 +7,14 @@
 //
 
 #import "HoursViewController.h"
+#import "TableViewController.h"
 
 @interface HoursViewController ()
 
 @end
 
 @implementation HoursViewController
-@synthesize HoursView, ShowTimesView, showsTable;
+@synthesize HoursView, ShowTimesView, FacilitiesView,showsTable;
 
 - (void)viewDidLoad
 {
@@ -224,12 +225,20 @@
     switch (sender.selectedSegmentIndex) {
         case 0:
             self.HoursView.hidden = NO;
+            self.FacilitiesView.hidden = YES;
             self.ShowTimesView.hidden = YES;
             break;
             
         case 1:
             self.HoursView.hidden = YES;
             self.ShowTimesView.hidden = NO;
+            self.FacilitiesView.hidden = YES;
+            break;
+            
+        case 2:
+            self.FacilitiesView.hidden = NO;
+            self.ShowTimesView.hidden = YES;
+            self.HoursView.hidden = YES;
             
         default:
             break;
