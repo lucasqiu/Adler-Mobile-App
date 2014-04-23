@@ -54,14 +54,15 @@
 }
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if ([_source.text isEqualToString:@""]||[_destination.text isEqualToString:@""]){
-        UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"Navigation Error" message:@"Please fill in both fields."
-                                        delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
-                                                      otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
-        
-        [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
-        [navigateAlert show];
-        return NO;
+    if ([identifier isEqualToString:@"Navigate"]){
+        if ([_source.text isEqualToString:@""]||[_destination.text isEqualToString:@""]){
+            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"Navigation Error" message:@"Please fill in both fields."
+                                            delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                                          otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
+            [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
+            [navigateAlert show];
+            return NO;
+        }
     }
     return YES;
 }

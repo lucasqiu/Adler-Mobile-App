@@ -105,7 +105,6 @@
 		FE5C87E918D63449009E2CC2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* TableViewController.m */; };
 		FE5C87F718D634C3009E2CC2 /* EachFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */; };
 		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
-		FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */; };
 		FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */; };
 		FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */; };
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
@@ -240,8 +239,6 @@
 		FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachFloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorViewController.h; sourceTree = "<group>"; };
-		FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesViewController.m; sourceTree = "<group>"; };
-		FE5C87EE18D634C3009E2CC2 /* FacilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesViewController.h; sourceTree = "<group>"; };
 		FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachMapViewController.m; sourceTree = "<group>"; };
 		FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachMapViewController.h; sourceTree = "<group>"; };
 		FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFloorViewController.m; sourceTree = "<group>"; };
@@ -326,8 +323,6 @@
 				720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */,
 				FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */,
 				FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */,
-				FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */,
-				FE5C87EE18D634C3009E2CC2 /* FacilitiesViewController.h */,
 				FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */,
 				FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */,
 				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
@@ -770,7 +765,6 @@
 				30E502951836263100BCDA41 /* MapGraph.m in Sources */,
 				30E3740B18403EAB00996B60 /* MapViewController.m in Sources */,
 				720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */,
-				FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
