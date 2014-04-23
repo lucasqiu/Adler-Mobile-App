@@ -19,6 +19,8 @@
 @property (strong, nonatomic) IBOutlet UIWebView *view2;
 @property (strong, nonatomic) IBOutlet UIStepper *nextImage;
 @property (nonatomic) CGPDFPageRef page;
+@property (strong, nonatomic) Node *n1;
+@property (strong, nonatomic) Node *n2;
 
 //label to display the direction in text form.
 @property (strong, nonatomic) IBOutlet UILabel *textDirection;

@@ -160,10 +160,10 @@ const integer_t INFINIT = FLT_MAX;
 
 + (NSMutableData *)drawLineSegments:(CGPoint *)points path:(CGPoint *)path count:(size_t)count onPDF:(CGPDFPageRef)page
 {
-    CGRect pageRect = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
+    CGRect pageRect = CGPDFPageGetBoxRect(page, kCGPDFArtBox);
     
     NSMutableData *data = [[NSMutableData alloc] init];
-    UIGraphicsBeginPDFContextToData(data, CGRectZero, nil);
+    UIGraphicsBeginPDFContextToData(data, pageRect, nil);
     UIGraphicsBeginPDFPageWithInfo(pageRect, nil);
     
 	// get the context for CoreGraphics

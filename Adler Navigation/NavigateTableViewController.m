@@ -20,6 +20,8 @@
 - (void)viewDidLoad
 {
     [_view2 setHidden:YES];
+    _view1.scrollView.bounces = NO;
+    _view2.scrollView.bounces = NO;
     
     //[_nextImage setTintColor:[UIColor blueColor]];
     //[_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
@@ -38,10 +40,12 @@
     
     self.nextImage.maximumValue = ([_path count] - 2);
     
-    Node * n1 = [_path objectAtIndex:0];
-    Node * n2 = [_path objectAtIndex:1];
+    _n1 = [_path objectAtIndex:0];
+    _n2 = [_path objectAtIndex:1];
     
-    [self drawPath:_view1 node1:n1 node2:n2];
+    [self drawPath:_view1 node1:_n1 node2:_n2];
+    
+    [NSTimer scheduledTimerWithTimeInterval:.045 target:self selector:@selector(zoomOnArrow:) userInfo:_view1 repeats:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,8 +57,8 @@
 - (IBAction)stepperValueChanged:(UIStepper *)sender
 {
     NSUInteger value = sender.value;
-    Node * n1 = [_path objectAtIndex:value];
-    Node * n2 = [_path objectAtIndex:value+1];
+    _n1 = [_path objectAtIndex:value];
+    _n2 = [_path objectAtIndex:value+1];
     
     UIWebView *nextView;
     if ([_view1 isHidden]) {
@@ -63,7 +67,7 @@
         nextView = _view2;
     }
     
-    [self drawPath:nextView node1:n1 node2:n2];
+    [self drawPath:nextView node1:_n1 node2:_n2];
     
     // instead of this, use 3 webviews and keep next and previous views pre rendered?
     [NSTimer scheduledTimerWithTimeInterval:.045 target:self selector:@selector(swapViews) userInfo:nil repeats:NO];
@@ -141,14 +145,63 @@
 
 - (void)swapViews
 {
+    UIWebView *curView;
+    UIWebView *nextView;
     if ([_view1 isHidden]) {
-        [_view1 setHidden:NO];
-        [_view2 setHidden:YES];
+        curView = _view2;
+        nextView = _view1;
     } else {
-        [_view2 setHidden:NO];
-        [_view1 setHidden:YES];
+        curView = _view1;
+        nextView = _view2;
+    }
+    if ([_n1.floor isEqualToString:_n2.floor]) {
+        [self copyZoomFrom:[curView scrollView] to:[nextView scrollView]];
+    }
+    [[nextView scrollView] setBounces:NO];
+    [nextView setHidden:NO];
+    [curView setHidden:YES];
+    
+//    [nextView.scrollView setZoomScale:nextView.scrollView.bounds.size.width/140.0 animated:YES];
+    if ([_n1.floor isEqualToString:_n2.floor]) {
+        [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(zoomOnArrow:) userInfo:nextView repeats:NO];
     }
 }
 
+- (void)copyZoomFrom:(UIScrollView *)cur to:(UIScrollView *)next
+{
+    CGRect visibleRect;// = [next convertRect:next.bounds toView:cur];
+    visibleRect.origin = cur.contentOffset;
+    visibleRect.size = cur.bounds.size;
+    double scale = 1.0 / [cur zoomScale];
+    visibleRect.origin.x *= scale;
+    visibleRect.origin.y *= scale;
+    visibleRect.size.width *= scale;
+    visibleRect.size.height *= scale;
+    
+    NSLog( @"Visible rect: %@", NSStringFromCGRect(visibleRect) );
+    
+    [next zoomToRect:visibleRect animated:NO];
+}
+
+- (void)zoomOnArrow:(NSTimer *)timer
+{
+    UIScrollView *view = [[timer userInfo] scrollView];
+    CGRect pageRect = CGPDFPageGetBoxRect(_page, kCGPDFArtBox);
+    float scaleFactorX = view.bounds.size.width / pageRect.size.width;
+    float scaleFactorY = view.bounds.size.height / pageRect.size.height;
+    
+    float centerX = (_n1.xCoordinate + _n2.xCoordinate) / 2.0 *scaleFactorX;
+    float centerY = (_n1.yCoordinate + _n2.yCoordinate) / 2.0 * scaleFactorY;
+ //   float len = sqrtf( pow((n1.xCoordinate-n2.xCoordinate)*scaleFactorX,2) +
+     //                 pow((n1.yCoordinate-n2.yCoordinate)*scaleFactorY,2) );
+    
+    CGRect rect;
+    rect.origin = CGPointMake(centerX-70, centerY-70);
+    rect.size = CGSizeMake(140, 140);
+    
+    NSLog( @"Rect: %@", NSStringFromCGRect(rect) );
+    
+    [view zoomToRect:rect animated:YES];
+}
 
 @end
