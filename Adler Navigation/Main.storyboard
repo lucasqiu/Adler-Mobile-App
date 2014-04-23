@@ -48,20 +48,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6UP-05-I7G">
-                                <rect key="frame" x="213" y="80" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <action selector="stepperValueChanged:" destination="aBc-ok-hIC" eventType="valueChanged" id="yCG-LQ-yPm"/>
-                                </connections>
-                            </stepper>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjV-Oc-Cea">
-                                <rect key="frame" x="0.0" y="117" width="320" height="400"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FSK-sX-ce6">
+                                <rect key="frame" x="0.0" y="132" width="320" height="385"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLa-60-zjO">
-                                <rect key="frame" x="0.0" y="117" width="320" height="400"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjV-Oc-Cea">
+                                <rect key="frame" x="0.0" y="132" width="320" height="385"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -94,7 +87,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="nextImage" destination="6UP-05-I7G" id="FjV-BF-opY"/>
-                        <outlet property="view1" destination="CLa-60-zjO" id="dyR-SA-3WI"/>
+                        <outlet property="textDirection" destination="MYB-f8-blp" id="krU-wN-uGz"/>
+                        <outlet property="view1" destination="FSK-sX-ce6" id="CD2-Tu-z26"/>
                         <outlet property="view2" destination="tjV-Oc-Cea" id="dNS-aA-kA1"/>
                     </connections>
                 </viewController>
