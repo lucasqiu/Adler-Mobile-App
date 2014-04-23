@@ -94,7 +94,7 @@
             str = @"travel10";
         }
         TableViewController *viewController = [segue destinationViewController];
-        viewController.destinationFromFacilities = str;
+        viewController.dest = str;
     }
 }
 
