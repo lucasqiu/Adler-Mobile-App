@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
     [self displayHoursSegment];
     [self displayShowTimesSegment];
     
