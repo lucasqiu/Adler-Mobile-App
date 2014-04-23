@@ -20,6 +20,9 @@
 @property (strong, nonatomic) IBOutlet UIStepper *nextImage;
 @property (nonatomic) CGPDFPageRef page;
 
+//label to display the direction in text form.
+@property (strong, nonatomic) IBOutlet UILabel *textDirection;
+
 - (IBAction)stepperValueChanged:(UIStepper *)sender;
 
 @end

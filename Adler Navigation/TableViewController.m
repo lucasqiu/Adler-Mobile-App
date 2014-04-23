@@ -22,6 +22,7 @@
 {
     [super viewDidLoad];
 
+    //[_giveDirections setEnabled:NO];
     self.source.delegate = self;
     self.destination.delegate = self;
     
@@ -31,6 +32,15 @@
     if (self.dest) {
         NSLog(self.dest);
         self.destination.text = self.dest;
+    }
+}
+
+- (IBAction)editingChanged {
+    if ([_source.text length] != 0 && [_destination.text length] != 0) {
+        [_giveDirections setEnabled:YES];
+    }
+    else {
+        [_giveDirections setEnabled:NO];
     }
 }
 

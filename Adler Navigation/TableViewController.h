@@ -13,6 +13,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *source;
 @property (strong, nonatomic) IBOutlet UITextField *destination;
 @property (strong, nonatomic) NSString *data;
+@property (strong, nonatomic) IBOutlet UIButton *giveDirections;
+- (IBAction)editingChanged;
+
 
 /// A destination passed to this view from the facilities view.
 @property NSString *dest;

@@ -13,7 +13,7 @@
 @end
 
 @implementation HoursViewController
-@synthesize HoursView, ShowTimesView;
+@synthesize HoursView, ShowTimesView, showsTable;
 
 - (void)viewDidLoad
 {
