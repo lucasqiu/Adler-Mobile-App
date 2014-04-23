@@ -249,6 +249,9 @@
 }
 
 
+- (NSString*) findNearestBathroom{
+   return @"";
+}
 
 - (void)didReceiveMemoryWarning
 {
