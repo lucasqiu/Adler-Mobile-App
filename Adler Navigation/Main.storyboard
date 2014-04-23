@@ -634,7 +634,7 @@
             </objects>
             <point key="canvasLocation" x="4679" y="310"/>
         </scene>
-        <!--Navigation Controller - Info-->
+        <!--Navigation Controller - Hours-->
         <scene sceneID="fIB-Zq-Eux">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YMc-Z3-TOm" sceneMemberID="viewController">
