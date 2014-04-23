@@ -38,8 +38,8 @@
 		720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */; };
 		725F0C5F18D663D9003D8FD5 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		725F0C6118D6B485003D8FD5 /* PriorityQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */; };
+		7269812B1907658D003D3C60 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7269812A1907658D003D3C60 /* home2.png */; };
 		726E853F19039777007F5803 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726E853E19039777007F5803 /* ImageViewController.m */; };
-		726E85421903A51C007F5803 /* ImagePagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726E85411903A51C007F5803 /* ImagePagesController.m */; };
 		726E85711903B332007F5803 /* cyb0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 726E85441903B332007F5803 /* cyb0.jpg */; };
 		726E85721903B332007F5803 /* cyb_long.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85451903B332007F5803 /* cyb_long.txt */; };
 		726E85731903B332007F5803 /* cyb_short.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85461903B332007F5803 /* cyb_short.txt */; };
@@ -98,20 +98,17 @@
 		72DF6DFC18F0BEE200B7B6F6 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DEA18F0BEE200B7B6F6 /* star.pdf */; };
 		72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */; };
 		72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DEE18F0BEE200B7B6F6 /* top.pdf */; };
-		B64AAFA518FC3AEA00E00D83 /* facilitiesBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B64AAFA418FC3AEA00E00D83 /* facilitiesBackground.png */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
 		FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BD18F3692800319486 /* downstairs.pdf */; };
 		FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BE18F3692800319486 /* upstairs.pdf */; };
 		FE5C87E918D63449009E2CC2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* TableViewController.m */; };
 		FE5C87F718D634C3009E2CC2 /* EachFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */; };
 		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
-		FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */; };
 		FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */; };
 		FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */; };
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
 		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
 		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
-		FEA4A88A18F4DF6E00A01AA8 /* adlerHome.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88918F4DF6E00A01AA8 /* adlerHome.png */; };
 		FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88B18F4E0D000A01AA8 /* black.png */; };
 		FEA4A88E18F4E0D900A01AA8 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88D18F4E0D900A01AA8 /* blue.png */; };
 		FED8ED8918F76290005A285B /* HoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8ED8818F76290005A285B /* HoursViewController.m */; };
@@ -134,22 +131,22 @@
 		30E3740C18408BCC00996B60 /* MapViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewControllerTests.m; sourceTree = "<group>"; };
 		30E374141858464500996B60 /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
 		30E374151858464500996B60 /* PriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueue.m; sourceTree = "<group>"; };
-		30E5024E183607E100BCDA41 /* Adler Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adler Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E5024E183607E100BCDA41 /* Adler Planetarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adler Planetarium.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E50251183607E100BCDA41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30E50253183607E100BCDA41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		30E50255183607E100BCDA41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30E50257183607E100BCDA41 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler Navigation-Info.plist"; sourceTree = "<group>"; };
+		30E5025B183607E100BCDA41 /* Adler Planetarium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler Planetarium-Info.plist"; sourceTree = "<group>"; };
 		30E5025D183607E100BCDA41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30E5025F183607E100BCDA41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		30E50261183607E100BCDA41 /* Adler Navigation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Adler Navigation-Prefix.pch"; sourceTree = "<group>"; };
+		30E50261183607E100BCDA41 /* Adler Planetarium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Adler Planetarium-Prefix.pch"; sourceTree = "<group>"; };
 		30E50262183607E100BCDA41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30E50263183607E100BCDA41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		30E50266183607E100BCDA41 /* Adler_Navigation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adler_Navigation.xcdatamodel; sourceTree = "<group>"; };
 		30E50268183607E100BCDA41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		30E5026E183607E100BCDA41 /* Adler NavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adler NavigationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E5026E183607E100BCDA41 /* Adler PlanetariumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adler PlanetariumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E5026F183607E100BCDA41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		30E50278183607E100BCDA41 /* Adler NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler NavigationTests-Info.plist"; sourceTree = "<group>"; };
+		30E50278183607E100BCDA41 /* Adler PlanetariumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Adler PlanetariumTests-Info.plist"; sourceTree = "<group>"; };
 		30E5027A183607E100BCDA41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30E5027C183607E100BCDA41 /* Adler_NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adler_NavigationTests.m; sourceTree = "<group>"; };
 		30E502871836084000BCDA41 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = Model/Node.h; sourceTree = "<group>"; };
@@ -167,10 +164,9 @@
 		720700DD18F8F2C400B17AD3 /* ExhibitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitViewController.h; sourceTree = "<group>"; };
 		720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ExhibitViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		725F0C6018D6B485003D8FD5 /* PriorityQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueueTests.m; sourceTree = "<group>"; };
+		7269812A1907658D003D3C60 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
 		726E853D19039777007F5803 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		726E853E19039777007F5803 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		726E85401903A51C007F5803 /* ImagePagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePagesController.h; sourceTree = "<group>"; };
-		726E85411903A51C007F5803 /* ImagePagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePagesController.m; sourceTree = "<group>"; };
 		726E85441903B332007F5803 /* cyb0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cyb0.jpg; sourceTree = "<group>"; };
 		726E85451903B332007F5803 /* cyb_long.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyb_long.txt; sourceTree = "<group>"; };
 		726E85461903B332007F5803 /* cyb_short.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyb_short.txt; sourceTree = "<group>"; };
@@ -231,7 +227,6 @@
 		72DF6DEA18F0BEE200B7B6F6 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = star.pdf; path = "Map Data/star.pdf"; sourceTree = "<group>"; };
 		72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top_paths.pdf; path = "Map Data/top_paths.pdf"; sourceTree = "<group>"; };
 		72DF6DEE18F0BEE200B7B6F6 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top.pdf; path = "Map Data/top.pdf"; sourceTree = "<group>"; };
-		B64AAFA418FC3AEA00E00D83 /* facilitiesBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facilitiesBackground.png; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FE3AE8BD18F3692800319486 /* downstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = downstairs.pdf; sourceTree = "<group>"; };
 		FE3AE8BE18F3692800319486 /* upstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = upstairs.pdf; sourceTree = "<group>"; };
@@ -241,8 +236,6 @@
 		FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachFloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorViewController.h; sourceTree = "<group>"; };
-		FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesViewController.m; sourceTree = "<group>"; };
-		FE5C87EE18D634C3009E2CC2 /* FacilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesViewController.h; sourceTree = "<group>"; };
 		FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachMapViewController.m; sourceTree = "<group>"; };
 		FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachMapViewController.h; sourceTree = "<group>"; };
 		FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFloorViewController.m; sourceTree = "<group>"; };
@@ -252,7 +245,6 @@
 		FE5C87F618D634C3009E2CC2 /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home.jpg; sourceTree = "<group>"; };
 		FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
 		FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
-		FEA4A88918F4DF6E00A01AA8 /* adlerHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adlerHome.png; sourceTree = "<group>"; };
 		FEA4A88B18F4E0D000A01AA8 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		FEA4A88D18F4E0D900A01AA8 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		FED8ED8718F76290005A285B /* HoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursViewController.h; sourceTree = "<group>"; };
@@ -298,8 +290,8 @@
 		30E5024F183607E100BCDA41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30E5024E183607E100BCDA41 /* Adler Navigation.app */,
-				30E5026E183607E100BCDA41 /* Adler NavigationTests.xctest */,
+				30E5024E183607E100BCDA41 /* Adler Planetarium.app */,
+				30E5026E183607E100BCDA41 /* Adler PlanetariumTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -327,30 +319,23 @@
 				720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */,
 				FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */,
 				FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */,
-				FE5C87ED18D634C3009E2CC2 /* FacilitiesViewController.m */,
-				FE5C87EE18D634C3009E2CC2 /* FacilitiesViewController.h */,
 				FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */,
 				FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */,
-				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
-				FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */,
 				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
 				FE5C87F518D634C3009E2CC2 /* HomeViewController.h */,
-				726E85401903A51C007F5803 /* ImagePagesController.h */,
-				726E85411903A51C007F5803 /* ImagePagesController.m */,
-				726E853D19039777007F5803 /* ImageViewController.h */,
-				726E853E19039777007F5803 /* ImageViewController.m */,
-				FE5C87E618D63449009E2CC2 /* TableViewController.m */,
-				FE5C87E818D63449009E2CC2 /* TableViewController.h */,
-				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
-				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
-				30E3740918403EAB00996B60 /* MapViewController.h */,
-				30E3740A18403EAB00996B60 /* MapViewController.m */,
-				30E374141858464500996B60 /* PriorityQueue.h */,
-				30E374151858464500996B60 /* PriorityQueue.m */,
-				728FD49F18D0F66D0073C43F /* comparable.h */,
-				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
 				FED8ED8718F76290005A285B /* HoursViewController.h */,
 				FED8ED8818F76290005A285B /* HoursViewController.m */,
+				726E853D19039777007F5803 /* ImageViewController.h */,
+				726E853E19039777007F5803 /* ImageViewController.m */,
+				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
+				FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */,
+				30E3740918403EAB00996B60 /* MapViewController.h */,
+				30E3740A18403EAB00996B60 /* MapViewController.m */,
+				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
+				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
+				FE5C87E618D63449009E2CC2 /* TableViewController.m */,
+				FE5C87E818D63449009E2CC2 /* TableViewController.h */,
+				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
 				30E50265183607E100BCDA41 /* Adler_Navigation.xcdatamodeld */,
@@ -362,17 +347,16 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B64AAFA418FC3AEA00E00D83 /* facilitiesBackground.png */,
-				FEA4A88918F4DF6E00A01AA8 /* adlerHome.png */,
 				FEA4A88B18F4E0D000A01AA8 /* black.png */,
 				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
+				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
+				7269812A1907658D003D3C60 /* home2.png */,
 				727A22F018F0BA36005DF50E /* Exhibit Data */,
 				727A22EF18F0BA31005DF50E /* Map Data */,
-				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
 				30E5025F183607E100BCDA41 /* main.m */,
 				30E5025C183607E100BCDA41 /* InfoPlist.strings */,
-				30E5025B183607E100BCDA41 /* Adler Navigation-Info.plist */,
-				30E50261183607E100BCDA41 /* Adler Navigation-Prefix.pch */,
+				30E5025B183607E100BCDA41 /* Adler Planetarium-Info.plist */,
+				30E50261183607E100BCDA41 /* Adler Planetarium-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,7 +376,7 @@
 		30E50277183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				30E50278183607E100BCDA41 /* Adler NavigationTests-Info.plist */,
+				30E50278183607E100BCDA41 /* Adler PlanetariumTests-Info.plist */,
 				30E50279183607E100BCDA41 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -401,6 +385,9 @@
 		30E502861836080B00BCDA41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30E374141858464500996B60 /* PriorityQueue.h */,
+				30E374151858464500996B60 /* PriorityQueue.m */,
+				728FD49F18D0F66D0073C43F /* comparable.h */,
 				30E502901836222000BCDA41 /* Edge.h */,
 				30E502911836222000BCDA41 /* Edge.m */,
 				30E502871836084000BCDA41 /* Node.h */,
@@ -594,9 +581,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30E5024D183607E100BCDA41 /* Adler Navigation */ = {
+		30E5024D183607E100BCDA41 /* Adler Planetarium */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Navigation" */;
+			buildConfigurationList = 30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Planetarium" */;
 			buildPhases = (
 				30E5024A183607E100BCDA41 /* Sources */,
 				30E5024B183607E100BCDA41 /* Frameworks */,
@@ -606,14 +593,14 @@
 			);
 			dependencies = (
 			);
-			name = "Adler Navigation";
+			name = "Adler Planetarium";
 			productName = "Adler Navigation";
-			productReference = 30E5024E183607E100BCDA41 /* Adler Navigation.app */;
+			productReference = 30E5024E183607E100BCDA41 /* Adler Planetarium.app */;
 			productType = "com.apple.product-type.application";
 		};
-		30E5026D183607E100BCDA41 /* Adler NavigationTests */ = {
+		30E5026D183607E100BCDA41 /* Adler PlanetariumTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler NavigationTests" */;
+			buildConfigurationList = 30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler PlanetariumTests" */;
 			buildPhases = (
 				30E5026A183607E100BCDA41 /* Sources */,
 				30E5026B183607E100BCDA41 /* Frameworks */,
@@ -624,9 +611,9 @@
 			dependencies = (
 				30E50275183607E100BCDA41 /* PBXTargetDependency */,
 			);
-			name = "Adler NavigationTests";
+			name = "Adler PlanetariumTests";
 			productName = "Adler NavigationTests";
-			productReference = 30E5026E183607E100BCDA41 /* Adler NavigationTests.xctest */;
+			productReference = 30E5026E183607E100BCDA41 /* Adler PlanetariumTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -643,7 +630,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Navigation" */;
+			buildConfigurationList = 30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Planetarium" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -655,8 +642,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30E5024D183607E100BCDA41 /* Adler Navigation */,
-				30E5026D183607E100BCDA41 /* Adler NavigationTests */,
+				30E5024D183607E100BCDA41 /* Adler Planetarium */,
+				30E5026D183607E100BCDA41 /* Adler PlanetariumTests */,
 			);
 		};
 /* End PBXProject section */
@@ -711,18 +698,17 @@
 				726E85821903B332007F5803 /* solar_short.txt in Resources */,
 				726E85831903B332007F5803 /* pe0.png in Resources */,
 				72DF6DF718F0BEE200B7B6F6 /* mid_paths.pdf in Resources */,
+				7269812B1907658D003D3C60 /* home2.png in Resources */,
 				726E85871903B332007F5803 /* sfm_long.txt in Resources */,
 				726E85741903B332007F5803 /* hid0.jpg in Resources */,
 				726E85A71903C8C4007F5803 /* unv_name.txt in Resources */,
 				726E85941903B332007F5803 /* unv_long.txt in Resources */,
-				B64AAFA518FC3AEA00E00D83 /* facilitiesBackground.png in Resources */,
 				72DF6DFB18F0BEE200B7B6F6 /* star_paths.pdf in Resources */,
 				726E859F1903C89B007F5803 /* pe_name.txt in Resources */,
 				726E85901903B332007F5803 /* tele0.png in Resources */,
 				726E85861903B332007F5803 /* sfm0.png in Resources */,
 				726E85711903B332007F5803 /* cyb0.jpg in Resources */,
 				720700D618F8F25500B17AD3 /* ast0.jpg in Resources */,
-				FEA4A88A18F4DF6E00A01AA8 /* adlerHome.png in Resources */,
 				726E857D1903B332007F5803 /* solar3.jpg in Resources */,
 				72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */,
 				726E857B1903B332007F5803 /* solar1.jpg in Resources */,
@@ -771,9 +757,7 @@
 				30E502951836263100BCDA41 /* MapGraph.m in Sources */,
 				30E3740B18403EAB00996B60 /* MapViewController.m in Sources */,
 				720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */,
-				FE5C87F918D634C3009E2CC2 /* FacilitiesViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
-				726E85421903A51C007F5803 /* ImagePagesController.m in Sources */,
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
 				FED8ED8918F76290005A285B /* HoursViewController.m in Sources */,
@@ -798,7 +782,7 @@
 /* Begin PBXTargetDependency section */
 		30E50275183607E100BCDA41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 30E5024D183607E100BCDA41 /* Adler Navigation */;
+			target = 30E5024D183607E100BCDA41 /* Adler Planetarium */;
 			targetProxy = 30E50274183607E100BCDA41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -899,9 +883,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Adler Navigation/Adler Navigation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
+				INFOPLIST_FILE = "Adler Navigation/Adler Planetarium-Info.plist";
+				PRODUCT_NAME = "Adler Planetarium";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -912,9 +896,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Adler Navigation/Adler Navigation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
+				INFOPLIST_FILE = "Adler Navigation/Adler Planetarium-Info.plist";
+				PRODUCT_NAME = "Adler Planetarium";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -934,8 +918,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Adler NavigationTests/Adler NavigationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Adler NavigationTests/Adler PlanetariumTests-Info.plist";
+				PRODUCT_NAME = "Adler PlanetariumTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -952,8 +936,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Adler NavigationTests/Adler NavigationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Adler NavigationTests/Adler PlanetariumTests-Info.plist";
+				PRODUCT_NAME = "Adler PlanetariumTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -962,7 +946,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Navigation" */ = {
+		30E50249183607E100BCDA41 /* Build configuration list for PBXProject "Adler Planetarium" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E5027E183607E100BCDA41 /* Debug */,
@@ -971,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Navigation" */ = {
+		30E50280183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler Planetarium" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E50281183607E100BCDA41 /* Debug */,
@@ -980,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler NavigationTests" */ = {
+		30E50283183607E100BCDA41 /* Build configuration list for PBXNativeTarget "Adler PlanetariumTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30E50284183607E100BCDA41 /* Debug */,

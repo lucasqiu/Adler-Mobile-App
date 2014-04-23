@@ -12,13 +12,6 @@
 
 @interface ExhibitViewController : UITableViewController
 @property (nonatomic, strong) NSMutableArray *exhibits;
-@property NSMutableArray *displayed;
-@end
-
-
-@interface ViewController : UIViewController <UIPageViewControllerDataSource>
-- (IBAction)startWalkthrough:(id)sender;
-@property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) NSArray *pageTitles;
-@property (strong, nonatomic) NSArray *pageImages;
+@property (strong, nonatomic) ImageViewController *imageViewController;
+@property int exhibitIndex;
 @end

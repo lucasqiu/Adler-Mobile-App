@@ -74,7 +74,7 @@
 			<string>Citizen Science</string>
 			<string>Cyberspace</string>
 			<string>travel2</string>
-			<string>Atwood Sphere</string>
+			<string>Historic Atwood Sphere</string>
 		</array>
 	</dict>
 	<dict>
@@ -243,7 +243,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Atwood Sphere</string>
+		<string>Historic Atwood Sphere</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -403,7 +403,7 @@
 		<integer>134</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Atwood Sphere</string>
+			<string>Historic Atwood Sphere</string>
 			<string>travel4</string>
 			<string>travel2</string>
 		</array>
@@ -921,7 +921,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel34</string>
-			<string>Welcome Gallery</string>
+			<string>Clark Family Welcome Gallery</string>
 		</array>
 	</dict>
 	<dict>
@@ -937,7 +937,7 @@
 		<integer>435</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Welcome Gallery</string>
+			<string>Clark Family Welcome Gallery</string>
 			<string>travel22</string>
 		</array>
 	</dict>
@@ -1044,7 +1044,7 @@
 		<integer>475</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Cafe Galileo</string>
+			<string>Café Galileo&apos;s</string>
 			<string>cafe_galileo_exitnode</string>
 		</array>
 	</dict>
@@ -1218,7 +1218,7 @@
 		<integer>601</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Welcome Gallery</string>
+			<string>Clark Family Welcome Gallery</string>
 			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
@@ -1226,7 +1226,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Welcome Gallery</string>
+		<string>Clark Family Welcome Gallery</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
@@ -1277,7 +1277,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Cafe Galileo</string>
+		<string>Café Galileo&apos;s</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>

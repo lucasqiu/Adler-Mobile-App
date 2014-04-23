@@ -22,6 +22,9 @@
 @property (strong, nonatomic) Node *n1;
 @property (strong, nonatomic) Node *n2;
 
+//label to display the direction in text form.
+@property (strong, nonatomic) IBOutlet UILabel *textDirection;
+
 - (IBAction)stepperValueChanged:(UIStepper *)sender;
 
 @end

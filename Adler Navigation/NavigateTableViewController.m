@@ -23,9 +23,9 @@
     _view1.scrollView.bounces = NO;
     _view2.scrollView.bounces = NO;
     
-    [_nextImage setTintColor:[UIColor blueColor]];
-    [_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
-    [_nextImage setDecrementImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
+    //[_nextImage setTintColor:[UIColor blueColor]];
+    //[_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
+    //[_nextImage setDecrementImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
 
     [super viewDidLoad];
 
