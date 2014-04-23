@@ -25,12 +25,9 @@
     //[_giveDirections setEnabled:NO];
     self.source.delegate = self;
     self.destination.delegate = self;
-    
     self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
     
-    // Did we navigate here from facilities?
     if (self.dest) {
-        NSLog(self.dest);
         self.destination.text = self.dest;
     }
 }
@@ -57,7 +54,16 @@
 }
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    return YES; // So that I can determine whether or not to perform the segue based on app logic
+    if ([_source.text isEqualToString:@""]||[_destination.text isEqualToString:@""]){
+        UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"Navigation Error" message:@"Please fill in both fields."
+                                        delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                                      otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
+        
+        [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
+        [navigateAlert show];
+        return NO;
+    }
+    return YES;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -65,7 +71,6 @@
     FloorViewController *fv = [segue destinationViewController];
     if ([[segue identifier] isEqualToString:@"SourceTableView"])
     {
-        
         fv.sourceORDestination = @"1";
         
     }
@@ -77,10 +82,12 @@
     else if ([[segue identifier] isEqualToString:@"Navigate"])
     {
         NavigateTableViewController * navigate = [segue destinationViewController];
+
         navigate.source = _source.text;
         navigate.destination = _destination.text;
     }
 }
+
 
 - (IBAction)sourceUnwindToViewController:(UIStoryboardSegue *)sourceUnwindSegue
 {
