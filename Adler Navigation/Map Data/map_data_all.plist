@@ -921,7 +921,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel34</string>
-			<string>Welcome Gallery</string>
+			<string>Clark Family Welcome Gallery</string>
 		</array>
 	</dict>
 	<dict>
@@ -937,7 +937,7 @@
 		<integer>435</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Welcome Gallery</string>
+			<string>Clark Family Welcome Gallery</string>
 			<string>travel22</string>
 		</array>
 	</dict>
@@ -1218,7 +1218,7 @@
 		<integer>601</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Welcome Gallery</string>
+			<string>Clark Family Welcome Gallery</string>
 			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
@@ -1226,7 +1226,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Welcome Gallery</string>
+		<string>Clark Family Welcome Gallery</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>

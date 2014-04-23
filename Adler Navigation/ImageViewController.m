@@ -26,14 +26,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor blackColor];
     if(self.curExhibit){
         self.longDetails.editable = NO;
         self.longDetails.text = self.curExhibit.description;
         self.display.image = self.curExhibit.images[0];
-    
+        if ([self.curExhibit.ID isEqualToString: @"Hidden Wonders"]||
+            [self.curExhibit.ID isEqualToString: @"Sundials"]){
+            _naviButton.hidden = YES;
+        }
     }
 }
+
+
 
 - (IBAction)toNavigate:(id)sender {
 }
@@ -52,11 +57,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
     if ([segue.identifier isEqualToString:@"NavigateToExhibit"]) {
         TableViewController *tc = [segue destinationViewController];
         NSString *str = _curExhibit.ID;
-        tc.dest = str;// @"Telescopes"; // have to use string literal, not NSString here.
+        tc.dest = str;
     }
 }
 
@@ -66,7 +70,6 @@
     tv.textColor = [UIColor whiteColor];
     
     UIButton *btn = (UIButton *)[self.view viewWithTag:100];
-    //UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor blackColor];
 }
 
